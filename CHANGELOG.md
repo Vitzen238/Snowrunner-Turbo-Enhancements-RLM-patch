@@ -1,4 +1,7 @@
-# Changelog
+# Changelog:
+
+## v1.1
+- Update to RLM 47.2.1.
 
 ## v1.0
 
