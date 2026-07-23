@@ -249,23 +249,23 @@
 				NetSync="pv"
 			>
 				<Constraint Type="Fixed" />
-				<Body _template="SideMirror" ModelFrame="BoneMirrorLeft_cdt" _template="Gravity">
+				<Body _template="SideMirror" ModelFrame="BoneMirrorLeft_cdt">
 					<Constraint AxisLocal="(0; 1; 0)" />
 				</Body>
-				<Body _template="SideMirror" ModelFrame="BoneMirrorRight_cdt" _template="Gravity">
+				<Body _template="SideMirror" ModelFrame="BoneMirrorRight_cdt">
 					<Constraint AxisLocal="(0; 1; 0)" />
 				</Body>
-				<Body _template="Belt" ModelFrame="BoneBelt1_cdt"  _template="Gravity"/>
-				<Body _template="Belt" ModelFrame="BoneBelt2_cdt"  _template="Gravity"/>
-				<Body _template="Sunshield" ModelFrame="BoneSunshieldL_cdt"  _template="Gravity"/>
-				<Body _template="Sunshield" ModelFrame="BoneSunshieldR_cdt"  _template="Gravity"/>
+				<Body _template="Belt" ModelFrame="BoneBelt1_cdt"/>
+				<Body _template="Belt" ModelFrame="BoneBelt2_cdt"/>
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldL_cdt"/>
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldR_cdt"/>
 				<Body _template="Key" ModelFrame="BoneKey1_cdt" _template="Gravity">
-					<Body _template="Key" ModelFrame="BoneKey2_cdt" _template="Gravity">
+					<Body _template="Key" ModelFrame="BoneKey2_cdt">
 						<Constraint AxisLocal="(1; 0; 0)" />
 					</Body>
 				</Body>
 			</Body>
-			<Body _template="TieRod" ModelFrame="BoneTieRod1_cdt" _template="Gravity">
+			<Body _template="TieRod" ModelFrame="BoneTieRod1_cdt">
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="TieRodSteer"

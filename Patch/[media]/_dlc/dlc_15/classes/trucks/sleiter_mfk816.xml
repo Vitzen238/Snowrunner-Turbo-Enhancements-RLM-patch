@@ -57,12 +57,12 @@
 			DefaultTire="sleiter_tire_1"
 			DefaultWheelType="wheels_superheavy_single_sleiter_mfk816"
 		>
-			<Wheel _template="FrontWheel" SteeringJointOffset="0.38" Pos="(2.858; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
-			<Wheel _template="FrontWheel" RightSide="true" SteeringJointOffset="0.38" Pos="(2.858; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
-			<Wheel _template="RearWheel" Pos="(-2.150; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
-			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.150; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
-			<Wheel _template="RearWheel" Pos="(-4.140; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
-			<Wheel _template="RearWheel" RightSide="true" Pos="(-4.140; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="FrontWheel" SteeringJointOffset="0.38" Pos="(2.858; 0.851; 1.47)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="FrontWheel" RightSide="true" SteeringJointOffset="0.38" Pos="(2.858; 0.851; 1.47)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" Pos="(-2.150; 0.851; 1.47)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.150; 0.851; 1.47)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" Pos="(-4.140; 0.851; 1.47)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-4.140; 0.851; 1.47)" ParentFrame="BoneChassis_cdt" />
 		</Wheels>
 		<SuspensionSocket
 			Default="sleiter_mfk816_suspension_default"
