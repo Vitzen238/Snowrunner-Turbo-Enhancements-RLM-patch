@@ -59,7 +59,7 @@
 		EngineStartDelay="0.7"
 		ExhaustStartTime="1.5"
 		FuelCapacity="430"
-		Responsiveness="0.2"
+		Responsiveness="1"
 		SteerSpeed="0.03"
 		TruckImage="Plad440mchr"
 		TruckType="OFFROAD"

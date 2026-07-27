@@ -90,7 +90,7 @@
 		EngineStartDelay="0.7"
 		ExhaustStartTime="1.1"
 		FuelCapacity="137"
-		Responsiveness="0.35"
+		Responsiveness="1"
 		SteerSpeed="0.025"
 		TruckImage="HibBillertmchr"
 		TruckType="OFFROAD"

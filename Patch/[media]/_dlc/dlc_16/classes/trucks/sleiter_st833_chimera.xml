@@ -89,7 +89,7 @@
 		EngineStartDelay="3.5"
 		ExhaustStartTime="2.5"
 		FuelCapacity="1350"
-		Responsiveness="0.2"
+		Responsiveness="1"
 		SteerSpeed="0.013"
 		TruckImage="SleiterChimeramchr"
 		TruckType="HEAVY"

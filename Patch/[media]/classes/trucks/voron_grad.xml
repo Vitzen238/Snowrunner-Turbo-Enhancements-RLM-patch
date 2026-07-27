@@ -503,7 +503,7 @@
 			/>
 			<Socket 
 				Names="InternationalFleetstarF2070aCabinProtector"
-				NamesBlock="UralNEXT_AddonBody, FrameAddonTow, FrameAddonTowPlatform, FrameAddonLogShortZikz, FrameAddonLogMediumHigh, BigCraneRu, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, FrameAddonSeismicVibrator" 
+				NamesBlock="KamazAddonBody, UralNEXT_AddonBody, FrameAddonTow, FrameAddonTowPlatform, FrameAddonLogShortZikz, FrameAddonLogMediumHigh, BigCraneRu, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, FrameAddonSeismicVibrator" 
 				Offset="(-1.185; 0.137; 0)" ParentFrame="BoneCabin_cdt" 
 			>
 				<AddonsShift Offset="(-1.2; 0; 0)" Types="MinicraneRU" />

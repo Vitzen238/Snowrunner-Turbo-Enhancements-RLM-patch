@@ -611,7 +611,7 @@
 			<Socket Names="DerrySpecial15c177Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="derry_special_15c177_beacon_default">
-			<Socket Names="DerrySpecial15c177Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="DerrySpecial15c177Beacon" NamesBlock="DerrySpecial15c177Roofrack" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Z2DerryspAdd" ParentFrame="BoneCabin_cdt" />

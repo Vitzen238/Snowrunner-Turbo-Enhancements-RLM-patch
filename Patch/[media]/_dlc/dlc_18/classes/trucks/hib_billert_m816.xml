@@ -115,7 +115,6 @@
 			MinDist="10.0"
 			ParentFrame="BoneCabin_cdt"
 		>
-			<EngineTurbo	Sound="trucks/hib_billert_m816/hib_billert_m816_turbo" />
 			<Reverse		Sound="trucks/hib_billert_m816/hib_billert_m816_beeper" />
 			<BrakePull		Sound="trucks/hib_billert_m816/hib_billert_m816_brake_pull" />
 			<BrakeRelease	Sound="trucks/hib_billert_m816/hib_billert_m816_brake_release" />

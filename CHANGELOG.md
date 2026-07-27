@@ -1,5 +1,9 @@
 # Changelog:
 
+## v1.3
+- Update to RLM 47.2.3
+- Fixed duplicated EngineTurbo tag on Billert M816 XML
+
 ## v1.2
 - Update to RLM 47.2.2.1.
 

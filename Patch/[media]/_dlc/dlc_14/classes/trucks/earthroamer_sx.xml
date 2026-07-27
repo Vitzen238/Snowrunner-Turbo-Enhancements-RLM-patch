@@ -78,7 +78,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.035"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_earthroamer_sx"
 		EngineIconScale="1"
 		EngineStartDelay="1.8"
@@ -501,6 +501,9 @@
 			<CameraPos FOV="32.0" Name="roof_sticker" Position="(8.700; 6.700; -1.300)" InterestPosition="(3.8; 1.704; 0.000)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0"/>
 			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" Position="(8.6; 1.868; -1.53)" InterestPosition="(6.277; 1.680; 0.000)"  />
 		</CustomizationCameras>
+		<AddonSockets DefaultAddon="earthroamer_lti_diff_lock_default">
+			<Socket Names="EarthroamerLtiDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
 		<AddonSockets DefaultAddon="earthroamer_sx_bumper_default">
 			<Socket Names="EarthroamerSxBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>

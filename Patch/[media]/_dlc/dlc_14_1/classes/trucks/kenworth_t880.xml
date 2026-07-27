@@ -85,7 +85,7 @@
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
 		FuelCapacity="416.395"
-		Responsiveness="0.45"
+		Responsiveness="1"
 		SteerSpeed="0.025"
 		TruckImage="kenworth880mchr"
 		TruckType="HIGHWAY"

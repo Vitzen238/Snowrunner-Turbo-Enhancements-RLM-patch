@@ -68,7 +68,7 @@
 		EngineStartDelay="0.7"
 		ExhaustStartTime="0.6"
 		FuelCapacity="180"
-		Responsiveness="0.32"
+		Responsiveness="1"
 		SteerSpeed="0.026"
 		TruckImage="mercedesBenzActrosmchr"
 		TruckType="OFFROAD"

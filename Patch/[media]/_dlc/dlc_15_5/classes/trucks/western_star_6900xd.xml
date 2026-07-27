@@ -508,7 +508,7 @@
 		<CraneSocket Pos="(-5.502; 1.15; -0.005)" ParentFrame="BoneChassis_cdt" />
 		<CraneSocket Pos="(-1.374; 1.333; 0.433)" ParentFrame="BoneChassis_cdt" />
 		<AddonSockets
-			DefaultAddon=""
+			DefaultAddon="plad_440_fender_addon"
 			RequiredAddonIfNoConflicts=""
 		>
 			<Socket Names="Plad440Fender" NamesBlock="" Offset="(-0.45; 0.3; 0)" ParentFrame="BoneChassis_cdt">
@@ -535,6 +535,7 @@
 				Names="Azov4220AntarcticSpotLight3"
 				Offset="(0.21; -1.19; 0)"
 				NamesBlock="Ankatra1160Counterweight"
+				ParentFrame="BoneCabin_cdt" 
 			>
 				<AddonsShift Offset="(-0.05;0;0)" Types="WesternStar6900XDBumper1"/>
 			</Socket>
@@ -696,11 +697,11 @@
 			<Socket
 				Names="BigCrane"
 				NamesBlock="MinicraneKenworthC500, WesternStar6900XDRoofrack, WesternStar6900XDSpotlight, "
-				Offset="(-1.75; 1.7; 0)"
+				Offset="(-1.75; 1.78; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.12; 0)" />
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.12; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.2; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.2; 0)" />
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="WesternStar6900XDSpareWheel" />
 			</Socket>
 			<Socket Names="SaddleHigh" Offset="(-3; 1.48; 0)" />

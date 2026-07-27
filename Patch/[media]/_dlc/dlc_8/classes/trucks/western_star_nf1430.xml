@@ -501,6 +501,7 @@
 				<AddonsShift TrailerNamesBlock="MackPinnacleSpareWheel1" Types="FrameAddonKung, MinicraneNavistar" />
 				<AddonsShift TrailerNamesBlock="nf1430Exhaust1" Types="MackPinnacleSpareWheel1, BigCrane" />
 				<AddonsShift TrailerNamesBlock="nf1430Exhaust1" Types="FrameAddonLogShort, MackPinnacleSpareWheel1" />
+				<AddonsShift TrailerNamesBlock="LogLift" Types="FrameAddonLogShort, MackPinnacleSpareWheel1" />
 			</Socket>
 		</AddonSockets>
 		<!--<AddonSockets>
