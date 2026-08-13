@@ -399,14 +399,11 @@
 		<AddonSockets>
 			<Socket
 				Names="Azov4220AntarcticSpotLight3"
-				Offset="(-1.36; -1.61; 0)"
-			>
-				<AddonsShift Offset="(-0.08;0.34;0)" Types="khan317sentinelBumper1"/>
-			</Socket>
+				Offset="(-1.44; -1.27; 0)"
+			/>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="khan_317_sentinel_bumper_default">
 			<Socket Names="khan317sentinelBumper" />
-			<Socket Names="khan317sentinelBumper1" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="khan_317_sentinel_bumper_rear_default">
 			<Socket Names="khan317sentinelRearBumper" />

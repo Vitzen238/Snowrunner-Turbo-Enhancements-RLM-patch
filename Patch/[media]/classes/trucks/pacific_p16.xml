@@ -51,7 +51,7 @@
 		</ExtraWheels>-->
 		<Wheels
 			DefaultRim="rim_p16"
-			DefaultTire="offroad_3"
+			DefaultTire="offroad_1"
 			DefaultWheelType="wheels_heavy_double_p16"
 		>
 			<Wheel _template="FrontWheel" Pos="(3.492; 0.702; 1.25)" />

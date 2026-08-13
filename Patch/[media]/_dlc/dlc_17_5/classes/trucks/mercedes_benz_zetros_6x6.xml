@@ -200,8 +200,10 @@
 		<!--<CompatibleWheels Scale="0.60" Type="wheels_paystar_5070_double2/3526085"	OffsetZ=" 0.01" RearOffsetZ="-0.05" />
 		<CompatibleWheels Scale="0.60" Type="wheels_chevy_c70_single1/3526085"		OffsetZ=" 0.00" RearOffsetZ=" 0.00" />
 		<CompatibleWheels Scale="0.60" Type="wheels_chevy_c70_single2/3526085"		OffsetZ=" 0.00" RearOffsetZ=" -0.05" />
-		<CompatibleWheels Scale="0.63" Type="wheels_man_tgx_single1/3526085"			 OffsetZ=" 0.025" RearOffsetZ=" 0.025" />--><!--RearOffsetZ="0.09" to avoid clipping-->
-		<!--<CompatibleWheels Scale="0.67" Type="wheels_man_tgx_single2/3526085"			 OffsetZ=" 0.025" RearOffsetZ=" -0.07" RearScale="0.67" />--><!--RearOffsetZ="-0.02" to avoid clipping-->
+		<CompatibleWheels Scale="0.63" Type="wheels_man_tgx_single1/3526085"			 OffsetZ=" 0.025" RearOffsetZ=" 0.025" />-->
+		<!--↑RearOffsetZ="0.09" to avoid clipping-->
+		<!--<CompatibleWheels Scale="0.67" Type="wheels_man_tgx_single2/3526085"			 OffsetZ=" 0.025" RearOffsetZ=" -0.07" RearScale="0.67" />-->
+		<!--↑RearOffsetZ="-0.02" to avoid clipping-->
 		<CompatibleWheels Scale="0.63" Type="wheels_mercedes_zetros_single1/3526085"	OffsetZ="0.025" RearOffsetZ=" 0.025" />
 		<CompatibleWheels Scale="0.63" Type="wheels_mercedes_zetros_single2/3526085"	OffsetZ="0.025" RearOffsetZ="-0.050" RearScale="0.65"/>
 		<CompatibleWheels Scale="0.65" Type="wheels_mercedes_zetros_single3/3526085"	OffsetZ="0.050" RearOffsetZ="-0.025" />

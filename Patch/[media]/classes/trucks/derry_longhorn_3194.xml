@@ -255,7 +255,7 @@
 						<Motor Damping="0.001" Spring="0.001" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body _template="TieRod" ModelFrame="BoneTieRod_cdt" _template="Gravity" >
+				<Body _template="TieRod" ModelFrame="BoneTieRod_cdt">
 					<Constraint
 						AxisLocal="(0; 0; 1)"
 						Name="TieRodSteer"
@@ -264,16 +264,16 @@
 					/>
 				</Body>
 			</Body>
-			<Body _template="Gravity"  _template="Hitch" ModelFrame="BoneHitchL1_cdt">
+			<Body _template="Hitch" ModelFrame="BoneHitchL1_cdt">
 				<Constraint MaxLimit="24" />
 			</Body>
-			<Body _template="Gravity"  _template="Hitch" ModelFrame="BoneHitchR1_cdt">
+			<Body _template="Hitch" ModelFrame="BoneHitchR1_cdt">
 				<Constraint MaxLimit="24" />
 			</Body>
-			<Body _template="Gravity"  _template="Hitch" ModelFrame="BoneHitchL2_cdt">
+			<Body _template="Hitch" ModelFrame="BoneHitchL2_cdt">
 				<Constraint MaxLimit="30" />
 			</Body>
-			<Body _template="Gravity"  _template="Hitch" ModelFrame="BoneHitchR2_cdt">
+			<Body _template="Hitch" ModelFrame="BoneHitchR2_cdt">
 				<Constraint MaxLimit="30" />
 			</Body>
 		</Body>

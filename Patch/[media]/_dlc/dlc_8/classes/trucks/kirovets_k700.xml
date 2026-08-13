@@ -306,7 +306,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.961; 0.994; 0.703)" Position="(4.384; 2.942; 0)" />
 			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(6.321; 2.828; -0.786)" Position="(10.575; 3.974; 0.816)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(5.745; 1.723; 0)" Position="(4.617; 2.581; 2.916)" />
-			<CameraPos FOV="32.0" Name="roof" InterestPosition="(5.118; 3.503; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.064; 5.516; -4.015)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(4; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.064; 3; -4.015)" />
 			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(6.172; 1.809; -0.834)" Position="(8.674; 5.508; 0)" />
 			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.451; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.951; 1.253; -5.017)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(4.494; 3.503; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5.841; 5.84; 6.957)" />

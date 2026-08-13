@@ -620,14 +620,14 @@
 			<Socket
 				Names="TatraCrane" 
 				Offset="(-0.75; 0.19; 0)"
-				NamesBlock="FrameAddonLogShortMastodon, FrameAddonLogMediumMastodon, FrameAddon, FrameAddonTank, FrameAddonKung, BigCrane, BunkLog, HeavyRepairSmall, Plad450RearFender, Plad450SpareWheel"
+				NamesBlock="FrameAddonLogShortMastodon, FrameAddonLogMediumMastodon, FrameAddon, FrameAddonTank, FrameAddonKung, BigCraneL, BunkLog, HeavyRepairSmall, Plad450RearFender, Plad450SpareWheel"
 				ParentFrame="BoneCabin_cdt"
 			/>
 			<Socket
 				Names="PladMinicrane"
 				Offset="(0.8; 1; 0)"
 				ParentFrame="BoneCabin_cdt"
-				NamesBlock="Plad450SpareWheel, BigCrane, ZikzLogLift, FrameAddonTank, FrameAddonLogMediumMastodon, FrameAddonLogShortMastodon"
+				NamesBlock="Plad450SpareWheel, BigCraneL, ZikzLogLift, FrameAddonTank, FrameAddonLogMediumMastodon, FrameAddonLogShortMastodon"
 			>
 				<AddonsShift Offset="(-1.32; 0; 0)" Types="Plad450SpareWheel" />
 			</Socket>

@@ -186,6 +186,7 @@
 		<CompatibleWheels Scale="0.62" Type="wheels_mercedes_actros_double1/3526085"	OffsetZ="-0.029" RearOffsetZ="-0.050" />
 		<!--<CompatibleWheels Scale="0.63" Type="wheels_mercedes_actros_double2/2041913"	OffsetZ="-0.029" RearOffsetZ="-0.050" />-->
 		<CompatibleWheels Scale="0.63" Type="wheels_mercedes_actros_single1/3526085"	OffsetZ="0.00" RearOffsetZ="-0.000" RearScale="0.65" />
+		<CompatibleWheels Scale="0.63" Type="wheels_mercedes_zetros_single1/3526085"	OffsetZ="-0.11" RearOffsetZ=" 0.02" />
 		
 		<Camera Center="(-1.1; -0.25; 0)" RadiusMultiplier="0.9" ParentFrame="BoneCabin_cdt">
 			<Cockpit
@@ -388,15 +389,15 @@
 		<WinchSocket Pos="(-0.810; 1.152; 0.395)" />
 		<WinchSocket Pos="(-0.810; 1.152; -0.395)" />
 		<WinchSocket Pos="(-3.955; 1.121; 0)" />
-		<WinchSocket Pos="(-4.042; 0.524; 1.054)" />
-		<WinchSocket Pos="(-4.042; 0.524; -1.054)" />
+		<!--<WinchSocket Pos="(-4.042; 0.524; 1.054)" />
+		<WinchSocket Pos="(-4.042; 0.524; -1.054)" />-->
 		
 		<CraneSocket Pos="(-0.5; 1.121; 0)" />
 		<CraneSocket Pos="(-0.810; 1.152; 0.395)" />
 		<CraneSocket Pos="(-0.810; 1.152; -0.395)" />
 		<CraneSocket Pos="(-3.955; 1.121; 0)" />
-		<CraneSocket Pos="(-4.042; 0.524; 1.054)" />
-		<CraneSocket Pos="(-4.042; 0.524; -1.054)" />
+		<!--<CraneSocket Pos="(-4.042; 0.524; 1.054)" />
+		<CraneSocket Pos="(-4.042; 0.524; -1.054)" />-->
 		
 		<UiDesc
 			UiDesc="UI_VEHICLE_MERCEDES_ACTROS_DESC"
@@ -496,7 +497,16 @@
 				Names="LogLiftPaderaSTD4"
 				Offset="(-0.6; -0.08; 0)"
 				ParentFrame="BoneCabinTwist_cdt"
-				NamesBlock="FrameAddonMackTerraPro, MercedesBenzActrosSubframe, TatraSideboard, FrameAddonTank, FrameAddonLogShort, BigCraneUs, FrameAddon, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonKung, SaddleMotorized"
+				NamesBlock="FrameAddonMaintainer, FrameAddonMackTerraPro, MercedesBenzActrosSubframe, TatraSideboard, FrameAddonTank, FrameAddonLogShort, BigCraneUs, FrameAddon, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonKung, SaddleMotorized"
+			>
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; -0.15; -0.04)" />
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; -0.15; 0.04)" />
+			</Socket>
+			<Socket
+				Names="LogLift" Dir="(0;0;-1)"
+				Offset="(0.04; 1.27; 0)"
+				ParentFrame="BoneCabinTwist_cdt"
+				NamesBlock="FrameAddonMaintainer, FrameAddonMackTerraPro, MercedesBenzActrosSubframe, TatraSideboard, FrameAddonTank, FrameAddonLogShort, BigCraneUs, FrameAddon, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonKung, SaddleMotorized"
 			>
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; -0.15; -0.04)" />
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; -0.15; 0.04)" />
@@ -508,6 +518,7 @@
 				NamesBlock="FrameAddonTank, FrameAddonLogShort, BigCraneUs, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonKung, SaddleMotorized, FrameAddonMaintainer"
 			>
 				<AddonsShift Offset="(0.35; 0.24; 0)" Types="MercedesBenzActrosSubframe" />
+				<AddonsShift Offset="(-0.31; 0.14; 0)" Types="SaddleHighMercedesActros" />
 			</Socket>
 			<Socket
 				Names="MinicraneNavistar"
@@ -520,6 +531,7 @@
 				<AddonsShift Offset="(0.27; 0.0; 0)" Types="FrameAddonMackTerraPro, MercedesBenzActrosSubframeDefault" />
 				<AddonsShift Offset="(0.27; 0.0; 0)" Types="TatraSideboard, MercedesBenzActrosSubframeDefault" />
 				<AddonsShift Offset="(0.27; 0.0; 0)" Types="Plad440Sideboard2, MercedesBenzActrosSubframeDefault" />
+				<AddonsShift Offset="(-0.26; 0.14; 0)" Types="SaddleHighMercedesActros" />
 				<!--<AddonsShift Offset="(0.16; 0.0; 0)" Types="FrameAddonMackTerraPro" />-->
 			</Socket>
 		</AddonSockets>
@@ -546,7 +558,7 @@
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FrameAddonMackTerraPro" Offset="(-0.53; 0.21; 0)" NamesBlock="TatraCrane, LogLift">
+			<Socket Names="FrameAddonMackTerraPro" Offset="(-0.53; 0.21; 0)" NamesBlock="TatraCrane, LogLift, LogLiftPaderaSTD4">
 				<AddonsShift Offset="(-0.8; 0.0; 0)" Types="MinicraneNavistar" />
 				<AddonsShift Offset="(-0.8; 0.0; 0)" Types="CraneAvenhornA15" />
 				<AddonsShift Offset="(0; 0.14; 0)" Types="MercedesBenzActrosSubframe" />
@@ -554,7 +566,7 @@
 				<AddonsShift Offset="(-0.0; 0.0; 0)" Types="MinicraneNavistar, MercedesBenzActrosSubframeDefault" />
 				<AddonsShift Offset="(0; 0.0; 0)" TrailerNamesBlock="FrameAddonMackTerraPro" Types="CraneAvenhornA15, MercedesBenzActrosSubframeDefault" />
 			</Socket>
-			<Socket Names="TatraSideboard" NamesBlock="LogLiftPaderaSTD4" Offset="(0.2; 0.095; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="TatraSideboard" NamesBlock="LogLiftPaderaSTD4, LogLift" Offset="(0.2; 0.095; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
 				<AddonsShift Offset="(-0.9; 0.0; 0)" Types="MinicraneNavistar" />
@@ -564,23 +576,23 @@
 				<AddonsShift Offset="(0.48; 0.0; 0)" Types="CraneAvenhornA15, MercedesBenzActrosSubframe" />
 				<AddonsShift Offset="(0.05; 0.0; 0)" Types="MinicraneNavistar, MercedesBenzActrosSubframeDefault" />
 			</Socket>
-			<Socket Names="Plad440Sideboard2" Offset="(1.2; 0.23; 0)" NamesBlock="LogLiftPaderaSTD4" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="Plad440Sideboard2" Offset="(1.2; 0.23; 0)" NamesBlock="LogLift, LogLiftPaderaSTD4" ParentFrame="BoneChassis_cdt" >
 				<AddonsShift Offset="(-0.9; 0.0; 0)" Types="MinicraneNavistar" />
 				<AddonsShift Offset="(-0.95; 0.0; 0)" Types="CraneAvenhornA15" />
 				<AddonsShift Offset="(-0.02; 0.15; 0)" Types="MercedesBenzActrosSubframe" />
 				<AddonsShift Offset="(0.2; 0.0; 0)" Types="CraneAvenhornA15, MercedesBenzActrosSubframe" />
 				<AddonsShift Offset="(-0.07; 0.0; 0)" Types="MinicraneNavistar, MercedesBenzActrosSubframeDefault" />
 			</Socket>
-			<Socket Names="VoronG5352Kung" Offset="(-0.09; 0.02; 0)" NamesBlock="CraneAvenhornA15, MinicraneNavistar, LogLiftPaderaSTD4" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="VoronG5352Kung" Offset="(-0.09; 0.02; 0)" NamesBlock="CraneAvenhornA15, MinicraneNavistar, LogLift, LogLiftPaderaSTD4" ParentFrame="BoneChassis_cdt" >
 				<AddonsShift Offset="(0; 0.15; 0)" Types="MercedesBenzActrosSubframe" />
 			</Socket>
-			<Socket Names="FrameAddonMackPinnacleLogMedium" NamesBlock="CraneAvenhornA15, LogLiftPaderaSTD4, MinicraneNavistar, MercedesBenzActrosSubframe" Offset="(-0.05; 0.19; 0)" ParentFrame="BoneChassis_cdt"/>
-			<Socket Names="FrameAddonTow" NamesBlock="LogLiftPaderaSTD4, MinicraneNavistar" Offset="(-1.7; 1.280; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonMackPinnacleLogMedium" NamesBlock="CraneAvenhornA15, LogLift, LogLiftPaderaSTD4, MinicraneNavistar, MercedesBenzActrosSubframe" Offset="(-0.05; 0.19; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="FrameAddonTow" NamesBlock="LogLift, LogLiftPaderaSTD4, MinicraneNavistar" Offset="(-1.7; 1.280; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.5; 0.14; 0)" Types="MercedesBenzActrosSubframe" />
 				<AddonsShift Offset="(0; 0.0; 0)" TrailerNamesBlock="FrameAddonTow" Types="MinicraneNavistar, MercedesBenzActrosSubframe" />
 				<AddonsShift Offset="(0; 0.0; 0)" TrailerNamesBlock="FrameAddonTow" Types="CraneAvenhornA15, MercedesBenzActrosSubframe" />
 			</Socket>
-			<Socket Names="FrameAddonTowPlatform" NamesBlock="CraneAvenhornA15, LogLiftPaderaSTD4, MinicraneNavistar" Offset="(-0.58; 1.340; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="CraneAvenhornA15, LogLift, LogLiftPaderaSTD4, MinicraneNavistar" Offset="(-0.58; 1.340; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
 				<AddonsShift Offset="(-0.11; 0.15; 0)" Types="MercedesBenzActrosSubframe" />
@@ -618,7 +630,7 @@
 			<Socket Names="SaddleHighMercedesActros" Offset="(0.2; 0; 0)" NamesBlock="MercedesBenzActrosSubframe, SaddleLow" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
 			</Socket>
-			<Socket Names="FrameAddonLogShort" NamesBlock="MercedesBenzActrosSubframe" Offset="(-1.276; 1.280; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="FrameAddonLogShort" NamesBlock="MercedesBenzActrosSubframe" Offset="(-1.14; 1.280; 0)" ParentFrame="BoneChassis_cdt"/>
 			<Socket Names="BunkLog" Offset="(-5.8; 1.280; 0)" NamesBlock="MercedesBenzActrosSubframe" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="BigCraneUs" NamesBlock="MercedesBenzActrosTop, MercedesBenzActrosRoofrack, MercedesBenzActrosBeacon" Offset="(-1.900; 1.280; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />

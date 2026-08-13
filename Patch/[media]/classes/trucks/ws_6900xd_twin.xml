@@ -604,7 +604,7 @@
 			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(7.158; 1.602; 1.179)" ParentFrame="BoneCabin_cdt" /><!--222-->
 			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Pos="(6.998; 1.593; -1.39)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Pos="(6.998; 1.593; 1.39)" ParentFrame="BoneCabin_cdt" />
-			<!--333--><Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.96; 2.405; -1.066)" ParentFrame="BoneCabin_cdt" />
+			<!--333--<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.96; 2.405; -1.066)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.96; 2.405; 1.066)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.958; 2.31; -1.066)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.958; 2.31; 1.066)" ParentFrame="BoneCabin_cdt" />
@@ -613,7 +613,7 @@
 			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.955; 2.120; -1.066)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.955; 2.120; 1.066)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.953; 2.024; -1.066)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.953; 2.024; 1.066)" ParentFrame="BoneCabin_cdt" /><!--333-->
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(5.953; 2.024; 1.066)" ParentFrame="BoneCabin_cdt" />--333-->
 			<Flare _template="IgnitionSignalRedSmall" Pos="(3.906; 3.35; -0.802)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalRedSmall" Pos="(3.906; 3.349; -0.653)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalRedSmall" Pos="(3.906; 3.349; -0.505)" ParentFrame="BoneCabin_cdt" />
@@ -746,7 +746,8 @@
 		<!-- ↑ Medium Logs ↑ -->
 		<AddonSockets DefaultAddon="frame_log_short_zikz_612h">
 			<Socket Names="SaddleTwin2" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
-                <ExtraParent Frame="BoneCabin_cdt" /><!--File Location: frame_log_short_zikz_612h.xml-->
+                <ExtraParent Frame="BoneCabin_cdt" />
+				<!--↑File Location: frame_log_short_zikz_612h.xml-->
             </Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="saddle_high_1" RequiredAddonIfNoConflicts="saddle_high_1">
