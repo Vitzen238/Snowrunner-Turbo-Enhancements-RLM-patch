@@ -156,7 +156,7 @@
 		<Damage>
 			<DamageArea Type="FuelTank" Min="(-0.814, 0.897, -1.244)" Max="(0.612, 1.463, -0.699)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(-0.814, 0.897, 0.699)" Max="(0.612, 1.463, 1.244)" ParentFrame="BoneChassis_cdt" />			
-			<DamageArea Type="Engine" Min="(2.692; 1.211; -1.830)" Max="(8.216; 2.053; 1.830)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="Engine" Min="(2.692; 1.211; -1.830)" Max="(5.216; 2.053; 1.830)" ParentFrame="BoneCabin_cdt" />
 			<Multiplier Multiplier="2.0" Type="Engine" />
 		</Damage>
 		

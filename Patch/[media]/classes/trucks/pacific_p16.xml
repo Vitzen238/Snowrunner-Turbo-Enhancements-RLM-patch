@@ -7,7 +7,7 @@
 		/>
 		<FrontWheel
 			Location="front"
-			SteeringAngle="30"
+			SteeringAngle="35"
 			SteeringCastor="8"
 			SteeringJointOffset="0.2"
 			Torque="none"

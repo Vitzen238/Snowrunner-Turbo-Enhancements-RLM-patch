@@ -398,8 +398,8 @@
 		<CraneSocket Pos="(0.012; 1.185; 0.425)" />
 		<CraneSocket Pos="(0.012; 1.185; -0.425)" />
 		<AddonSockets>
-			<Socket CablesName="env/trailer_cable" TruckCablesPos="(0.12; 1.324; -0.03)" Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.878; 1.81; 0)" />
-			<Socket CablesName="env/trailer_cable" TruckCablesPos="(0.12; 1.324; -0.03)" Names="Semitrailer, SemitrailerOiltank" Offset="(-2.878; 1.642; 0)" />
+			<Socket CablesName="env/trailer_cable" TruckCablesPos="(-0.6; 1.324; -0.03)" Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.878; 1.81; 0)" />
+			<Socket CablesName="env/trailer_cable" TruckCablesPos="(-0.6; 1.324; -0.03)" Names="Semitrailer, SemitrailerOiltank" Offset="(-2.878; 1.642; 0)" />
 			<Socket Names="SemitrailerFoldableLog" Offset="(-3.048; 1.672; 0)" />
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.813; 1.189; 0)"/>
 		</AddonSockets>

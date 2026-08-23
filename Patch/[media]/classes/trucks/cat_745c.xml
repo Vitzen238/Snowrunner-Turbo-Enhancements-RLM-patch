@@ -131,7 +131,7 @@
 		<CompatibleWheels Scale="1.84" OffsetZ="0.13" Type="wheels_cultivator" />
 		<CompatibleWheels Scale="0.9" Type="wheels_superheavy_mudtires" />
 		<CompatibleWheels Scale="0.89" Type="wheels_kamaz_arctic_wide1/3526085"	  OffsetZ="0.130" />
-		<Camera Center="(0; 0; 0)" RadiusMultiplier="0.7">
+		<Camera Center="(0; 0; 0)" RadiusMultiplier="1">
 			<Cockpit
 				_template="Default"
 				WindshieldDiffuseTexture="trucks/cat_745c_glass__d_a.tga"

@@ -202,7 +202,7 @@
 			<DamageArea Type="Gearbox" Min="(1.125; 1.146; -0.292)" Max="(2.756; 1.813; 0.292)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels OffsetZ="-0.02" Scale="0.911" Type="wheels_kenworth_963" />
-		<CompatibleWheels OffsetZ="0" Scale="0.87" Type="wheels_superheavy_single" />
+		<CompatibleWheels OffsetZ="0" Scale="0.92" Type="wheels_superheavy_single" />
 		<CompatibleWheels OffsetZ="-0.09" RearOffsetZ="0" Scale="0.929" Type="wheels_superheavy_cat770g_double" />
 		<CompatibleWheels OffsetZ="-0.09" RearOffsetZ="0" Scale="0.911" Type="wheels_femm_37at" />
 		<CompatibleWheels Scale=".78" Type="wheels_superheavy_mudtires" />

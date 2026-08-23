@@ -142,7 +142,7 @@
 		<!--PREMIUM-->
 		<CompatibleWheels Scale="0.546" Type="wheels_ford_clt9000_double1/3526085" />
 		<CompatibleWheels Scale="0.546" Type="wheels_ford_clt9000_double2/3526085" />
-		<Camera Center="(-1.5; 0; 0)" ParentFrame="BoneCabin_cdt">
+		<Camera Center="(-0; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
 				WindshieldDiffuseTexture="trucks/ford_clt9000_glass__d_a.tga"

@@ -11,6 +11,7 @@
 			SteeringAngle="28"
 			SteeringJointOffset="0.18"
 			Torque="default"
+			CamberSuspensionMultiplier="0"
 		/>
 	</Wheel>
 	<Flare>
