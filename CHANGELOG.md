@@ -1,5 +1,9 @@
 # Changelog:
 
+## v1.6
+- Update to RLM 48.0.0A
+- Added correct turbo tags to DAN 96320
+
 ## v1.5
 - Update to RLM 47.2.5
 

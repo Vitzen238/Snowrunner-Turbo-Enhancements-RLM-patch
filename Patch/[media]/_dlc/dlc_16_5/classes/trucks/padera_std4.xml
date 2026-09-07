@@ -289,7 +289,7 @@
 					MinLimit="-5"
 					MaxLimit="5"
 				>
-					<Motor Damping="55000" Spring="55000" Type="Spring" />
+					<Motor Damping="55000" Spring="355000" Type="Spring" />
 				</Constraint>
 				<Body _template="Gravity"
 					Collisions="Default"
@@ -522,13 +522,15 @@
 		<AddonSockets>
 			<Socket
 				Names="CraneAvenhornA15"
-				Offset="(1.35; -0.22; 0)"
+				Offset="(1.35; -0.22; 0)" Dir="(0;0;-1)"
 				ParentFrame="BoneCabinTwist_cdt"
 				NamesBlock="FrameAddonTank, Azov73210SpareWheel, Pacific512SpareWheel, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4"
 			>
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="CraneAvenhornA15" Types="FrameAddonLogShortPaderaSTD4, PaderaSTD4SpareWheels"/>
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="PaderaSTD4SpareWheels" Types="CraneAvenhornA15, FrameAddon"/>
-				<AddonsShift Offset="(-1.5; 0; 0)" Types="SaddleHigh, PaderaSTD4SpareWheels"/>
-				<AddonsShift Offset="(-1.5; 0; 0)" Types="SaddleLow, PaderaSTD4SpareWheels"/>
+				<AddonsShift Offset="(-0.6; 0; 0)" Types="SaddleHigh, PaderaSTD4SpareWheels"/>
+				<AddonsShift Offset="(-0.6; 0; 0)" Types="SaddleLow, PaderaSTD4SpareWheels"/>
+				<AddonsShift Offset="(-0.33; 0; 0)" Types="PaderaSTD4SpareWheels" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
@@ -569,6 +571,7 @@
 		<AddonSockets>
 			<Socket Names="PaderaSTD4Kung" Offset="(0; 0.002; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="LogLiftPaderaSTD4, PaderaSTD4Sideboard" >
 				<AddonsShift Offset="(1.0; 0; 0)" Types="MinicraneRearPaderaSTD4" />
+				<AddonsShift Offset="(-0.17; 0; 0)" Types="CraneAvenhornA15, PaderaSTD4SpareWheels"/>
 			</Socket>
 			<Socket Names="Plad450Saddle" Offset="(2; -0.2; 0.000)" NamesBlock="PaderaSTD4Subframe, PaderaSTD4Sideboard" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.045)" />
@@ -637,7 +640,9 @@
 				<AddonsShift Offset="(-0.15; 0; 0)" Types="PaderaSTD4SpareWheels" />
 			</Socket>
 			
-			<Socket Names="FrameAddonTow" Offset="(-2.4; 1.36; 0)" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4"/>
+			<Socket Names="FrameAddonTow" Offset="(-2.4; 1.36; 0)" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddonTow" Types="CraneAvenhornA15, PaderaSTD4SpareWheels"/>
+			</Socket>
 		</AddonSockets>
 		<!-- TRAILERS -->
 		<AddonSockets>

@@ -381,6 +381,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.161; 2.836; 1.333)" Position="(4.671; 2.49; -0.421)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.154; 1.493; 1)" Position="(4.774; 2.658; -0.448)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(6.154; 3.193; 0.395)" Position="(4.781; 2.495; -0.674)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(3.561; 1.684; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.975; 4.814; 6.571)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.561; 1.684; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.975; 4.814; 6.571)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(5.759; 2.49; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.793; 4.409; -3.424)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.161; 2.63; 1.333)" Position="(4.797; 2.528; -0.397)" />
@@ -422,6 +423,11 @@
 				Names="LogLift" Dir="(0;0;-1)" 
 				NamesBlock="FrameAddonSeismicVibrator, FrameAddonLogMedium, MetalDetector, FrameAddonLogShort, MinicraneUS, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, TatraSideboard, SaddleMotorized" 
 				Offset="(-0.72; 1.093; 0)" 
+			/>
+			<Socket 
+				Names="LogLiftKenworth"
+				NamesBlock="FrameAddonSeismicVibrator, FrameAddonLogMedium, MetalDetector, FrameAddonLogShort, MinicraneUS, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, TatraSideboard, SaddleMotorized" 
+				Offset="(-1; 1.278; 0)" 
 			/>
 		</AddonSockets>
 		<AddonSockets>

@@ -425,6 +425,7 @@
 		/>
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(8.061; 4.451; 1.421)" Position="(5.883; 2.373; -0.832)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(3.374; 1.869; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.245; 4.012; 6.199)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-0.508; 2.026; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-9.259; 3.714; 6.213)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.294; 1.744; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.557; 4.1; 3.247)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.061; 2.646; 0.991)" Position="(5.676; 3.006; -0.661)" />

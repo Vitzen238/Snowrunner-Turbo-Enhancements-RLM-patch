@@ -625,7 +625,7 @@
 			</Socket>
 			<Socket
 				Names="LogLift"
-				NamesBlock="FrameAddon, AvenhornA15Kung, FrameAddonTow, FrameAddonTowPlatform, BigCrane, BigCraneUs, FrameAddonKungWS6900xd, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, SaddleHigh, SaddleLow"
+				NamesBlock="FrameAddon, FrameAddonLogMedium, AvenhornA15Kung, FrameAddonTow, FrameAddonTowPlatform, BigCrane, BigCraneUs, FrameAddonKungWS6900xd, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, SaddleHigh, SaddleLow"
 				Offset="(0.34; 1.48; 0)"
 				Dir="(0;0;-1)" 
 				ParentFrame="BoneCabin_cdt"

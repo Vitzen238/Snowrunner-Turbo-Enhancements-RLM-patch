@@ -342,10 +342,10 @@
 			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.688; 0.937; 0.638)" ParentFrame="BoneChassis_cdt" />
 		</Ignition>
 		<HeadLight>
-			<Model _template="HeadLightRay" Org="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
-			<Model _template="HeadLightRay" Org="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.35" Pos="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.35" Pos="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Color="g(255; 225; 215) x 0.5" Org="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Color="g(255; 225; 215) x 0.5" Org="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 225; 215) x 0.5" Size="0.35" Pos="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 225; 215) x 0.5" Size="0.35" Pos="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="BlueStreak" Pos="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="BlueStreak" Pos="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
 		</HeadLight>
