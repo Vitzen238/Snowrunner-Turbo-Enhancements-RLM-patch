@@ -5,7 +5,7 @@
 
 ## Compatibility:
 - Snowrunner 43.0;
-- RLM 48.0.0
+- RLM 48.0.1
 
 ## Description:
 - **I am not the author of either [Real Life Mod](https://mod.io/g/snowrunner/m/real-life-mod#description) or [Turbocharger Sound Enhancements](https://mod.io/g/snowrunner/m/sound-fixes).**

@@ -394,7 +394,7 @@
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
-		<StopSignals>
+		<!--<StopSignals>
 			<Light _template="StopSignal" Pos="(-4.331; 0.439; 0)" ParentFrame="BoneChassis_cdt" />
 			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.986; 0.961; 0.850)" ParentFrame="BoneChassis_cdt" />
 			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.986; 0.961; -0.850)" ParentFrame="BoneChassis_cdt" />
@@ -405,11 +405,11 @@
 			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-3.986; 0.931; -1.040)" />
 			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.986; 0.931; 1.040)" />
 			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.986; 0.931; -1.040)" />
-		</ReverseSignals>
+		</ReverseSignals>-->
 		<Ignition>
-			<Light _template="IgnitionSignalRed" Pos="(-4.047; 0.790; 0)" />
+			<!--<Light _template="IgnitionSignalRed" Pos="(-4.047; 0.790; 0)" />
 			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.986; 0.961; 0.850)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.986; 0.961; -0.850)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.986; 0.961; -0.850)" ParentFrame="BoneChassis_cdt" />-->
 			
 			<Flare _template="IgnitionSignalOrange" Size="0.45" Pos="(4.126; 1.416; 1.047)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Size="0.45" Pos="(4.126; 1.416; -1.047)" ParentFrame="BoneCabin_cdt" />
@@ -539,6 +539,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
+			<Socket Names="FrameAddonMercedesZetrosKung" NamesBlock="" Offset="(-4.48; 1.86; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonMackTerraPro" NamesBlock="MercedesBenzZetrosSubframeDefault, Azov73210SpareWheel, Pacific512SpareWheel, LogLiftMercedesZetros, MinicraneNavistar, KenworthC500SpareWheel2" Offset="(-1.3; 0.37; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; 0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; -0.1)" />
@@ -546,7 +547,7 @@
 				<AddonsShift Offset="(-0.8; 0.0; 0)" Types="MinicraneNavistar" />
 				<AddonsShift Offset="(-0.35; 0.0; 0)" Types="KenworthC500SpareWheel2" />
 			</Socket>
-			<Socket Names="FrameAddonMercedesZetros" Offset="(-2.1; 1.445; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonMercedesZetros" Offset="(-2.1; 1.40; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; 0.15)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; -0.15)" />
 				<AddonsShift Offset="(-0.35; 0.0; 0)" Types="CraneAvenhornA15" />
@@ -658,7 +659,7 @@
 				Names="MinicraneNavistar"
 				Offset="(-0.00; 1.295; 0)"
 				ParentFrame="BoneCabinTwist_cdt"
-				NamesBlock="FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
+				NamesBlock="FrameAddonMercedesZetrosKung, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
 			>
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; 0.04)" />
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; -0.04)" />
@@ -668,7 +669,7 @@
 				Names="CraneAvenhornA15"
 				Dir="(0;0;-1)" Offset="(0.08; -0.26; 0)" 
 				ParentFrame="BoneCabinTwist_cdt"
-				NamesBlock="FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
+				NamesBlock="FrameAddonMercedesZetrosKung, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
 			>
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; 0.04)" />
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; -0.04)" />
@@ -756,7 +757,7 @@
 		<IKBone ModelFrame="BoneTieRodHinge2" ParentFrame="BoneTieRod_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
-				AttachOffset="(0.0; 0; 0)"
+				AttachOffset="(0; 0; 0)"
 				AttachToFrame="BoneRackLeft"
 				ModelFrame="BoneTieRodPrismatic"
 			>
@@ -775,6 +776,16 @@
 				<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
 			</IKBone>
 		</IKBone>-->
+		<IKBone ModelFrame="IK_BoneSwaybarFR_B" ParentFrame="BoneCabinTwist_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="IK_BoneSwaybarFR_A"
+			>
+				<IKJoint AxisLocal="(1; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
 		<IKBone ModelFrame="IK_BoneSwaybarFL_B" ParentFrame="BoneCabinTwist_cdt">
 			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
 			<IKBone
