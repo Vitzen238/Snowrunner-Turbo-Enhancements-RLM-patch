@@ -627,7 +627,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
 			</Socket>
-			<Socket Names="FrameAddonMantainerMercedesActros" NamesBlock="MercedesBenzActrosSubframeDefault, MercedesBenzActrosSubframe" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonMantainerMercedesActros" NamesBlock="InternationalPaystar5070Fender, Plad440Fender, MinicraneNavistar, CraneAvenhornA15, LogLift, LogLiftPaderaSTD4, MercedesBenzActrosSubframeDefault, MercedesBenzActrosSubframe" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.15; 0; -0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.15; 0; 0.05)" />
 			</Socket>

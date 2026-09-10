@@ -428,7 +428,7 @@
 		Price="122000"
 		UnlockByExploration="false"
 		UnlockByRank="1"
-		ExcludeAddons="am_general_m923a1_wheel_addon_1/3526085, am_general_m923a1_wheel_addon_2/3526085"
+		ExcludeAddons="am_general_m923a1_wheel_addon_1/3526085, am_general_m923a1_wheel_addon_2/3526085, international_loadstar_1700_beacon_1, international_loadstar_1700_beacon_2"
 	>
 		<WinchSocket Pos="(-0.810; 1.152; 0.395)" />
 		<WinchSocket Pos="(-0.810; 1.152; -0.395)" />
@@ -500,6 +500,19 @@
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="MercedesBenzZetrosRoofrack" Offset="(0; 0; 0)" NamesBlock="MercedesBenzZetrosAntenna" ParentFrame="BoneCabin_cdt" />
+			<Socket
+				Names="MercedesBenzActrosBeacon"
+				Dir="(0; 0; -1)"
+				UpDir="(0.05; 1; 0)"
+				Offset="(4; -0.45; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Socket
+				Names="InternationalLoadstar1700Flasher"
+				Offset="(1.36; 0.8; 0)"
+				UpDir="(0.03;1;0)" 
+				ParentFrame="BoneCabin_cdt"
+			/>	
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="MercedesBenzZetrosHorn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
@@ -547,7 +560,7 @@
 				<AddonsShift Offset="(-0.8; 0.0; 0)" Types="MinicraneNavistar" />
 				<AddonsShift Offset="(-0.35; 0.0; 0)" Types="KenworthC500SpareWheel2" />
 			</Socket>
-			<Socket Names="FrameAddonMercedesZetros" Offset="(-2.1; 1.40; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonMercedesZetros" Offset="(-2.1; 1.4; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; 0.15)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; -0.15)" />
 				<AddonsShift Offset="(-0.35; 0.0; 0)" Types="CraneAvenhornA15" />

@@ -556,7 +556,7 @@
 			<Socket Names="Azov64131Snorkel2" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="azov_64131_beacon_default">
-			<Socket Names="Azov64131Beacon" NamesBlock="Azov64131Beacon2, Azov64131SpotLight, Azov64131SpotLight2" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131Beacon" NamesBlock="Azov64131SpotLight, Azov64131SpotLight2" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Azov64131Beacon2" ParentFrame="BoneCabin_cdt" />

@@ -6,7 +6,6 @@
 			Torque="default"
 		/>
 		<FrontWheel
-			ConnectedToHandbrake="true"
 			Location="front"
 			Torque="none"
 			SteeringAngle="35"
@@ -448,6 +447,7 @@
 			UiName="UI_VEHICLE_MACK_TERRA_PRO_NAME"
 		/>
 		<CustomizationCameras>
+			<CameraPos FOV="32.0" Name="spare_wheel_1" 		InterestPosition="(1.200; 1.200; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.80; 6; -7.300)" />
 			<CameraPos FOV="32.0" Name="side_l" 		InterestPosition="(6.270; 2.278; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.87; 5.00; -4.550)" />
 			<CameraPos FOV="32.0" Name="side_r" 		InterestPosition="(3.312; 2.550; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5.969; 5.00; -5.795)" />
 			<CameraPos FOV="32.0" Name="wheels" 		InterestPosition="(4.350; 0.100; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.200; 1.10; -5.200)" />
@@ -459,7 +459,7 @@
 			<CameraPos FOV="32.0" Name="roof" 			InterestPosition="(6.900; 2.100; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.300; 4.70; 5.000)" />
 			<CameraPos FOV="32.0" Name="exhaust" 		InterestPosition="(5.800; 1.800; 0.700)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.100; 4.20; 3.700)" />
 			<CameraPos FOV="32.0" Name="addon_1" 		InterestPosition="(1.200; 1.200; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.80; 3.800; 7.300)" />
-			<CameraPos FOV="32.0" Name="addon_2" 		InterestPosition="(2.000; 0.000; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(6.800; 4.000; -3.30)" />
+			<CameraPos FOV="32.0" Name="addon_2" 		InterestPosition="(1.200; 1.200; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.80; 6; -7.300)" />
 			<CameraPos FOV="32.0" Name="hood_figure" 	InterestPosition="(5.000; 1.300; 1.200)" MaxXRotation="0" 	MaxYRotation="0"   MaxZoom="0" Position="(8.400; 1.900; -1.00)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" 	InterestPosition="(6.200; 0.900; 0.800)"	Position="(6.150; 2.800; -0.800)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" 	InterestPosition="(6.400; 2.570; 0.400)" 	Position="(6.300; 2.270; -0.400)" />
@@ -501,7 +501,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MackPinnacleSpareWheel1" Offset="(0.860; -0.025; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="MinicraneUS, FrameAddonMackTerraPro3" />
+			<Socket Names="MackPinnacleSpareWheel1" Offset="(0.860; -0.025; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="FrameAddonMackTerraPro3" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.010; 1.465; -0.000)" />
@@ -564,6 +564,7 @@
 			<Socket Names="MinicraneUS" Offset="(1.580; 1.070; -0.000)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0.003)" />
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; -0.003)" />
+				<AddonsShift Offset="(-0.2; 0; 0)" Types="MackPinnacleSpareWheel1" />
 			</Socket>
 			<Socket Names="LogLift" Offset="(2.300; 1.060; 0.000)" ParentFrame="BoneCabin_cdt"/>
 		</AddonSockets>
