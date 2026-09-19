@@ -14,13 +14,13 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
+	<Body>
 		<Mudguard Collisions="Default" Mass="2.5">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<BoneSunshield Collisions="Default" Mass="2">
+		<BoneSunshield GravityFactor="1.4" Collisions="Default" Mass="2">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

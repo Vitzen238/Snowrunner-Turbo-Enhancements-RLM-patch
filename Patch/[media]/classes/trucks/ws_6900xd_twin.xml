@@ -1,3 +1,4 @@
+<!--Requires Separate GravityFactor="1.4"-->
 <_templates Include="trucks">
 	<Wheel>
 		<SecondAxle
@@ -45,7 +46,7 @@
 		/>
 	</Flare>
 	<Body _template="Gravity">
-		<Twist
+		<Twist GravityFactor="1.4"
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="3300"
@@ -60,7 +61,7 @@
 				<Motor Damping="100000" Spring="6000000" Type="Spring" />
 			</Constraint>
 		</Twist>
-		<TieRod Mass="1">
+		<TieRod GravityFactor="1.4" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -75,7 +76,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<SunShield Collisions="None" Mass="2">
+		<SunShield GravityFactor="1.4" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

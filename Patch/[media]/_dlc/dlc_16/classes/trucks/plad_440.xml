@@ -17,8 +17,8 @@
 			ParentFrame="BoneCabinTwist_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Sunshield Collisions="None" Mass="3">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -28,7 +28,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<MudguardFront Collisions="None" Mass="10">
+		<MudguardFront GravityFactor="1.4" Collisions="None" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -38,7 +38,7 @@
 				<Motor Damping="1" Spring="1" Type="Spring" />
 			</Constraint>
 		</MudguardFront>
-		<Mirror Collisions="Default" Mass="3">
+		<Mirror GravityFactor="1.4" Collisions="Default" Mass="3">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -509,6 +509,11 @@
 				Names="Plad440Roofrack"
 				NamesBlock="Plad440Beacon, Plad440Spotlight, Plad440Horn"
 				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+			<Socket
+				Names="InternationalPaystar5070Beacon"
+				Offset="(0.4; -0.17; 0.62)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>

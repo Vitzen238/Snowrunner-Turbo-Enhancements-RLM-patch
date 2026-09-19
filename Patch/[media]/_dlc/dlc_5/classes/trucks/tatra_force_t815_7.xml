@@ -25,8 +25,8 @@
 			Torque="full"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<SunShield2 Collisions="None" Mass="1">
+	<Body>
+		<SunShield2 GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping="0.3" Spring="30" Type="Spring" />
 			</Constraint>
 		</SunShield2>
-		<SunShield Collisions="None" Mass="1">
+		<SunShield GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -46,7 +46,7 @@
 				<Motor Damping="0.6" Spring="60" Type="Spring" />
 			</Constraint>
 		</SunShield>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -56,7 +56,7 @@
 				<Motor Damping="7.5" Spring="250" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard Collisions="Default" Mass="2">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="2">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -285,7 +285,7 @@
 					</Constraint>
 				</Body>
 			</Body>
-			<Body _template="TieRod" ModelFrame="BoneTieRod1_cdt" _template="Gravity">
+			<Body _template="TieRod" ModelFrame="BoneTieRod1_cdt">
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="TieRodSteer1"
@@ -293,7 +293,7 @@
 					MaxLimit="16"
 				/>
 			</Body>
-			<Body _template="TieRod" ModelFrame="BoneTieRod2_cdt" _template="Gravity">
+			<Body _template="TieRod" ModelFrame="BoneTieRod2_cdt">
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="TieRodSteer2"
@@ -301,7 +301,7 @@
 					MaxLimit="16"
 				/>
 			</Body>
-			<Body _template="TieRod" ModelFrame="BoneTieRod3_cdt" _template="Gravity">
+			<Body _template="TieRod" ModelFrame="BoneTieRod3_cdt">
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="TieRodSteer3"
@@ -309,7 +309,7 @@
 					MaxLimit="26"
 				/>
 			</Body>
-			<Body _template="TieRod" ModelFrame="BoneTieRod4_cdt" _template="Gravity">
+			<Body _template="TieRod" ModelFrame="BoneTieRod4_cdt">
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="TieRodSteer4"
@@ -317,7 +317,7 @@
 					MaxLimit="26"
 				/>
 			</Body>
-			<Body _template="TieRod" ModelFrame="BoneTieRod5_cdt" _template="Gravity">
+			<Body _template="TieRod" ModelFrame="BoneTieRod5_cdt">
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="TieRodSteer5"

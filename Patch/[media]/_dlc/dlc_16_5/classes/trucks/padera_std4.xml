@@ -184,15 +184,15 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.068; 1.691; 0.000)" Size="0.5" />
 		
 		<!--<CompatibleWheels Type="wheels_heavy_padera_std4" Scale="0.59" OffsetZ="0.00" />-->
-		<CompatibleWheels Type="wheels_heavy_double1_padera_std4" Scale="0.59" OffsetZ="0.05" RearOffsetZ="0.00" />
-		<CompatibleWheels Type="wheels_heavy_double2_padera_std4" Scale="0.6" OffsetZ="0.05" RearOffsetZ="0.00" />
-		<CompatibleWheels Type="wheels_heavy_highway_double_padera_std4" Scale="0.59" OffsetZ="0.05" RearOffsetZ="0.00" />
+		<CompatibleWheels Type="wheels_heavy_double1" Scale="0.59" OffsetZ="0.05" RearOffsetZ="0.00" />
+		<!--<CompatibleWheels Type="wheels_heavy_double2" Scale="0.6" OffsetZ="0.05" RearOffsetZ="0.00" />-->
+		<CompatibleWheels Type="wheels_heavy_highway_double" Scale="0.59" OffsetZ="0.05" RearOffsetZ="0.00" />
 		<CompatibleWheels Type="wheels_heavy_allterrain_double_padera_std4" Scale="0.59" OffsetZ="0.07" RearOffsetZ="0.00" />
 		<CompatibleWheels Type="wheels_heavy_offroad_double_padera_std4" Scale="0.59" OffsetZ="0.05" RearOffsetZ="0.00" />
 		<CompatibleWheels Type="wheels_heavy_padera_std4" Scale="0.63" OffsetZ="0.01" />
-		<CompatibleWheels Type="wheels_heavy_double1_padera_std4" Scale="0.63" OffsetZ="0.01" RearOffsetZ="0.02" />
-		<CompatibleWheels Type="wheels_heavy_double2_padera_std4" Scale="0.63" OffsetZ="0.01" RearOffsetZ="0.02" />
-		<CompatibleWheels Type="wheels_heavy_highway_double_padera_std4" Scale="0.63" OffsetZ="0.03" RearOffsetZ="0.02" />
+		<!--<CompatibleWheels Type="wheels_heavy_double1" Scale="0.63" OffsetZ="0.01" RearOffsetZ="0.02" />-->
+		<CompatibleWheels Type="wheels_heavy_double2" Scale="0.63" OffsetZ="0.01" RearOffsetZ="0.02" />
+		<!--<CompatibleWheels Type="wheels_heavy_highway_double" Scale="0.63" OffsetZ="0.03" RearOffsetZ="0.02" />-->
 		<CompatibleWheels Type="wheels_heavy_allterrain_double_padera_std4" Scale="0.63" OffsetZ="0.03" RearOffsetZ="0.02" />
 		<CompatibleWheels Type="wheels_heavy_offroad_double_padera_std4" Scale="0.63" OffsetZ="0.03" RearOffsetZ="0.02" />
 		<!--PREMIUM-->

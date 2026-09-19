@@ -1,4 +1,5 @@
-<!--1980 MOL TB 800--><_templates Include="trucks">
+<!--1980 MOL/KFM TB 800-->
+<_templates Include="trucks">
 	<Wheel>
 		<RearWheel
 			ConnectedToHandbrake="true"
@@ -14,8 +15,8 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Mirror Collisions="Default" Mass="5">
+	<Body>
+		<Mirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -25,7 +26,7 @@
 				<Motor Damping="1" Spring="40" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; -1)"
 				Type="Hinge"
@@ -217,7 +218,7 @@
 				</Constraint>
 				<Body _template="Mirror" ModelFrame="BoneMirrorLeft_cdt" />
 				<Body _template="Mirror" ModelFrame="BoneMirrorRight_cdt" />
-				<Body ModelFrame="BoneHookL_cdt" Mass="1" NetSync="pv">
+				<Body _template="Gravity" ModelFrame="BoneHookL_cdt" Mass="1" NetSync="pv">
 					<Constraint
 						CenterOfMassOffset="(0; 0; 0)"
 						Type="Fixed"

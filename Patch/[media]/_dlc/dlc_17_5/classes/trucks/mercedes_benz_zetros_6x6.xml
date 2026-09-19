@@ -14,8 +14,8 @@
 			Torque="default"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Stuff Collisions="None" Mass="8">
+	<Body>
+		<Stuff GravityFactor="1.4" Collisions="None" Mass="8">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -25,7 +25,7 @@
 				<Motor Damping="0.2" Spring="3" Type="Spring" />
 			</Constraint>
 		</Stuff>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -35,7 +35,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Mudguard Collisions="None" Mass="5">
+		<Mudguard GravityFactor="1.4" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -45,7 +45,7 @@
 				<Motor Damping="3" Spring="5" Type="Spring" />
 			</Constraint>	
 		</Mudguard>
-		<MudguardRear Collisions="None" Mass="5">
+		<MudguardRear GravityFactor="1.4" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -55,7 +55,7 @@
 				<Motor Damping="3" Spring="5" Type="Spring" />
 			</Constraint>	
 		</MudguardRear>
-		<TieRod Collisions="None" Mass="10" >
+		<TieRod GravityFactor="1.4" Collisions="None" Mass="10" >
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -428,7 +428,7 @@
 		Price="122000"
 		UnlockByExploration="false"
 		UnlockByRank="1"
-		ExcludeAddons="am_general_m923a1_wheel_addon_1/3526085, am_general_m923a1_wheel_addon_2/3526085, international_loadstar_1700_beacon_1, international_loadstar_1700_beacon_2"
+		ExcludeAddons="am_general_m923a1_wheel_addon_1/3526085, am_general_m923a1_wheel_addon_2/3526085, cat_ct680_beacon_2, international_loadstar_1700_beacon_1, international_loadstar_1700_beacon_2"
 	>
 		<WinchSocket Pos="(-0.810; 1.152; 0.395)" />
 		<WinchSocket Pos="(-0.810; 1.152; -0.395)" />

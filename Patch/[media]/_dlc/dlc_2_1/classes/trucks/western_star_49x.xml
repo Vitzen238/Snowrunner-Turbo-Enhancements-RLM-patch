@@ -38,8 +38,8 @@
 			Size="0.1"
 		/>
 	</Flare>
-	<Body _template="Gravity">
-		<Sunshield Collisions="Default" Mass="10">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				PivotOffset="(0; 0; 0)"
@@ -50,7 +50,7 @@
 				<Motor Damping="1" Spring="100" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Mirror Collisions="Default" Mass="10">
+		<Mirror GravityFactor="1.4" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				PivotOffset="(0; 0; 0)"
@@ -293,7 +293,7 @@
 						MaxLimit="28"
 					/>
 				</Body>
-				<Body _template="Gravity" _template="TieRod" ModelFrame="BoneTieRodR_cdt">
+				<Body _template="TieRod" ModelFrame="BoneTieRodR_cdt">
 					<Constraint
 						AxisLocal="(0; 0; 1)"
 						Name="TieRodSteer2"
@@ -426,7 +426,7 @@
 			/>
 			<Socket 
 				Names="LogLiftKenworth"
-				NamesBlock="FrameAddonSeismicVibrator, FrameAddonLogMedium, MetalDetector, FrameAddonLogShort, MinicraneUS, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, TatraSideboard, SaddleMotorized" 
+				NamesBlock="InternationalPaystar5070CabinProtector, FrameAddonSeismicVibrator, FrameAddonLogMedium, MetalDetector, FrameAddonLogShort, MinicraneUS, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, TatraSideboard, SaddleMotorized" 
 				Offset="(-1; 1.278; 0)" 
 			/>
 		</AddonSockets>

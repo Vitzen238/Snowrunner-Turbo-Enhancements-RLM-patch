@@ -7,8 +7,8 @@
 		/>
 		<FrontWheel Location="front" Torque="default" />
 	</Wheel>
-	<Body _template="Gravity">
-		<SideMirror Collisions="Default" Mass="5">
+	<Body>
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"

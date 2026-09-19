@@ -497,7 +497,8 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.502; 0.905; 0)" />
-			<Socket CablesName="env/trailer_cable" TruckCablesPos="(-1.6; 1.25; -0.03)" Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.136; 2.03; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.15; 2.03; 0)" />
+			<!--<Socket CablesName="env/trailer_cable" TruckCablesPos="(-1.46; 1.25; -0.03)" Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.15; 2.03; 0)" />-->
 		</AddonSockets>
 		<AddonSockets DefaultAddon="saddle_high_1">
 			<Socket Names="BunkLog" Offset="(-6.65; 1.54; 0)" />

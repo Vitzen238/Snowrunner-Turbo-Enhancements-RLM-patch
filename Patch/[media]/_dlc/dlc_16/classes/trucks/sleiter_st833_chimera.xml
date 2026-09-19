@@ -17,8 +17,8 @@
 			ParentFrame="BoneCabinTwist_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Wiper
+	<Body>
+		<Wiper GravityFactor="1.4"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="None"
 			Mass="5"
@@ -33,7 +33,7 @@
 				<Motor Damping="500" Spring="3000" Type="Spring" />
 			</Constraint>
 		</Wiper>
-		<Sunshield
+		<Sunshield GravityFactor="1.4"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="None"
 			Mass="5"
@@ -48,7 +48,7 @@
 				<Motor Damping="100" Spring="1500" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Seatbelt
+		<Seatbelt GravityFactor="1.4"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="None"
 			Mass="2"
@@ -62,7 +62,7 @@
 				<Motor Damping="50" Spring="2500" Type="Spring" />
 			</Constraint>
 		</Seatbelt>
-		<Mirror
+		<Mirror GravityFactor="1.4"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="Default"
 			ImpactType="Truck"

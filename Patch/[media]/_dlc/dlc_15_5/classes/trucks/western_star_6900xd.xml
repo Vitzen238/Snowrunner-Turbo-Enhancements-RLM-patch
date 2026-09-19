@@ -6,7 +6,7 @@
 			Torque="default"
 		/>
 		<FrontWheel
-			ConnectedToHandbrake="true"
+			ConnectedToHandbrake="false"
 			Location="front"
 			SteeringAngle="35"
 			SteeringCastor="8"
@@ -14,7 +14,7 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
+	<Body>
 		<Mudguard Collisions="None" Mass="5">
 			<Constraint AxisLocal="(0; 0; 1)" Type="Hinge">
 				<Motor Damping="3" Spring="5" Type="Spring" />
@@ -155,7 +155,9 @@
 		<CompatibleWheels Scale="0.70" Type="wheels_heavy_allterrain_double" />-->
 		<!--PREMIUM-->
 		<CompatibleWheels Scale="0.73" Type="wheels_ws_6900xd_ts_double1/3526085" RearOffsetZ="0.01" />
-		<CompatibleWheels Scale="0.69" Type="wheels_ws_6900xd_single1/3526085" OffsetZ="0.050" RearOffsetZ=" 0.084" />
+		<CompatibleWheels Scale="0.69" Type="wheels_ws_6900xd_single1/3526085" OffsetZ="0.050" RearOffsetZ="0.084" />
+		<CompatibleWheels Scale="0.72" Type="wheels_ws_6900xd_single2/3526085"	OffsetZ="0.130" RearOffsetZ="-0.02" RearScale="0.7315" />
+
 		<Camera
 			Center="(-0.75; -0.35; 0)"
 			RadiusMultiplier="1.1"
@@ -323,17 +325,17 @@
 							<Motor Damping=".4" Spring="0.1" Type="Spring" />
 						</Constraint>
 					</Body>
-					<Body _template="Mudguard" ModelFrame="BoneLeftMudguard_cdt">
+					<Body GravityFactor="1.4" _template="Mudguard" ModelFrame="BoneLeftMudguard_cdt">
 						<Constraint MinLimit="-8" MaxLimit="4" />
 					</Body>
-					<Body _template="Mudguard" ModelFrame="BoneRightMudguard_cdt">
+					<Body GravityFactor="1.4" _template="Mudguard" ModelFrame="BoneRightMudguard_cdt">
 						<Constraint MinLimit="-8" MaxLimit="4" />
 					</Body>
 				</Body>
-				<Body _template="Mudguard" ModelFrame="BoneFrontLeftMudguard_cdt">
+				<Body GravityFactor="1.4" _template="Mudguard" ModelFrame="BoneFrontLeftMudguard_cdt">
 					<Constraint MinLimit="-8" MaxLimit="4" />
 				</Body>
-				<Body _template="Mudguard" ModelFrame="BoneFrontRightMudguard_cdt">
+				<Body GravityFactor="1.4" _template="Mudguard" ModelFrame="BoneFrontRightMudguard_cdt">
 					<Constraint MinLimit="-8" MaxLimit="4" />
 				</Body>
 				<Body _template="Gravity" Mass="1" ModelFrame="BoneTieRodLeft_cdt">

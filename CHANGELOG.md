@@ -1,5 +1,8 @@
 # Changelog:
 
+## v1.9
+- Update to RLM 49.0.0.1
+
 ## v1.8
 - Update to RLM 48.0.2.1
 
