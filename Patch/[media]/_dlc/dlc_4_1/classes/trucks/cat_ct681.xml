@@ -25,8 +25,8 @@
 			<ExtraParent Frame="BoneChassis_cdt" />
 		</Cabin2Chassis>
 	</Socket>
-	<Body _template="Gravity">
-		<SideMirror Collisions="Default" Mass="5">
+	<Body>
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -36,12 +36,12 @@
 				<Motor Damping="10" Spring="550" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard Mass="10">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Hitch Collisions="Default" Mass="5">
+		<Hitch GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -51,7 +51,7 @@
 				<Motor Damping=".1" Spring="2" Type="Spring" />
 			</Constraint>
 		</Hitch>
-		<Antenna Collisions="Default" Mass="2">
+		<Antenna GravityFactor="1.4" Collisions="Default" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -149,7 +149,7 @@
 		/>-->
 		<Intake Dir="(1; 0; 0)" Origin="(1.905; 1.479; 0)" Size="1.2" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="50" />
+		<FuelTank DamageCapacity="10" />
 		<ExtraWheels
 			Rim="rim_5"
 			OffsetZ="0.03"
@@ -160,7 +160,7 @@
 			<Wheel _template="MiddleAxle" Pos="(-2.786; 0.68; 1.07)" />
 			<Wheel _template="MiddleAxle" RightSide="true" Pos="(-2.786; 0.68; 1.07)" />
 		</ExtraWheels>
-		<EngineSocket Default="us_truck_modern_engine_cat_royal" Type="e_us_truck_modern, e_us_truck_modern_catroyal, e_us_truck_modern_cathx" />
+		<EngineSocket Default="us_truck_modern_engine_cat_royal" Type="us_truck_modern_engine_cathx, e_us_truck_modern_catroyal" />
 		<Driver Pos="(-0.576; 1.893; 0.489)" SteeringWheelPos="(-0.193; 2.221; 0.482)" ParentFrame="BoneCabin_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.9" Dir="(-0.898; 0.44; 0)" InputRange="(0;136)" InputType="speed" Mesh="trucks/arrows/cat_ct681_arrow_02" Org="(0.109; 2.188; 0.482)" OutputAngles="(-144;31)" />
@@ -178,7 +178,7 @@
 			<Gauge Damping="0.9" Dir="(-0.849; 0.414; 0.329)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/cat_ct681_arrow_01" Org="(-0.116; 2.236; -0.141)" OutputAngles="(-112;45)" />
 		</Dashboard>
 		<Damage>
-			<DamageArea Type="Engine" Min="(0.2; 2; -0.42)" Max="(1.879; 0.72; 0.42)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="Engine" Min="(0.2; 2; -0.42)" Max="(1.82; 0.72; 0.42)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(-1.45; 0.36; 0.42)" Max="(0.02; 1.05; 1.2)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.573" Type="wheels_kenworth_c500" />

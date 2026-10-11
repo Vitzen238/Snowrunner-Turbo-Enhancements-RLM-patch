@@ -9,7 +9,7 @@
 		<FrontWheel Location="front" Torque="default" ParentFrame="BoneFront_cdt" />
 	</Wheel>
 	<Body>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -20,8 +20,8 @@
 			</Constraint>
 		</SideMirror>
 	</Body>
-	<Body _template="Gravity">
-		<Sunshield Collisions="None" Mass="5">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -48,7 +48,7 @@
 		TruckImage="kirovets_k7m_mchr"
 		TruckType="HEAVY"
 	>
-		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<WinchUpgradeSocket Default="w_rope" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
 			DefaultRim="rim"
 			DefaultTire="tire"

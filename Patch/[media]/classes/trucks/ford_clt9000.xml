@@ -14,8 +14,8 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<SideMirror Collisions="Default" Mass="5">
+	<Body>
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -41,7 +41,7 @@
 		TruckImage="fordclt9000v2mchr"
 		TruckType="HIGHWAY"
 	>
-		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<WinchUpgradeSocket Default="w_rope" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="highway_1"
@@ -511,6 +511,12 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FordClt9000Top" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket
+				Names="MercedesBenzActrosBeacon"
+				Dir="(0; 0; -1)"
+				Offset="(4.7; -0.12; 0)"
+				ParentFrame="BoneCabinPrismatic_cdt"
+			/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FordClt9000FenderSide" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />

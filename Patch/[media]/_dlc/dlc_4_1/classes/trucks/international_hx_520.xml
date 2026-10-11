@@ -19,8 +19,8 @@
 			<ExtraParent Frame="BoneChassis_cdt" />
 		</Cabin2Chassis>
 	</Socket>
-	<Body _template="Gravity">
-		<SunShield Collisions="Default" Mass="1">
+	<Body>
+		<SunShield GravityFactor="1.4" Collisions="Default" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -30,7 +30,7 @@
 				<Motor Damping="0.25" Spring="18" Type="Spring" />
 			</Constraint>
 		</SunShield>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -40,12 +40,12 @@
 				<Motor Damping="10" Spring="650" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard Mass="10">
+		<Mudguard GravityFactor="1.4" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Antenna Collisions="Default" Mass="2">
+		<Antenna GravityFactor="1.4" Collisions="Default" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -142,8 +142,8 @@
 		/>-->
 		<Intake Dir="(1; 0; 0)" Origin="(2.017; 1.582; 0)" Size="1.2" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_catroyal" />
+		<FuelTank DamageCapacity="10" />
+		<EngineSocket Default="us_truck_modern_engine_cathx" Type="e_us_truck_modern_cathx" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(-0.671; 1.924; 0.475)"
@@ -167,7 +167,7 @@
 		</Dashboard>
 		<Damage>
 			<DamageArea Type="Engine" Min="(0.374; 0.8; -0.45)" Max="(1.894; 2; 0.45)" ParentFrame="BoneCabin_cdt" />
-			<DamageArea Type="FuelTank" Min="(-1.844; 0.43; 0.4)" Max="(-0.012; 1.13; 1.2)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(-1.844; 0.44; 0.44)" Max="(-0.012; 1.13; 1.2)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.573" RearOffsetZ="-0.03" Type="wheels_kenworth_c500" />
 		<CompatibleWheels Scale="0.55" Type="wheels_heavy_double1" />

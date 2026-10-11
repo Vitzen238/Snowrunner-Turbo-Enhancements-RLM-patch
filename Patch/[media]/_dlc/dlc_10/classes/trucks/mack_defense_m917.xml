@@ -17,8 +17,8 @@
 	<Flare>
 		<MarkerBeacon Color="g(125; 81; 18) x 0.7" Size="0.3" />
 	</Flare>
-	<Body _template="Gravity">
-		<Mirror Collisions="Default" Mass="1.5">
+	<Body>
+		<Mirror GravityFactor="1.4" Collisions="Default" Mass="1.5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -28,7 +28,7 @@
 				<Motor Damping="1" Spring="250" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -38,7 +38,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Hitch AngularDamping="1" Collisions="Default" Mass="10">
+		<Hitch GravityFactor="1.4" AngularDamping="1" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				PivotOffset="(0; 0; 0)"
@@ -49,7 +49,7 @@
 				<Motor Damping="0.05" Spring="4" Type="Spring" />
 			</Constraint>
 		</Hitch>
-		<Mudguard Collisions="None" Mass="5">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -59,7 +59,7 @@
 				<Motor Damping="3" Spring="5" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Wire Collisions="None" Mass="0.02">
+		<Wire GravityFactor="1.4" Collisions="None" Mass="0.02">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Prismatic"
@@ -69,7 +69,7 @@
 				<Motor Damping="0.1" Spring="5" Type="Spring" />
 			</Constraint>
 		</Wire>
-		<Shelf Collisions="None" Mass="0.01">
+		<Shelf GravityFactor="1.4" Collisions="None" Mass="0.01">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Prismatic"
@@ -170,7 +170,7 @@
 		<!-- <LimitedFluid Center="(0.785; 0.978; 0.868)" SizeX="1.036" SizeY="0.423" SizeZ="0.514" Type="Box"/> -->
 		<Intake Dir="(1; 0; 0)" Origin="(5.009; 1.687; 0)" Size="1" />
 		<GearboxSocket Default="g_special_mack_defense" Type="gearboxes_special_mack_defense" />
-		<FuelTank DamageCapacity="110" />
+		<FuelTank DamageCapacity="20" />
 		<EngineSocket Default="us_special_mack_defense_mcv6" Type="e_us_truck_modern_mack_defense_m917" />
 		<Driver
 			AnimationSet="Truck"
@@ -194,7 +194,7 @@
 			<Gauge Damping="0.99" Dir="(-0.771; 0.196; 0.606)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mack_defense_m917_arrow_03" Org="(3.015; 2.444; -0.152)" OutputAngles="(-120; 20)" Scale="0.8"/>
 		</Dashboard>
 		<Damage>
-			<DamageArea Type="Engine" Min="(3.405, 1.5, -0.6)" Max="(5.033, 2.343, 0.6)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="Engine" Min="(3.405, 1.5, -0.6)" Max="(4.95, 2.343, 0.6)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.239, 0.668, 0.533)" Max="(1.332, 1.319, 1.162)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.60" Type="wheels_derry_special_15c177" />

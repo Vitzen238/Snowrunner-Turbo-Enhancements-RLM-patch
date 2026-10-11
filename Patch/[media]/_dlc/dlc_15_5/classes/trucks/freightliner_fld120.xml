@@ -16,8 +16,8 @@
 			ParentFrame="BoneCabinTwist_cdt"
 		/>
 	</Wheel>
-	<Body  _template="Gravity">
-		<Wiper Collisions="None" Mass="15">
+	<Body>
+		<Wiper GravityFactor="1.4" Collisions="None" Mass="15">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -27,7 +27,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Wiper>
-		<Sunshield Collisions="None" Mass="50">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="50">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -37,7 +37,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Seatbelt Collisions="None" Mass="1">
+		<Seatbelt GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				LinearLimitsX="(-0.020; 0.020)"
 				LinearLimitsY="(-0.001; 0.001)"
@@ -47,7 +47,7 @@
 				<Motor Damping="20" Spring="700" Type="Spring" />
 			</Constraint>
 		</Seatbelt>
-		<Mudguard Collisions="Default" Mass="30">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="30">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -57,7 +57,7 @@
 				<Motor Damping="15" Spring="20" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Mirror Collisions="Default" ImpactType="Truck" Mass="30">
+		<Mirror GravityFactor="1.4" Collisions="Default" ImpactType="Truck" Mass="30">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -155,7 +155,7 @@
 		<LimitedFluid Center="(-0.028; 0.66; 0.729)" LengthX="1.95" RadiusY="0.275" RadiusZ="0.275" Type="Cylinder" />-->
 		<Intake Dir="(1; 0; 0)" Origin="(4.240; 1.327; -0)" Size="1" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="100" />
+		<FuelTank DamageCapacity="15" />
 		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
 		<Driver
 			AnimationSet="Truck"
@@ -534,7 +534,6 @@
 		<WinchSocket Pos="(-4.19; 0.704; 0)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(1.2; 0.8; 0.35)" ParentFrame="BoneCabinTwist_cdt" />
 		<WinchSocket Pos="(1.2; 0.8; -0.35)" ParentFrame="BoneCabinTwist_cdt" />
-		<WinchSocket Pos="(1.2; 0.8; 0)" ParentFrame="BoneCabinTwist_cdt" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_FREIGHTLINER_FLD120_DESC"
 			UiIcon30x30="heavyDutyVehicleImg30"

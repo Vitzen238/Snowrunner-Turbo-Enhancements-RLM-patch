@@ -16,8 +16,8 @@
 			ConnectedToHandbrake="true"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<TieRod Collisions="None" Mass="1">
+	<Body>
+		<TieRod GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -32,7 +32,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<SteerShaft Collisions="None" Mass="1">
+		<SteerShaft GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -47,9 +47,9 @@
 				/>
 			</Constraint>
 		</SteerShaft>
-		<MudGuard
+		<MudGuard GravityFactor="1.4"
 			Mass="1"
-			Collisions="None"
+			Collisions="Default"
 		>
 			<Constraint
 				AxisLocal="(0; 0: 1)"
@@ -60,7 +60,7 @@
 				<Motor Damping="0.15" Spring="1" Type="Spring" />
 			</Constraint>
 		</MudGuard>
-		<SunSheld
+		<SunSheld GravityFactor="1.4"
 			Mass="2"
 			Collisions="None"
 		>

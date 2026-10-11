@@ -34,8 +34,8 @@
 			Torque="full"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Mudguard AngularDamping="3.0" Collisions="Default" Mass="10">
+	<Body>
+		<Mudguard GravityFactor="1.4" AngularDamping="3.0" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -151,7 +151,7 @@
 		<CompatibleWheels OffsetZ="0.08" Scale="0.65" Type="semitrailer_gooseneck_3" />
 		<!--JAT DLC-->
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.58" Type="wheels_heavy_offroad_single" />
-		<CompatibleWheels RearOffsetZ="0.04" Scale="0.58" Type="wheels_heavy_mudtires_single2" />
+		<!--<CompatibleWheels RearOffsetZ="0.04" Scale="0.58" Type="wheels_heavy_mudtires_single2" />-->
 
 		<!--Big Wheels-->
 		<CompatibleWheels OffsetZ="0.02" Scale="0.67" Type="wheels_tatra_force_815_7" />

@@ -29,8 +29,8 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Sunshield Collisions="None" Mass="3">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -40,7 +40,7 @@
 				<Motor Damping="2" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -50,7 +50,7 @@
 				<Motor Damping="0.7" Spring="100" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard AngularDamping="3.0" Collisions="Default" Mass="10">
+		<Mudguard GravityFactor="1.4" AngularDamping="3.0" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -545,6 +545,8 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Azov73210Bumper" />
+			<Socket Names="Azov73210Bumper2" />
+			<Socket Names="Azov73210Bumper4" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Azov73210Spotlight" />

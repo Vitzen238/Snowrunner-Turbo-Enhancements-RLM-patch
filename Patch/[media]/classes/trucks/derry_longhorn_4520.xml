@@ -41,8 +41,8 @@
 			Size="0.1"
 		/>
 	</Flare>
-	<Body _template="Gravity">
-		<Mirror Collisions="Default" Mass="1.5">
+	<Body>
+		<Mirror GravityFactor="1.4" Collisions="Default" Mass="1.5">
 			<Constraint
 				LinearLimitsX="(-0.01;0.01)"
 				LinearLimitsY="(-0.03;0.03)"
@@ -52,7 +52,7 @@
 				<Motor Damping="30" Spring="1050" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Hitch Collisions="Default" Mass="10">
+		<Hitch GravityFactor="1.4" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				PivotOffset="(0; 0; 0)"
@@ -272,7 +272,7 @@
 				>
 					<Motor Damping="7" Spring="2200" Type="Spring" />
 				</Constraint>
-				<Body _template="Gravity" 
+				<Body
 					_template="Mudguard"
 					AngularDamping="1.0"
 					ModelFrame="BoneLeftMudguard_cdt"
@@ -403,6 +403,8 @@
 		UnlockByExploration="false"
 		UnlockByRank="24"
 	>
+		<WinchSocket Pos="(0.65; 3.3; -0.82)" ParentFrame="BoneCabin_cdt"/>
+		<WinchSocket Pos="(0.65; 3.3; 0.82)" ParentFrame="BoneCabin_cdt"/>
 		<WinchSocket Pos="(4.432; 0.723; 0)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(4.432; 0.723; -0.481)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(4.432; 0.723; 0.481)" ParentFrame="BoneCabin_cdt" />
@@ -445,6 +447,8 @@
 			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(6.764; 2.94; -0.145)" Position="(4.241; 3.049; -0.565)" />
 			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(4.494; 0.9; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.753; 4.897; 5.666)" />
 		</CustomizationCameras>
+		<CraneSocket Pos="(0.65; 3.3; -0.82)" ParentFrame="BoneCabin_cdt"/>
+		<CraneSocket Pos="(0.65; 3.3; 0.82)" ParentFrame="BoneCabin_cdt"/>
 		<CraneSocket Pos="(4.432; 0.723; 0)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(4.432; 0.723; -0.481)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(4.432; 0.723; 0.481)" ParentFrame="BoneCabin_cdt" />

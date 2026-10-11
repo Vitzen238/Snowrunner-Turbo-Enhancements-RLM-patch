@@ -104,7 +104,7 @@
 		/>
 		<GearboxSocket Default="g_special_yamal" Type="gearboxes_special_plad_450" />
 		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="ru_special_femm_37at_sbr_r1" Type="e_ru_special_femm_37at" />
+		<EngineSocket Default="ru_tuz_tatarin" Type="e_ru_tuz_tatarin, e_ru_special_femm_37at" />
 		<Driver Pos="(5.7; 2.573; 0.741)" SteeringWheelPos="(6.072; 2.901; 0.724)" AnimationSet="HeavyTruck" LegsOffset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		 <Dashboard>
 			<Gauge Damping="0.9" Dir="(-0.922; 0.387; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/femm_37at_arrow_01" Org="(6.354; 2.808; 0.632)" OutputAngles="(-135;130)" />
@@ -213,7 +213,7 @@
 					<ConeMotor Damping="15000" Spring="30000" Type="Spring" />
 					<!--back-front-->
 				</Constraint>
-				<Body _template="Gravity"  Collisions="None" Mass="10" ModelFrame="BoneChairCabin_cdt">
+				<Body _template="Gravity" Collisions="None" Mass="10" ModelFrame="BoneChairCabin_cdt">
 					<Constraint
 						AxisLocal="(0; 0; 1)"
 						Type="Hinge"
@@ -223,7 +223,7 @@
 						<Motor Damping="100" Spring="200" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body _template="Gravity"  Collisions="None" Mass="2" ModelFrame="BoneHandleCabin_cdt">
+				<Body _template="Gravity" Collisions="None" Mass="2" ModelFrame="BoneHandleCabin_cdt">
 					<Constraint
 						AxisLocal="(0; 0; 1)"
 						Type="Hinge"
@@ -233,7 +233,7 @@
 						<Motor Damping="0.3" Spring="1" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body _template="Gravity"  Collisions="None" Mass="1" ModelFrame="BoneCurtainCabin_cdt">
+				<Body _template="Gravity" Collisions="None" Mass="1" ModelFrame="BoneCurtainCabin_cdt">
 					<Constraint
 						AxisLocal="(1; 0; 0)"
 						Type="Hinge"
@@ -243,7 +243,7 @@
 						<Motor Damping="0.01" Spring="0.1" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body _template="Gravity"  Collisions="None" Mass="15" ModelFrame="BoneBedCabin_cdt">
+				<Body _template="Gravity" Collisions="None" Mass="15" ModelFrame="BoneBedCabin_cdt">
 					<Constraint
 						AxisLocal="(0; 0; 1)"
 						Type="Hinge"
@@ -253,7 +253,7 @@
 						<Motor Damping="7" Spring="30" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body _template="Gravity"  Collisions="Default" Mass="5" ModelFrame="BoneMirrorLeft_cdt">
+				<Body _template="Gravity" Collisions="Default" Mass="5" ModelFrame="BoneMirrorLeft_cdt">
 					<Constraint
 						AxisLocal="(0; 1; 0)"
 						Type="Hinge"
@@ -263,7 +263,7 @@
 						<Motor Damping="10" Spring="200" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body _template="Gravity"  Collisions="Default" Mass="5" ModelFrame="BoneMirrorRight_cdt">
+				<Body _template="Gravity" Collisions="Default" Mass="5" ModelFrame="BoneMirrorRight_cdt">
 					<Constraint
 						AxisLocal="(0; 1; 0)"
 						Type="Hinge"
@@ -561,7 +561,7 @@
 		<IKBone ModelFrame="BoneBackPistonLBase" ParentFrame="BoneFront_cdt">
 			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
 			<IKBone
-				AttachOffset="(0; 0; 0)"
+				AttachOffset="(-0.04; 0; 0)"
 				AttachToFrame="BoneBack_cdt"
 				ModelFrame="BoneBackPistonL"
 			>
@@ -571,7 +571,7 @@
 		<IKBone ModelFrame="BoneBackPistonRBase" ParentFrame="BoneFront_cdt">
 			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
 			<IKBone
-				AttachOffset="(0; 0; 0)"
+				AttachOffset="(-0.04; 0; 0)"
 				AttachToFrame="BoneBack_cdt"
 				ModelFrame="BoneBackPistonR"
 			>

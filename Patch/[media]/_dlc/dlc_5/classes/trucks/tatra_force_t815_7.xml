@@ -135,8 +135,6 @@
 			<EngineHigh_2d	Sound="trucks/tatra_force/tatra_force_high_2d"	IsSound2D="true" />
 			<EngineHeavy	Sound="trucks/tatra_force/tatra_force_heavy" />
 			<EngineHeavy_2d	Sound="trucks/tatra_force/tatra_force_heavy_2d"	IsSound2D="true" />
-			<EngineTurbo			Sound="trucks/azov_5319/azov_5319_turbo" />
-			<EngineTurbo_2d		Sound="trucks/azov_5319/azov_5319_turbo" IsSound2D="true" />
 			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
 			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
 		</Sounds>

@@ -46,8 +46,8 @@
 			SizeMultAtDay="0.5"
 		/>
 	</Flare>
-	<Body _template="Gravity">
-		<SideMirror Collisions="Default" Mass="5">
+	<Body>
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -57,7 +57,7 @@
 				<Motor Damping="5" Spring="150" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Panel Collisions="None" Mass="5">
+		<Panel GravityFactor="1.4" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Prismatic"
@@ -67,7 +67,7 @@
 				<Motor Damping="50" Spring="600" Type="Spring" />
 			</Constraint>
 		</Panel>
-		<MudguardFrame Collisions="Default" Mass="30">
+		<MudguardFrame GravityFactor="1.4" Collisions="Default" Mass="30">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"

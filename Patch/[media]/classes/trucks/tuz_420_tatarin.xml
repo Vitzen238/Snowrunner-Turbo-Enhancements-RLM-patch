@@ -19,8 +19,8 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Hook Collisions="None" Mass="10">
+	<Body>
+		<Hook GravityFactor="1.4" Collisions="None" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

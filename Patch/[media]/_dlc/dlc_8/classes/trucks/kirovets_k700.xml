@@ -13,8 +13,8 @@
 			ParentFrame="BoneFront_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Sunshield Collisions="None" Mass="5">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -41,7 +41,7 @@
 		TruckImage="kirovets_k700_mchr"
 		TruckType="HEAVY"
 	>
-		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<WinchUpgradeSocket Default="w_rope" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
 			DefaultRim="rim"
 			DefaultTire="tire"

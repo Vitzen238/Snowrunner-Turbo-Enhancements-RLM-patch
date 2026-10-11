@@ -18,8 +18,8 @@
 	<Flare>
 		<MarkerBeacon Color="g(125; 81; 18) x 0.7" Size="0.3" />
 	</Flare>
-	<Body _template="Gravity">
-		<Mirror Collisions="Default" Mass="1.5">
+	<Body>
+		<Mirror GravityFactor="1.4" Collisions="Default" Mass="1.5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -29,7 +29,7 @@
 				<Motor Damping="1" Spring="250" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -39,7 +39,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Antenna Collisions="Default" Mass="2">
+		<Antenna GravityFactor="1.4" Collisions="Default" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -52,7 +52,7 @@
 				<ConeMotor Damping="4" Spring="150" Type="Spring" />
 			</Constraint>
 		</Antenna>
-		<Mudguard Collisions="None" Mass="5">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -152,7 +152,7 @@
 		<LimitedFluid Center="(0.080; 0.867; -0.794)" LengthX="1.55" RadiusY="0.308" RadiusZ="0.308" Type="Cylinder"/>-->
 		<Intake Dir="(1; 0; 0)" Origin="(4.98; 1.687; 0)" Size="1.3" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="80" />
+		<FuelTank DamageCapacity="15" />
 		<EngineSocket Default="us_truck_cat_c15_acert" Type="e_un_truck_heavy_boarpac" />
 		<Driver
 			AnimationSet="HeavyTruck"
@@ -503,14 +503,14 @@
 	>
 		<WinchSocket Pos="(-1.721; 1.192; 0.416)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(-1.721; 1.192; -0.416)" ParentFrame="BoneChassis_cdt" />
-		<WinchSocket Pos="(2.280; 0.995; 1.147)" ParentFrame="BoneCabinTwist_cdt" />
-		<WinchSocket Pos="(2.280; 0.995; -1.147)" ParentFrame="BoneСabinTwist_cdt" />
+		<!--<WinchSocket Pos="(2.280; 0.995; 1.147)" ParentFrame="BoneCabinTwist_cdt" />
+		<WinchSocket Pos="(2.280; 0.995; -1.147)" ParentFrame="BoneСabinTwist_cdt" />-->
 		<WinchSocket Pos="(-4.753; 0.724; 0.0)" ParentFrame="BoneChassis_cdt" />
 		
 		<CraneSocket Pos="(-1.721; 1.192; 0.416)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(-1.721; 1.192; -0.416)" ParentFrame="BoneChassis_cdt" />
-		<CraneSocket Pos="(2.280; 0.995; 1.147)" ParentFrame="BoneСabinTwist_cdt" />
-		<CraneSocket Pos="(2.280; 0.995; -1.147)" ParentFrame="BoneСabinTwist_cdt" />
+		<!--<CraneSocket Pos="(2.280; 0.995; 1.147)" ParentFrame="BoneСabinTwist_cdt" />
+		<CraneSocket Pos="(2.280; 0.995; -1.147)" ParentFrame="BoneСabinTwist_cdt" />-->
 		<CraneSocket Pos="(-4.753; 0.724; 0.0)" ParentFrame="BoneChassis_cdt" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_KENWORTH_C500_DESC"

@@ -21,7 +21,7 @@
 		</Cabin2Chassis>
 	</Socket>
 	<Body Friction="0.01">
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -31,7 +31,7 @@
 				<Motor Damping="1" Spring="30" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -164,7 +164,7 @@
 		<!--JAT DLC-->
 		<CompatibleWheels Scale=".6" Type="wheels_heavy_offroad_single" />
 		<!--<CompatibleWheels Scale=".6" Type="wheels_heavy_mudtires_single" />-->
-		<CompatibleWheels Scale=".6" Type="wheels_heavy_mudtires_single2" />
+		<!--<CompatibleWheels Scale=".6" Type="wheels_heavy_mudtires_single2" />-->
 		<Camera Center="(-0.7; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"

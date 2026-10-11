@@ -15,8 +15,8 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<SideMirror Collisions="Default" Mass="5">
+	<Body>
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -26,7 +26,7 @@
 				<Motor Damping="5" Spring="250" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard Mass="5">
+		<Mudguard GravityFactor="1.4" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping="0.4" Spring="2" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<MudguardRear Mass="5">
+		<MudguardRear GravityFactor="1.4" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -46,7 +46,7 @@
 				<Motor Damping="0.4" Spring="2" Type="Spring" />
 			</Constraint>
 		</MudguardRear>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; -1)"
 				Type="Hinge"
@@ -164,7 +164,7 @@
 		<OcclusionMap HalfSizeZ="1.94" MinX="-3.41" MaxX="3.47" />
 		<Intake Dir="(1; 0; 0)" Origin="(3.335; 1.221; 0)" Size="1" />
 		<GearboxSocket Default="g_special_hib_billert_m816_default" Type="gearboxes_hib_billert_m816" />
-		<FuelTank DamageCapacity="50" />
+		<FuelTank DamageCapacity="15" />
 		<EngineSocket Default="engine_truck_hib_billert_m816_00" Type="e_truck_engine_hib_billert_m816" />
 
 		<!-- VANILLA -->
@@ -412,7 +412,7 @@
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.479; 0.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.767; 1.805; 2.899)" />
 			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(-1; 3; 3.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12; 0.5; -3)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(5.601; 1.97; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(3.352; 1.747; -7.216)" />
-			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(4.104; 0.673; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(2.058; 3.425; -3.441)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(4.104; 2.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.058; 0.425; -3.441)" />
 			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(6.094; 1.716; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.936; 4.516; -3.212)" />
 			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.997; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.213; 1.446; -3.663)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(2.488; 1.994; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.538; 3.78; 6.364)" />

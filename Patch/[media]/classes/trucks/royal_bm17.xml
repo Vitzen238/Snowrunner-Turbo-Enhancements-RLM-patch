@@ -24,8 +24,8 @@
 			Size="0.1"
 		/>
 	</Flare>
-	<Body _template="Gravity">
-		<SideMirror Collisions="Default" Mass="5">
+	<Body>
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -35,7 +35,7 @@
 				<Motor Damping="5" Spring="280" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard Collisions="Default" Mass="10">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
@@ -126,7 +126,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(3.655; 1.617; 0)" Size="1" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="120" />
-		<EngineSocket Default="us_truck_modern_engine_cat_royal" Type="e_us_truck_modern, e_us_truck_modern_catroyal, e_ru_truck_modern_grad" />
+		<EngineSocket Default="us_truck_old_paystar5070" Type="e_us_truck_old_paystar5070, e_un_truck_heavy_boarpac" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(1.045; 2.062; 0.51)"

@@ -55,7 +55,7 @@
 				/>
 			</Constraint>
 		</SteeringShaft>
-		<Mudguard GravityFactor="1.4" Collisions="None" Mass="5">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -197,8 +197,9 @@
 			<Gauge Damping="0.99" Dir="(-0.966; 0.255; -0.09)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/kenworth_963_arrow_2" Org="(1.918; 2.739; 0.606)" OutputAngles="(-149; 34)" />
 		</Dashboard>
 		<Damage>
-			<DamageArea Type="Engine" Min="(2.257; 1.613; -0.701)" Max="(4.52; 2.691; 0.701)" ParentFrame="BoneCabin_cdt" />
-			<DamageArea Type="FuelTank" Min="(-1.416; 0.885; -1.513)" Max="(1; 1.561; 1.513)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="Engine" Min="(2.257; 1.613; -0.701)" Max="(4.46; 2.691; 0.701)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(-1.416; 0.885; -0.63)" Max="(1; 1.561; -1.513)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(-1.416; 0.885; 0.63)" Max="(1; 1.561; 1.513)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="Gearbox" Min="(1.125; 1.146; -0.292)" Max="(2.756; 1.813; 0.292)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels OffsetZ="-0.02" Scale="0.911" Type="wheels_kenworth_963" />

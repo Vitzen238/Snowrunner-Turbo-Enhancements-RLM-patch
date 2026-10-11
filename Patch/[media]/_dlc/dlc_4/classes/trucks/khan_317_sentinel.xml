@@ -23,8 +23,8 @@
 			SizeMultAtDay="0.5"
 		/>
 	</Flare>
-	<Body _template="Gravity">
-		<Sunshield Collisions="None" Mass="3">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -34,7 +34,7 @@
 				<Motor Damping="0.5" Spring="20" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -44,7 +44,7 @@
 				<Motor Damping="3" Spring="90" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Key Collisions="None" Mass="1">
+		<Key GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -54,7 +54,7 @@
 				<Motor Damping="0.005" Spring="0.005" Type="Spring" />
 			</Constraint>
 		</Key>
-		<Belt Collisions="None" Mass="2">
+		<Belt GravityFactor="1.4" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

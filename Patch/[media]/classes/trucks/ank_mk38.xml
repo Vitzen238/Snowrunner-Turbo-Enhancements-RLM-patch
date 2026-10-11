@@ -118,7 +118,7 @@
 		<LimitedFluid Center="(0.015; 0.952; 0.851)" SizeX="1.106" SizeY="0.426" SizeZ="0.609" Type="Box" />-->
 		<Intake Dir="(1; 0; 0)" Origin="(3.474; 1.593; 0)" Size="1" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="50" />
+		<FuelTank DamageCapacity="15" />
 		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_top" />
 		<Driver
 			AnimationSet="Truck"
@@ -138,8 +138,9 @@
 			<Gauge Damping="0.99" Dir="(-0.998; 0; 0.067)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ank_mk38_arrow_04" Org="(1.703; 1.943; -0.167)" OutputAngles="(-29; -3)" />
 		</Dashboard>
 		<Damage>
-			<DamageArea Type="Engine" Min="(1.455; 1; -0.5)" Max="(3.568; 2.1; 0.5)" ParentFrame="BoneCabin_cdt" />
-			<DamageArea Type="FuelTank" Min="(-0.55; 0.7; -1.26)" Max="(0.58; 1.2; 1.26)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="Engine" Min="(1.455; 1; -0.5)" Max="(3.50; 2.1; 0.5)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.55; 0.71; -1.20)" Max="(0.58; 1.2; -0.49)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.55; 0.71; 0.49)" Max="(0.58; 1.2; 1.20)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels RearOffsetZ="-0.04" Scale="0.55" Type="wheels_heavy_double1" />
 		<CompatibleWheels OffsetZ=".03" Scale="0.6" Type="wheels_tatra_force_815_7" />

@@ -25,8 +25,8 @@
 			Torque="default"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Wiper Collisions="None" Mass="10">
+	<Body>
+		<Wiper GravityFactor="1.4" Collisions="None" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Wiper>
-		<Seatbelt Collisions="None" Mass="1">
+		<Seatbelt GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				LinearLimitsX="(-0.020; 0.020)"
 				LinearLimitsY="(-0.001; 0.001)"
@@ -46,7 +46,7 @@
 				<Motor Damping="20" Spring="700" Type="Spring" />
 			</Constraint>
 		</Seatbelt>
-		<Mirror Collisions="Default" ImpactType="Truck" Mass="10">
+		<Mirror GravityFactor="1.4" Collisions="Default" ImpactType="Truck" Mass="10">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -56,7 +56,7 @@
 				<Motor Damping="50" Spring="25" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<TieRod Collisions="None" Mass="10" >
+		<TieRod GravityFactor="1.4" Collisions="None" Mass="10" >
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -677,12 +677,20 @@
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="PaderaSTD4Roofrack" NamesBlock="PaderaSTD4SnorkelDefault" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<!--<Socket
+				Names="Aac58DwBeacon"
+				Offset="(3.42; 1.11; 0)"
+				ParentFrame="BoneCabin_cdt" 
+			/>-->
+			<Socket Offset="(0.65; 0.2; 0)" Names="azovSprinterBeacon" ParentFrame="BoneCabin_cdt" />
+			<Socket Offset="(-0.23; 0.33; 0)" Names="TatraT813Beacon" NamesBlock="PaderaSTD4Visor2" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="PaderaSTD4Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="PaderaSTD4Visor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="PaderaSTD4Visor2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="PaderaSTD4Spotlight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />

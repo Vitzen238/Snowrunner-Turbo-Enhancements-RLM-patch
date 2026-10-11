@@ -37,7 +37,7 @@
 		/>
 	</Flare>
 	<Body>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -47,7 +47,7 @@
 				<Motor Damping="1" Spring="150" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Panel Collisions="None" Mass="0.1">
+		<Panel GravityFactor="1.4" Collisions="None" Mass="0.1">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Prismatic"
@@ -203,18 +203,18 @@
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
-			<Body _template="SideMirror" ModelFrame="BoneMirrorLeft_cdt"  _template="Gravity"/>
-			<Body _template="SideMirror" ModelFrame="BoneMirrorRight_cdt"  _template="Gravity"/>
-			<Body _template="Mudguard" ModelFrame="BoneLeftMudguard_cdt" _template="Gravity">
+			<Body _template="SideMirror" ModelFrame="BoneMirrorLeft_cdt"/>
+			<Body _template="SideMirror" ModelFrame="BoneMirrorRight_cdt"/>
+			<Body _template="Mudguard" ModelFrame="BoneLeftMudguard_cdt">
 				<Constraint AxisLocal="(0; 0; -1)" MinLimit="10" MaxLimit="40" />
 			</Body>
-			<Body _template="Mudguard" ModelFrame="BoneRightMudguard_cdt" _template="Gravity">
+			<Body _template="Mudguard" ModelFrame="BoneRightMudguard_cdt">
 				<Constraint AxisLocal="(0; 0; -1)" MinLimit="10" MaxLimit="40" />
 			</Body>
-			<Body _template="Panel" ModelFrame="BoneLeftPanel1_cdt"  _template="Gravity"/>
-			<Body _template="Panel" ModelFrame="BoneLeftPanel2_cdt"  _template="Gravity"/>
-			<Body _template="Panel" ModelFrame="BoneRightPanel1_cdt"  _template="Gravity"/>
-			<Body _template="Panel" ModelFrame="BoneRightPanel2_cdt"  _template="Gravity"/>
+			<Body _template="Panel" ModelFrame="BoneLeftPanel1_cdt"/>
+			<Body _template="Panel" ModelFrame="BoneLeftPanel2_cdt"/>
+			<Body _template="Panel" ModelFrame="BoneRightPanel1_cdt"/>
+			<Body _template="Panel" ModelFrame="BoneRightPanel2_cdt"/>
 			<Body Mass="10" ModelFrame="BoneHandle_cdt">
 				<Constraint
 					AxisLocal="(1; 0; 0)"

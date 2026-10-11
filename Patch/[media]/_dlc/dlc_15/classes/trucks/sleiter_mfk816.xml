@@ -130,8 +130,8 @@
 		<Intake Dir="(-1; 0; 0)" Origin="(-0.917; 3.426; 0.810)" Size="0.5" ParentFrame="BoneCabin_cdt" />
 		<Intake Dir="(-1; 0; 0)" Origin="(-0.917; 3.426; -0.810)" Size="0.5" ParentFrame="BoneCabin_cdt" />
 		<GearboxSocket Default="g_special_sleiter_mfk816" Type="gearboxes_special_sleiter_mfk816" />
-		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="us_truck_old_heavy_sleiter_mfk816_1" Type="e_us_truck_old_heavy, e_us_truck_old_heavy_sleiter_mfk816" />
+		<FuelTank DamageCapacity="20" />
+		<EngineSocket Default="us_truck_old_paystar5070" Type="e_us_truck_old_paystar5070, e_us_truck_old_heavy_sleiter_mfk816" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(1.75; 2.539; 0.851)"
@@ -290,7 +290,7 @@
 		Price="160400"
 		UnlockByExploration="true"
 		UnlockByRank="1"
-		ExcludeAddons="frame_addon_flatbed_2"
+		ExcludeAddons="kolob_74760_bumper_3, frame_addon_flatbed_2, azov_73210_bumper_1, azov_73210_bumper_3, international_paystar_5070_beacon_1"
 	>
 		<WinchSocket Pos="(1.889; 2.105; 1.842)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(1.889; 2.105; -1.842)" ParentFrame="BoneCabin_cdt" />
@@ -339,14 +339,65 @@
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(4.777; 2.616; 0.86)" Position="(4.026; 3.29; 0.599)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(4.665; 3.443; 0.400)" Position="(3.8; 3.306; -0.834)" />
 		</CustomizationCameras>			
+		<!--↓RLM-->
+		<AddonSockets>
+			<Socket
+				Names="Azov4220AntarcticBeacon"
+				Offset="(-2.36; 0.14; 0)"
+				ParentFrame="BoneCabin_cdt"
+				NamesBlock="SleiterMFK816Roofrack"
+			/>
+			<Socket
+				Names="InternationalPaystar5070Beacon"
+				Offset="(1.55; 0.86; 1.13)"
+				ParentFrame="BoneCabin_cdt"
+				NamesBlock="SleiterMFK816Roofrack"
+			/>
+			<Socket
+				Names="DerryLonghorn4520Beacon"
+				Offset="(-0.15; 0.49; 1.18)"
+				ParentFrame="BoneCabin_cdt"
+				NamesBlock="SleiterMFK816Roofrack"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<!--<Socket
+				Names="FreightlinerM916A1Beacon"
+				Offset="(1.53; 0.7; -1.15)"
+				ParentFrame="BoneCabin_cdt"
+				NamesBlock="SleiterMFK816Roofrack"
+			/>-->
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="Azov73210Bumper2"
+				Offset="(-0.15; 0.72; 0)"
+				ParentFrame="BoneCabin_cdt" 
+				NamesBlock="Azov4220AntarcticSpotLight3"
+			/>
+			<Socket
+				Names="Azov73210Bumper4"
+				Offset="(-0.18; 0.975; 0)"
+				ParentFrame="BoneCabin_cdt" 
+				NamesBlock="Azov4220AntarcticSpotLight3"
+			/>
+			<!--<Socket
+				Names="Kolob74760Bumper"
+				Offset="(0.085; -0.08; 0)"
+				ParentFrame="BoneCabin_cdt" 
+				NamesBlock="Azov4220AntarcticSpotLight3"
+			/>-->
+		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Azov4220AntarcticSpotLight3" Offset="(-0.3; -0.82; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="mercer_k520_diff_lock">
 			<Socket Names="MercerK520DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>		
+		<!--↑RLM-->
 		<AddonSockets DefaultAddon="sleiter_mfk816_bumper_default">
 			<Socket Names="SleiterMFK816Bumper" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="SleiterMFK816Bumper1" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="sleiter_mfk816_spare_wheels">
 			<Socket Names="SleiterMFK816SpareWheels" ParentFrame="BoneCabin_cdt" />
@@ -391,7 +442,7 @@
 			<Socket Names="GlassTopSleiterMFK816" UpDir="(-1; 0.57; 0)" Offset="(4.20; -0.74; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="SleiterMFK816Sticker_Roof" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="SleiterMFK816Sticker_Roof" Offset="(-0.08; 0; 0.06)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SleiterMFK816Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />

@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mudguard Collisions="None" Mass="5">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint AxisLocal="(0; 0; 1)" Type="Hinge">
 				<Motor Damping="3" Spring="5" Type="Spring" />
 			</Constraint>
@@ -37,7 +37,8 @@
 		SuspensionMarkerOffset="(-1.5; 0; 0)" 
 		GearboxMarkerOffset="(0.5; 0; 0)" 
 		TruckType="HEAVY"
-	><!--Old capacity: 1135.62 l: HOW?-->
+	>
+	<!--Old capacity: 1135.62 l: HOW?-->
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
 			DefaultRim="rim_1"
@@ -513,7 +514,7 @@
 			DefaultAddon="plad_440_fender_addon"
 			RequiredAddonIfNoConflicts=""
 		>
-			<Socket Names="Plad440Fender" NamesBlock="" Offset="(-0.45; 0.3; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="Plad440Fender" NamesBlock="WS6900FrameAddonKung" Offset="(-0.45; 0.3; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0.38; 0; 0)" />
 				<!--<AddonsShift Offset="(0; -0.02; 0)" Types="FrameAddonLogShort" />-->
 			</Socket>
@@ -627,15 +628,13 @@
 			</Socket>
 			<Socket
 				Names="LogLift"
-				NamesBlock="FrameAddon, FrameAddonLogMedium, AvenhornA15Kung, FrameAddonTow, FrameAddonTowPlatform, BigCrane, BigCraneUs, FrameAddonKungWS6900xd, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, SaddleHigh, SaddleLow"
+				NamesBlock="FrameAddon, FrameAddonLogMedium, AvenhornA15Kung, FrameAddonTow, FrameAddonTowPlatform, BigCrane, BigCraneUs, FrameAddonKungWS6900xd, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator"
 				Offset="(0.34; 1.48; 0)"
 				Dir="(0;0;-1)" 
 				ParentFrame="BoneCabin_cdt"
 			>
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="WesternStar6900XDSpareWheel" />
 				<!--<AddonsShift Offset="(0.1; 0; 0)" Types="FrameAddonLogMedium" />-->
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="WesternStar6900XDSpareWheel" Names="LogLift, FrameAddonLogShort"/>
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="WesternStar6900XDSpareWheel" Names="LogLift, FrameAddonLogMedium"/>
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
@@ -673,6 +672,7 @@
 			<Socket Names="BunkLog" Offset="(-6.7; 1.48; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneKenworthC500" Offset="(-2.0; 1.48; 0)" >
 				<AddonsShift Offset="(0;0;0)" TrailerNamesBlock="AvenhornA15Kung" Types="WesternStar6900XDSpareWheel, FrameAddonLogShort" />
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="LogLift" Names="WesternStar6900XDSpareWheel, FrameAddonLogShort"/>
 			</Socket>
 			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneKenworthC500" Offset="(-1.77; 1.48; 0)" >
 				<AddonsShift Offset="(-0.2; 0; 0)" Types="LogLift" />

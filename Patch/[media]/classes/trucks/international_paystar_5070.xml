@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mudguard Collisions="Default" Mass="2.5">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="2.5">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
@@ -120,7 +120,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(2.83; 1.53; 0)" Size="1.219" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="us_truck_old_paystar5070" Type="e_us_truck_old_paystar5070, e_us_truck_old_top" />
+		<EngineSocket Default="us_truck_old_paystar5070" Type="e_us_truck_old_paystar5070" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(0.39; 1.872; 0.5)"
@@ -303,7 +303,7 @@
 						<Motor Damping="0.5" Spring="40" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body _template="BoneSunshield" AngularDamping="2" ModelFrame="BoneSunshieldLeft_cdt"  _template="Gravity"/>
+				<Body _template="BoneSunshield" AngularDamping="2" ModelFrame="BoneSunshieldLeft_cdt"/>
 				<Body
 					_template="BoneSunshield"
 					AngularDamping="2"
@@ -432,6 +432,7 @@
 			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneNavistar, MetalDetector, InternationalPaystar5070CabinProtector" Offset="(-2.76; 1.231; 0)" />
 			<Socket Names="SaddleLow" Offset="(-3.734; 1.21; 0)" />
 			<Socket Names="SaddleHigh" Offset="(-3.734; 1.21; 0)" />
+			<Socket Names="PaystarDumper" Offset="(-1.55; -0.11; 0)" NamesBlock="LogLift, FordF750Trunk, Azov73210SpareWheel, Pacific512SpareWheel, MinicraneNavistar, MetalDetector, InternationalPaystar5070CabinProtector" />
 			<Socket Names="FrameAddonTowPlatform"  Offset="(-2.05; 1.305; 0)" NamesBlock="MinicraneNavistar, MetalDetector, InternationalPaystar5070CabinProtector" />
 			<Socket Names="FrameAddonTow"  Offset="(-3.2; 1.23; 0)" NamesBlock="MinicraneNavistar, MetalDetector, InternationalPaystar5070CabinProtector" />
 			<Socket Names="FrameAddon" NamesBlock="InternationalPaystar5070CabinProtector" Offset="(-2.7; 1.23; 0)" ParentFrame="BoneChassis_cdt">

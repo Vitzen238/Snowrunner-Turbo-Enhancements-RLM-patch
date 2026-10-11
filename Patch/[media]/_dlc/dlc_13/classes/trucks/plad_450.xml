@@ -24,8 +24,8 @@
 			Torque="default"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<SideMirror Collisions="Default" Mass="5">
+	<Body>
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -35,7 +35,7 @@
 				<Motor Damping="0.7" Spring="200" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -45,7 +45,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Lifter Collisions="None" Mass="6">
+		<Lifter GravityFactor="1.4" Collisions="None" Mass="6">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -55,7 +55,7 @@
 				<Motor Damping="0.7" Spring="200" Type="Spring" />
 			</Constraint>
 		</Lifter>
-		<Key Collisions="None" Mass="1">
+		<Key GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -65,7 +65,7 @@
 				<Motor Damping="0.005" Spring="0.005" Type="Spring" />
 			</Constraint>
 		</Key>
-		<MudguardFront Collisions="None" Mass="10">
+		<MudguardFront GravityFactor="1.4" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -160,7 +160,7 @@
 		</Shakers>
 		<GearboxSocket Default="g_special_yamal" Type="gearboxes_special_plad_450" />
 		<FuelTank DamageCapacity="110" />
-		<EngineSocket Default="us_special_plad_450_datz12l" Type="e_us_truck_old_plad_450" />
+		<EngineSocket Default="us_truck_old_paystar5070" Type="e_us_truck_old_paystar5070, e_us_truck_old_plad_450" />
 		<Driver Pos="(2.512; 2.543; 0.547)" SteeringWheelPos="(2.872; 2.902; 0.546)" AnimationSet="HeavyTruck" ParentFrame="BoneCabin_cdt" />
 		<Damage>
 			<DamageArea Type="FuelTank" Min="(-0.722, 0.807, -1.298)" Max="(0.562, 1.455, 1.298)" ParentFrame="BoneChassis_cdt" />
@@ -195,16 +195,16 @@
 		<Intake Dir="(1; 0; 0)" Origin="(5.434; 2.190; 0)" Size="1.219" />
 		
 		<CompatibleWheels OffsetZ="0.025" Scale="0.75" Type="wheels_plad_450" />
-		<CompatibleWheels OffsetZ="0.072" Scale="0.65" Type="wheels_heavy_single_s" />
-		<CompatibleWheels OffsetZ="0.072" Scale="0.65" Type="wheels_heavy_offroad_single_s" />
+		<CompatibleWheels OffsetZ="0.03" Scale="0.65" Type="wheels_heavy_single_s" />
+		<CompatibleWheels OffsetZ="0.072" Scale="0.806" Type="wheels_heavy_offroad_single_s" />
 		<!--<CompatibleWheels OffsetZ="0.098" Scale="0.745" Type="wheels_heavy_mudtires_single_s" />-->
-		<CompatibleWheels OffsetZ="0.098" Scale="0.745" Type="wheels_heavy_mudtires_single2_s" />
+		<!--<CompatibleWheels OffsetZ="0.098" Scale="0.745" Type="wheels_heavy_mudtires_single2_s" />-->
 		
 		<!--<CompatibleWheels OffsetZ="0.12" Scale="0.8" Type="wheels_plad_450" />-->
-		<!--<CompatibleWheels OffsetZ="0.12" Scale="0.8" Type="wheels_heavy_single_s" />-->
+		<!--<CompatibleWheels OffsetZ="0.03" Scale="0.806" Type="wheels_heavy_single_s" />-->
 		<!--<CompatibleWheels OffsetZ="0.10" Scale="0.8" Type="wheels_heavy_offroad_single_s" />-->
 		<!--<CompatibleWheels OffsetZ="0.15" Scale="0.8" Type="wheels_heavy_mudtires_single_s" />-->
-		<CompatibleWheels OffsetZ="0.15" Scale="0.8" Type="wheels_heavy_mudtires_single2_s" />
+		<!--<CompatibleWheels OffsetZ="0.15" Scale="0.8" Type="wheels_heavy_mudtires_single2_s" />-->
 		
 		<!--PREMIUM-->
 		<CompatibleWheels Scale="0.806" Type="wheels_faun_goliath_single1/3526085" />

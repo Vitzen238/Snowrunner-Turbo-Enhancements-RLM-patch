@@ -16,8 +16,8 @@
 			ParentFrame="BoneChassis_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity" >
-		<TieRod Mass="1">
+	<Body>
+		<TieRod GravityFactor="1.4" Mass="1">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -32,7 +32,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -42,7 +42,7 @@
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -52,7 +52,7 @@
 				<Motor Damping="1" Spring="250" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard Collisions="Default" Mass="5">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -62,7 +62,7 @@
 				<Motor Damping="1" Spring="1" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Mirror Collisions="Default" Mass="5">
+		<Mirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -214,10 +214,10 @@
 			<Body _template="Mirror" ModelFrame="BoneMirrorLeft_cdt" />
 			<Body _template="Mirror" Mass="4.8" ModelFrame="BoneMirrorRight_cdt" />
 			<Body _template="Sunshield" ModelFrame="BoneSunShield_cdt" />
-			<Body _template="Mudguard" Collisions="None" ModelFrame="BoneMudguardR_cdt">
+			<Body _template="Mudguard" Collisions="Default" ModelFrame="BoneMudguardR_cdt">
 				<Constraint MinLimit="-10" MaxLimit="12" />
 			</Body>
-			<Body _template="Gravity" _template="Mudguard" Collisions="None" ModelFrame="BoneMudguardL_cdt">
+			<Body _template="Mudguard" Collisions="Default" ModelFrame="BoneMudguardL_cdt">
 				<Constraint MinLimit="-10" MaxLimit="12" />
 			</Body>
 			<Body  _template="Gravity" Collisions="Default" Mass="0.5" ModelFrame="BoneLock_cdt">

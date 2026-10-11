@@ -3,21 +3,23 @@
 	<Wheel>
 		<RearAxle
 			Location="rear"
-			SteeringAngle="-5"
+			SteeringAngle="-13"
 			Torque="default"
 			ConnectedToHandbrake="true"
 			ParentFrame="BoneChassis_cdt"
 		/>
 		<FrontAxle
 			Location="front"
-			SteeringAngle="24"
-			Torque="full"
+			SteeringAngle="20"
+			SteeringJointOffset="0.35"
+			SteeringCastor="0"
+			Torque="default"
 			ConnectedToHandbrake="true"
-			ParentFrame="BoneChassis_cdt"
+			ParentFrame="BoneAxle1_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<SideMirror Collisions="Default" Mass="5">
+	<Body>
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -32,32 +34,36 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.02"
-		DiffLockType="Installed"
+		DiffLockType="Always"
 		EngineIconMesh="env/engine_futom_7290ra"
 		EngineIconScale="1"
-		EngineStartDelay="0.6"
-		ExhaustStartTime="0.6"
+		EngineStartDelay="2.6"
+		ExhaustStartTime="2.6"
 		FuelCapacity="930"
 		Responsiveness="1"
 		SteerSpeed="0.015"
 		TruckImage="futom5000mchr"
 		TruckType="HEAVY"
 	>
-		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<WinchUpgradeSocket Default="w_rope" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
 			DefaultRim="rim"
 			DefaultTire="tire"
 			DefaultWheelType="wheels_futom_7290ra"
 		>
-			<Wheel _template="FrontAxle" Pos="(1.423; 1.019; 1.233)" />
-			<Wheel _template="FrontAxle" RightSide="true" Pos="(1.423; 1.019; 1.233)" />
-			<Wheel _template="RearAxle" Pos="(-2.177; 1.019; 1.233)" />
-			<Wheel _template="RearAxle" RightSide="true" Pos="(-2.177; 1.019; 1.233)" />
+			<Wheel _template="FrontAxle" Pos="(1.423; 1.019; 1.20)" />
+			<Wheel _template="FrontAxle" RightSide="true" Pos="(1.423; 1.019; 1.20)" />
+			<Wheel _template="RearAxle" Pos="(-2.177; 1.019; 1.20)" />
+			<Wheel _template="RearAxle" RightSide="true" Pos="(-2.177; 1.019; 1.20)" />
 		</Wheels>
+		<CompatibleWheels OffsetZ="-0.00" Scale="1.075" Type="wheels_futom_7290ra" />
+		<CompatibleWheels OffsetZ="0.42" Scale="1.075" Type="wheels_extend_futom_7290ra" />
+		<CompatibleWheels OffsetZ="0.02" Scale="1" Type="wheels_superheavy_single" />
+		<CompatibleWheels OffsetZ="0.02" Scale="1" Type="wheels_superheavy_mudtires" />
 		<SuspensionSocket
 			Default="futom_7290ra_suspension_default"
 			Type="s_futom_7290ra"
-			MaxWheelRadiusWithoutSuspension="1"
+			MaxWheelRadiusWithoutSuspension="1.1"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
 		<SteeringRack Frame="BoneRack" FrameSteerLeft="BoneRackLeft" FrameSteerRight="BoneRackRight" RackHalfSizeZ="0.679" />
@@ -159,10 +165,6 @@
 			<DamageArea Type="FuelTank" Min="(-0.916; 0.767; 0.877)" Max="(0.094; 2.015; 1.227)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<EngineSocket Default="us_futom_7290ra_engine_0" Type="e_us_futom_7290ra_special" />
-		<CompatibleWheels Scale="1" Type="wheels_futom_7290ra" />
-		<CompatibleWheels OffsetZ=".48" Scale="1" Type="wheels_extend_futom_7290ra" />
-		<CompatibleWheels Scale="1" Type="wheels_superheavy_single" />
-		<CompatibleWheels Scale="1" Type="wheels_superheavy_mudtires" />
 		<Camera Center="(-1.3; 0; 0)" RadiusMultiplier="0.9">
 			<Cockpit
 				_template="Default"
@@ -242,10 +244,29 @@
 		<Body _template="Gravity"
 			CenterOfMassOffset="(-0.5; -0.3; 0)"
 			ImpactType="Truck"
-			Mass="13260"
+			Mass="10425"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
+			<Body _template="Gravity" Mass="2046" ModelFrame="BoneAxle1_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-6"
+					MaxLimit="6"
+				>
+					<Motor Damping="120" Spring="1" Type="Spring" />
+				</Constraint>
+				<Body _template="TieRod" ModelFrame="BoneTieRod1_cdt">
+					<Constraint
+						Type="Prismatic"
+						AxisLocal="(0; 0; -1)"
+						Name="TieRodSteer"
+						MinLimit="-0.0835"
+						MaxLimit="0.0835"
+					/>
+				</Body>
+			</Body>
 			<Body _template="Gravity"
 				ImpactType="Truck"
 				Mass="810"
@@ -336,22 +357,13 @@
 			>
 				<Constraint Type="Fixed" />
 			</Body>
-			<Body _template="TieRod" ModelFrame="BoneTieRod1_cdt">
-				<Constraint
-					Type="Prismatic"
-					AxisLocal="(0; 0; -1)"
-					Name="TieRodSteer"
-					MinLimit="-0.0835"
-					MaxLimit="0.0835"
-				/>
-			</Body>
 			<Body _template="TieRod" ModelFrame="BoneTieRod2_cdt">
 				<Constraint
 					Type="Prismatic"
 					AxisLocal="(0; 0; -1)"
 					Name="TieRodSteer2"
-					MinLimit="-0.0835"
-					MaxLimit="0.0835"
+					MinLimit="-0.06"
+					MaxLimit="0.06"
 				/>
 			</Body>
 		</Body>
@@ -459,6 +471,7 @@
 		UnlockByExploration="true"
 		UnlockByRank="1"
 	>
+		<WinchSocket Pos="(2.2; 2.432; 0)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(-3.095; 1.252; 0)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(3.217; 0.966; 0)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(3.217; 0.966; 0.867)" ParentFrame="BoneChassis_cdt" />
@@ -627,23 +640,23 @@
 		</IKBone>
 		
 		<IKBone ModelFrame="BoneFrontRackLBase" ParentFrame="BoneTieRod1_cdt">
-			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge2" />
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
 				AttachToFrame="BoneRackLeft"
 				ModelFrame="BoneFrontRackL"
 			>
-				<IKJoint AxisLocal="(0; 0; -1)" Type="Slider" />
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
 			</IKBone>
 		</IKBone>
 		<IKBone ModelFrame="BoneFrontRackRBase" ParentFrame="BoneTieRod1_cdt">
-			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge2" />
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
 				AttachToFrame="BoneRackRight"
 				ModelFrame="BoneFrontRackR"
 			>
-				<IKJoint AxisLocal="(0; 0; -1)" Type="Slider" />
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
 			</IKBone>
 		</IKBone>
 		
@@ -668,4 +681,7 @@
 			</IKBone>
 		</IKBone>
 	</AutomaticIK>
+	<FuelMass>
+		<Body Mass="11214"/>
+	</FuelMass>
 </Truck>

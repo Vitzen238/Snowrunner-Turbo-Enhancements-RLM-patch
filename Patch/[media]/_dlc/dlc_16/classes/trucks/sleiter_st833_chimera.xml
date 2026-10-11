@@ -165,7 +165,7 @@
 		<Intake Dir="(0; 1; 0)" Origin="(3.083; 3.858; 0)" Size="0.155" />
 		<Intake Dir="(1; 0; 0)" Origin="(4.554; 2.16; 0)" Size="0.800" />
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
-		<FuelTank DamageCapacity="150" />
+		<FuelTank DamageCapacity="20" />
 		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy, e_us_truck_old_heavy_sleiter_mfk816" />
 		<Driver
 			AnimationSet="HeavyTruck"
@@ -191,7 +191,7 @@
 			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/sleiter_chimera_arrow_07" Org="(4.228; 2.91; 0.530)" OutputAngles="(-135; 135)" />
 		</Dashboard>
 		<Damage>
-			<DamageArea Type="Engine" Min="(2.468; 1.376; -1.294)" Max="(4.614; 2.614; 1.294)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="Engine" Min="(2.46; 1.376; -0.5)" Max="(4.5; 2.614; 0.5)" ParentFrame="BoneCabinTwist_cdt" />
 			<DamageArea Type="FuelTank" Min="(-0.695; 0.774; 0.62)" Max="(0.508; 1.704; 1.437)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(-0.695; 0.774; -1.437)" Max="(0.508; 1.704; -0.62)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
@@ -601,6 +601,11 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SleiterST833ChimeraRoofrack" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket
+				Names="Azov4220AntarcticBeacon"
+				Offset="(-0.6; 0.075; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

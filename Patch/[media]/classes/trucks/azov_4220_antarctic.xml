@@ -36,8 +36,8 @@
 			Size="0.05"
 		/>
 	</Flare>
-	<Body _template="Gravity">
-		<Sunshield Collisions="None" Mass="5">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -47,7 +47,7 @@
 				<Motor Damping="0.7" Spring="20" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<StairsPrismatic Mass="10">
+		<StairsPrismatic GravityFactor="1.4" Mass="10">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Prismatic"
@@ -57,7 +57,7 @@
 				<Motor Damping="10" Spring="100" Type="Spring" />
 			</Constraint>
 		</StairsPrismatic>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"

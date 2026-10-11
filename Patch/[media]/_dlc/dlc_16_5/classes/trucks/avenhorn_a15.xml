@@ -25,8 +25,8 @@
 			ParentFrame="BoneChassis_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Sunshield Collisions="None" Mass="3">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Chain Mass="60" >
+		<Chain GravityFactor="1.4" Mass="60" >
 			<Constraint
 				PivotOffset="(0.000; 0.000; 0.000)"
 				Type="Ragdoll"
@@ -53,7 +53,7 @@
 				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
 			</Constraint>
 		</Chain>
-		<FireEx1 Collisions="None" Mass="2">
+		<FireEx1 GravityFactor="1.4" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -63,7 +63,7 @@
 				<Motor Damping="0.2" Spring="3" Type="Spring" />
 			</Constraint>
 		</FireEx1>
-		<FireEx2 Collisions="None" Mass="2">
+		<FireEx2 GravityFactor="1.4" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"

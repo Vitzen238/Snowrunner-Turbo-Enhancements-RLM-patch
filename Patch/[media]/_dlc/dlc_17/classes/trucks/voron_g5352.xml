@@ -25,8 +25,8 @@
 			Torque="default"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Mudguard Collisions="None" Mass="5">
+	<Body>
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping="3" Spring="5" Type="Spring" />
 			</Constraint>	
 		</Mudguard>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; -1)"
 				Type="Hinge"
@@ -173,7 +173,7 @@
 		<!--<CompatibleWheels OffsetZ="0.1" Scale="0.66" Type="wheels_heavy_offroad_single_voron_g5352" />-->
 		<!--<CompatibleWheels OffsetZ="0.1" Scale="0.63" Type="wheels_heavy_mudtires_single" />-->
 		<!--<CompatibleWheels OffsetZ="0.1" Scale="0.66" Type="wheels_heavy_mudtires_single_voron_g5352" />-->
-		<CompatibleWheels OffsetZ="0.1" Scale="0.63" Type="wheels_heavy_mudtires_single2" />
+		<!--<CompatibleWheels OffsetZ="0.1" Scale="0.63" Type="wheels_heavy_mudtires_single2" />-->
 		<!--<CompatibleWheels OffsetZ="0.1" Scale="0.66" Type="wheels_heavy_mudtires_single2_voron_g5352" />-->
 		<!--PREMIUM-->
 		<CompatibleWheels Scale="0.63" Type="wheels_ural432001_single1/3526085" />
@@ -499,23 +499,23 @@
 		<AddonSockets DefaultAddon="frame_addon_voron_g5352_kung" >
 			<!-- Cargo -->
 			<Socket Names="VoronG5352Sideboard" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" >
-				<AddonsShift Offset="(-0.36; 0; 0)" Types="VoronG5352TowbarExtend" />
-				<AddonsShift Offset="(-0.6; 0; 0)" Types="MinicraneRU"/>
-				<AddonsShift Offset="(0.65; 0; 0)" Types="MinicraneRUVoronG5352"/>
+				<AddonsShift Offset="(-0.73; 0; 0)" Types="MinicraneRUVoronG5352"/>
+				<AddonsShift Offset="(-0.30; 0; 0)" Types="VoronG5352TowbarExtend, MinicraneRUVoronG5352"/>
+				<AddonsShift Offset="(0.25; 0; 0)" Types="MinicraneRUVoronG5352Rear"/>
 			</Socket>
 			<Socket Names="VoronG5352Kung" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" >
-				<AddonsShift Offset="(-0.36; 0; 0)" Types="VoronG5352TowbarExtend" />
-				<AddonsShift Offset="(-0.6; 0; 0)" Types="MinicraneRU"/>
-				<AddonsShift Offset="(0.65; 0; 0)" Types="MinicraneRUVoronG5352"/>
+				<AddonsShift Offset="(-0.73; 0; 0)" Types="MinicraneRUVoronG5352"/>
+				<AddonsShift Offset="(-0.30; 0; 0)" Types="VoronG5352TowbarExtend, MinicraneRUVoronG5352"/>
+				<AddonsShift Offset="(0.25; 0; 0)" Types="MinicraneRUVoronG5352Rear"/>
 			</Socket>
 			<Socket Names="FrameAddonKung" Offset="(-2.15; 1.35; 0)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0.0; -0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0.0; 0.1)" />
 				
-				<AddonsShift Offset="(0.0; 0.0; 0)" Types="MinicraneRU" />
-				<AddonsShift Offset="(1.2; 0.0; 0)" Types="MinicraneRUVoronG5352" />
+				<AddonsShift Offset="(0.0; 0.0; 0)" Types="MinicraneRUVoronG5352" />
+				<AddonsShift Offset="(1.2; 0.0; 0)" Types="MinicraneRUVoronG5352Rear" />
 				
-				<AddonsShift Offset="(-0.3; 0.0; 0)" Types="VoronG5352TowbarExtend" />
+				<!--<AddonsShift Offset="(-0.3; 0.0; 0)" Types="VoronG5352TowbarExtend" />-->
 			</Socket>
 			<Socket Names="VoronG5352HeavyRepair" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 			<!-- Maintain -->
@@ -563,7 +563,7 @@
 		<AddonSockets>
 			<Socket Names="LogLiftPaderaSTD4" Offset="(-0.07; -0.09; 0)" NamesBlock="VoronG5352Sideboard, FrameAddonMaintainer, FrameAddonTank, VoronG5352Kung, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonTow, BigCraneRu, BigCraneVoronG5352, FrameAddonLogMediumHigh02, VoronG5352HeavyRepair, SaddleMotorized" />
 			<Socket
-				Names="MinicraneRU"
+				Names="MinicraneRUVoronG5352"
 				Offset="(1.22; 1.4; 0)"
 				ParentFrame="BoneCabinTwist_cdt"
 				NamesBlock="FrameAddonMaintainer, FrameAddonTank, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonTow, BigCraneRu, BigCraneVoronG5352, FrameAddonLogMediumHigh02, SaddleMotorized"
@@ -571,12 +571,14 @@
 				<ExtraParent ParentFrame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 				<ExtraParent ParentFrame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 				<AddonsShift Offset="(-2.37; 0.175; 0)" Types="VoronG5352HeavyRepair" />
+				<AddonsShift Offset="(-0.22; 0; 0)" Types="VoronG5352Kung, VoronG5352TowbarExtend"/>
+				<AddonsShift Offset="(-0.22; 0; 0)" Types="VoronG5352Sideboard, VoronG5352TowbarExtend"/>
 				<AddonsShift Offset="(-1.5; 0; 0)" Types="SaddleHigh" TrailerNamesBlock="LargeSemitrailerOiltank" />
 				<AddonsShift Offset="(-1.0; 0; 0)" Types="SaddleLow" TrailerNamesBlock="LargeSemitrailerOiltank" />
 				<!--<AddonsShift Offset="(0.15; 0; 0)" Types="MinicraneRUVoronG5352" />-->
 			</Socket>
 			<Socket
-				Names="MinicraneRUVoronG5352"
+				Names="MinicraneRUVoronG5352Rear"
 				Offset="(-4.17; 1.265; 0)"
 				ParentFrame="BoneChassis_cdt"
 				NamesBlock="FrameAddonMaintainer, FrameAddonTank, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonTow, BigCraneRu, BigCraneVoronG5352, FrameAddonLogMediumHigh02, VoronG5352HeavyRepair, FrameAddonLogShortVoronG5352"

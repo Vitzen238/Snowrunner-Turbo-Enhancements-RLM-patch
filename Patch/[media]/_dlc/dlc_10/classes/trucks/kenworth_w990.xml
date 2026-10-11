@@ -19,8 +19,8 @@
 	<Flare>
 		<MarkerBeacon Color="g(125; 81; 18) x 0.7" Size="0.3" />
 	</Flare>
-	<Body _template="Gravity">
-		<Mirror Collisions="Default" Mass="1.5">
+	<Body>
+		<Mirror GravityFactor="1.4" Collisions="Default" Mass="1.5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -30,7 +30,7 @@
 				<Motor Damping="1" Spring="250" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -40,7 +40,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Antenna Collisions="None" Mass="2">
+		<Antenna GravityFactor="1.4" Collisions="None" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -53,7 +53,7 @@
 				<ConeMotor Damping="4" Spring="150" Type="Spring" />
 			</Constraint>
 		</Antenna>
-		<Mudguard Collisions="None" Mass="5">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -80,7 +80,7 @@
 		TruckType="HIGHWAY"
 		
 	>
-		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<WinchUpgradeSocket Default="w_rope" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="offroad"
@@ -149,7 +149,7 @@
 		<LimitedFluid Center="(1.144; 0.718; 0.790)" LengthX="1.059" RadiusY="0.314" RadiusZ="0.314" Type="Cylinder"/>-->
 		<Intake Dir="(1; 0; 0)" Origin="(5.009; 1.687; 0)" Size="1" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="50" />
+		<FuelTank DamageCapacity="10" />
 		<ExtraWheels
 			Rim="rim_1"
 			Scale="0.56"
@@ -181,7 +181,8 @@
 		</Dashboard>
 		<Damage>
 			<DamageArea Type="Engine" Min="(3.158, 0.807, -0.727)" Max="(5.016, 2.166, 0.727)" ParentFrame="BoneCabin_cdt" />
-			<DamageArea Type="FuelTank" Min="(0.107, 0.401, -1.113)" Max="(1.699, 1.097, 1.113)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(0.107, 0.401, -0.4)" Max="(1.699, 1.097, -1.113)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(0.107, 0.401, 0.4)" Max="(1.699, 1.097, 1.113)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.573" Type="wheels_kenworth_c500" />
 		<CompatibleWheels Scale="0.56" Type="wheels_kenworth_990" />

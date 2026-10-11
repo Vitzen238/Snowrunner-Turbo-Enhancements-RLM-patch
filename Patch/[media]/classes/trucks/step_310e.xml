@@ -25,8 +25,8 @@
 			Size="0.2"
 		/>
 	</Flare>
-	<Body _template="Gravity">
-		<WireWiggle Collisions="None" Mass="1.5">
+	<Body>
+		<WireWiggle GravityFactor="1.4" Collisions="None" Mass="1.5">
 			<Constraint
 				LinearLimitsX="(-0.1;0.1)"
 				LinearLimitsY="(-0.02;0.02)"
@@ -36,7 +36,7 @@
 				<Motor Damping="2" Spring="250" Type="Spring" />
 			</Constraint>
 		</WireWiggle>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -46,7 +46,7 @@
 				<Motor Damping="1" Spring="250" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard Collisions="Default" Mass="10">
+		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
@@ -174,7 +174,7 @@
 			Origin="(0.83; 0.607; -0.232)"
 			Speed="3.82"
 		/>
-		<EngineSocket Default="ru_truck_old_engine_step_310e" Type="e_ru_truck_old_step_310e, e_ru_truck_old" />
+		<EngineSocket Default="ru_truck_old_engine_step_310e" Type="e_ru_truck_old_step_310e" />
 		<Driver
 			AnimationSet="Truck"
 			Pos="(2.533; 1.616; 0.44)"
@@ -204,6 +204,10 @@
 		<CompatibleWheels OffsetZ="0.06" Scale="0.56" 	Type="wheels_scout_btr" />
 		<CompatibleWheels OffsetZ="0.04" Scale="0.55" Type="wheels_tatra_force_815_7" />
 		<CompatibleWheels Scale="0.57" OffsetZ="0.06" RearOffsetZ="0.07" Type="wheels_heavy_mudtires_tayga" />
+		<!--JAT DLC-->
+		<!--<CompatibleWheels RearOffsetZ="0.04" Scale="0.51" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.51" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.51" Type="wheels_heavy_allterrain_double" />-->
 
 		<!--PREMIUM-->
 		<CompatibleWheels Scale="0.51" Type="wheels_zil130_double1/3526085"	OffsetZ="-0.010" RearOffsetZ="0.075" />

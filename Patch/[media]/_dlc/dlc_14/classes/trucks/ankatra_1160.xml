@@ -15,8 +15,8 @@
 			Torque="default"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Suspension Collisions="None" Mass="1090">
+	<Body>
+		<Suspension GravityFactor="1.4" Collisions="None" Mass="1090">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -26,7 +26,7 @@
 				<Motor Damping="200" Spring="10" Type="Spring" />
 			</Constraint>
 		</Suspension>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping="0.7" Spring="200" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Sunshield Collisions="None" Mass="3">
+		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -205,7 +205,7 @@
 			<Axle Frame="BoneAxle1" />
 		</Axles>
 	</TruckData>
-	<Snorkel Origin="(0.376; 1.8; 0)" ParentFrame="BoneChassis_cdt" />
+	<Snorkel Origin="(0.376; 1.9; 0)" ParentFrame="BoneChassis_cdt" />
 	<PhysicsModel Mesh="trucks/ankatra_1160">
 		<NetSync Legacy="false" />
 		<Body _template="Gravity"
@@ -374,6 +374,7 @@
 		UnlockByExploration="true"
 		UnlockByRank="1"
 	>
+		<WinchSocket Pos="(0.376; 1.9; -0.11)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(2.106; 0.873; 0)" ParentFrame="BoneChassis_cdt" />
 		<!--<WinchSocket Pos="(2.106; 0.873; 0.249)" ParentFrame="BoneChassis_cdt" />-->
 		<WinchSocket Pos="(-0.037; 0.85; -0.35)" ParentFrame="BoneChassis_cdt" />

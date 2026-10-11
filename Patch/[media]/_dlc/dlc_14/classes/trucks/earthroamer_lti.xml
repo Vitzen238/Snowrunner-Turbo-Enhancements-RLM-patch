@@ -16,10 +16,10 @@
 			ConnectedToHandbrake="true"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<MudGuard
+	<Body>
+		<MudGuard GravityFactor="1.4"
 			Mass="1"
-			Collisions="None"
+			Collisions="Default"
 		>
 			<Constraint
 				AxisLocal="(0; 0; 1)"
@@ -30,7 +30,7 @@
 				<Motor Damping="0.5" Spring="1" Type="Spring" />
 			</Constraint>
 		</MudGuard>
-		<SunSheld
+		<SunSheld GravityFactor="1.4"
 			Mass="2"
 			Collisions="None"
 		>

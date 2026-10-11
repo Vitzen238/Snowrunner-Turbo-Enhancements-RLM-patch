@@ -14,8 +14,8 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Mirror Collisions="Default" >
+	<Body>
+		<Mirror GravityFactor="1.4" Collisions="Default" >
 			<Constraint
 				LinearLimitsX="(-.005;.005)"
 				LinearLimitsY="(-.005; .02)"

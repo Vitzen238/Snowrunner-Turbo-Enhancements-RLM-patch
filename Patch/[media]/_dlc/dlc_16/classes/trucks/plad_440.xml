@@ -28,7 +28,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<MudguardFront GravityFactor="1.4" Collisions="None" Mass="10">
+		<MudguardFront GravityFactor="1.4" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -143,7 +143,7 @@
 		<LimitedFluid Center="(0.802; 0.772; 0.638)" SizeX="1.379" SizeY="0.436" SizeZ="0.364" Type="Box" />-->
 		<Intake Dir="(1; 0; 0)" Origin="(3.405; 1.47; 0.014)" Size="0.55" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="80" />
+		<FuelTank DamageCapacity="10" />
 		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_plad_440" />
 		<Driver AnimationSet="Truck" Pos="(0.84; 1.73; 0.485)" SteeringWheelPos="(1.22; 2.058; 0.479)" />
 		<Dashboard>

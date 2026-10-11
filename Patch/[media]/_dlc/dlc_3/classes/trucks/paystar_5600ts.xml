@@ -45,8 +45,8 @@
 			Size="0.1"
 		/>
 	</Flare>
-	<Body _template="Gravity">
-		<Twist ImpactType="Truck">
+	<Body>
+		<Twist GravityFactor="1.4" ImpactType="Truck">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				PivotOffset="(0; 0; 0)"
@@ -57,7 +57,7 @@
 				<Motor Damping="10000" Spring="250000" Type="Spring" />
 			</Constraint>
 		</Twist>
-		<TieRodR Collisions="None" Mass="1">
+		<TieRodR GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; -1)"
 				Type="Hinge"
@@ -72,7 +72,7 @@
 				/>
 			</Constraint>
 		</TieRodR>
-		<TieRodL Collisions="None" Mass="1">
+		<TieRodL GravityFactor="1.4" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -87,7 +87,7 @@
 				/>
 			</Constraint>
 		</TieRodL>
-		<SunShield Collisions="None" Mass="2">
+		<SunShield GravityFactor="1.4" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -97,7 +97,7 @@
 				<Motor Damping="0.5" Spring="20" Type="Spring" />
 			</Constraint>
 		</SunShield>
-		<SideMirror Collisions="Default" Mass="50">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="50">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -107,7 +107,7 @@
 				<Motor Damping="10" Spring="1000" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<MirrorRagdoll Collisions="None" Mass="3">
+		<MirrorRagdoll GravityFactor="1.4" Collisions="None" Mass="3">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -120,7 +120,7 @@
 				<ConeMotor Damping="1" Spring="130" Type="Spring" />
 			</Constraint>
 		</MirrorRagdoll>
-		<Antenna Collisions="Default" Mass="2">
+		<Antenna GravityFactor="1.4" Collisions="Default" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -368,7 +368,7 @@
 					</Constraint>
 				</Body>
 			</Body>
-			<Body _template="Gravity"
+			<Body
 				_template="Twist"
 				CenterOfMassOffset="(1; 0; 0)"
 				Mass="3000"
@@ -990,6 +990,16 @@
 				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
+		<IKBone ModelFrame="BoneTieRodR1_IK1" ParentFrame="BoneTieRodR1_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackR1"
+				ModelFrame="BoneTieRodR1_IK1b"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
 		<IKBone ModelFrame="BoneTieRod_L2_IK1" ParentFrame="BoneTieRodL2_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
@@ -1006,16 +1016,6 @@
 				AttachOffset="(0; 0; 0)"
 				AttachToFrame="BoneRackL2"
 				ModelFrame="BoneTieRod_L2_IK2b"
-			>
-				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
-		<IKBone ModelFrame="BoneIKPistonFrontLa" ParentFrame="BoneCabin_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneAxleFront2"
-				ModelFrame="BoneIKPistonFrontLb"
 			>
 				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
 			</IKBone>
@@ -1040,6 +1040,16 @@
 				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
+		<IKBone ModelFrame="BoneIKPistonFrontLa" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxleFront2"
+				ModelFrame="BoneIKPistonFrontLb"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
 		<IKBone ModelFrame="BoneIKPistonFrontRa" ParentFrame="BoneCabin_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
@@ -1053,7 +1063,7 @@
 		<IKBone ModelFrame="BoneIKSuspRear1La" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
-				AttachOffset="(0; 0; 0)"
+				AttachOffset="(0; -0.2; 0)"
 				AttachToFrame="BoneAxleRear1"
 				ModelFrame="BoneIKSuspRear1Lb"
 			>
@@ -1063,7 +1073,7 @@
 		<IKBone ModelFrame="BoneIKSuspRear2La" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
-				AttachOffset="(0; 0; 0)"
+				AttachOffset="(0; -0.2; 0)"
 				AttachToFrame="BoneAxleRear2"
 				ModelFrame="BoneIKSuspRear2Lb"
 			>
@@ -1073,7 +1083,7 @@
 		<IKBone ModelFrame="BoneIKSuspRear3La" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
-				AttachOffset="(0; 0; 0)"
+				AttachOffset="(0; -0.2; 0)"
 				AttachToFrame="BoneAxleRear3"
 				ModelFrame="BoneIKSuspRear3Lb"
 			>
@@ -1083,7 +1093,7 @@
 		<IKBone ModelFrame="BoneIKSuspRear1Ra" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
-				AttachOffset="(0; 0; 0)"
+				AttachOffset="(0; -0.2; 0)"
 				AttachToFrame="BoneAxleRear1"
 				ModelFrame="BoneIKSuspRear1Rb"
 			>
@@ -1093,7 +1103,7 @@
 		<IKBone ModelFrame="BoneIKSuspRear2Ra" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
-				AttachOffset="(0; 0; 0)"
+				AttachOffset="(0; -0.2; 0)"
 				AttachToFrame="BoneAxleRear2"
 				ModelFrame="BoneIKSuspRear2Rb"
 			>
@@ -1103,21 +1113,72 @@
 		<IKBone ModelFrame="BoneIKSuspRear3Ra" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
-				AttachOffset="(0; 0; 0)"
+				AttachOffset="(0; -0.2; 0)"
 				AttachToFrame="BoneAxleRear3"
 				ModelFrame="BoneIKSuspRear3Rb"
 			>
 				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
-		<IKBone ModelFrame="BoneTieRodR1_IK1" ParentFrame="BoneTieRodR1_cdt">
+		
+		<IKBone ModelFrame="BoneIKPistonRear1Ra" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneRackR1"
-				ModelFrame="BoneTieRodR1_IK1b"
+				AttachToFrame="BoneIKSuspRear1Rb"
+				ModelFrame="BoneIKPistonRear1Rb"
 			>
-				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneIKPistonRear1La" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneIKSuspRear1Lb"
+				ModelFrame="BoneIKPistonRear1Lb"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneIKPistonRear2Ra" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneIKSuspRear2Rb"
+				ModelFrame="BoneIKPistonRear2Rb"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneIKPistonRear2La" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneIKSuspRear2Lb"
+				ModelFrame="BoneIKPistonRear2Lb"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneIKPistonRear3Ra" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneIKSuspRear3Rb"
+				ModelFrame="BoneIKPistonRear3Rb"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneIKPistonRear3La" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneIKSuspRear3Lb"
+				ModelFrame="BoneIKPistonRear3Lb"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
 	</AutomaticIK>

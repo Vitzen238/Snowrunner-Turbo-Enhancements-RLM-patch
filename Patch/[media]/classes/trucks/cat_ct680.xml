@@ -19,8 +19,8 @@
 			<ExtraParent Frame="BoneChassis_cdt" />
 		</Cabin2Chassis>
 	</Socket>
-	<Body _template="Gravity">
-		<Sunshield Collisions="Default" Mass="1">
+	<Body>
+		<Sunshield GravityFactor="1.4" Collisions="Default" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -30,7 +30,7 @@
 				<Motor Damping="0.3" Spring="25" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -40,7 +40,7 @@
 				<Motor Damping="1" Spring="250" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Antenna Collisions="None" Mass="2">
+		<Antenna GravityFactor="1.4" Collisions="None" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -139,8 +139,8 @@
 		<LimitedFluid Center="(-0.173; 0.7; -0.854)" LengthX="1.34" RadiusY="0.33" RadiusZ="0.33" Type="Cylinder" />-->
 		<Intake Dir="(1; 0; 0)" Origin="(3.834; 1.479; 0)" Size="1.2" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="us_truck_modern_engine_cat_royal" Type="e_us_truck_modern, e_us_truck_modern_catroyal, e_us_truck_modern_cathx" />
+		<FuelTank DamageCapacity="10" />
+		<EngineSocket Default="us_truck_modern_engine_cat_royal" Type="e_us_truck_modern_catroyal" />
 		<Driver Pos="(1.173; 1.825; 0.488)" SteeringWheelPos="(1.555; 2.153; 0.486)" ParentFrame="BoneSeat_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.9998" Dir="(-0.944; 0.33; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/cat_ct680_arrow_01" Org="(1.876; 2.126; 0.651)" OutputAngles="(-110;30)" />
@@ -159,7 +159,7 @@
 			<Gauge Damping="0.9" Dir="(-0.838; 0.514; 0.181)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/cat_ct680_arrow_01" Org="(1.695; 2.169; -0.256)" OutputAngles="(-105;0)" />
 		</Dashboard>
 		<Damage>
-			<DamageArea Type="Engine" Min="(2; 0.55; -0.42)" Max="(3.85; 2; 0.42)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="Engine" Min="(2; 0.55; -0.42)" Max="(3.8; 2; 0.42)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(-0.93; 0.35; -1.2)" Max="(0.57; 1.1; -0.5)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.27; 0.35; 0.5)" Max="(1.77; 1.1; 1.2)" ParentFrame="BoneChassis_cdt" />
 		</Damage>

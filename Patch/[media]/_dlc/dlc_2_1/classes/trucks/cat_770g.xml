@@ -15,8 +15,8 @@
 			CamberSuspensionMultiplier="0.05"
 		/>
 	</Wheel>
-	<Body  _template="Gravity">
-		<Mudguard Mass="10">
+	<Body>
+		<Mudguard GravityFactor="1.4" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="30" Spring="20" Type="Spring" />
 			</Constraint>
