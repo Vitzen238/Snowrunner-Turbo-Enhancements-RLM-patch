@@ -29,7 +29,7 @@
 		/>
 	</Flare>
 	<Body>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="10">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>

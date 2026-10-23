@@ -16,7 +16,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<Mirror  _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -26,7 +26,7 @@
 				<Motor Damping="1" Spring="40" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; -1)"
 				Type="Hinge"
@@ -165,7 +165,7 @@
 		>
 			<Cockpit
 				_template="Default"
-				LimitsVer="(-0.4; 0.2)"
+				LimitsVer="(-0.42; 0.2)"
 				LimitsHor="(-2.6; 1.5)"
 				WindshieldDiffuseTexture="trucks/aac_58dw_glass__d_a.tga" 
 				WindshieldShadingTexture="trucks/aac_58dw_glass__sh_d.tga"
@@ -427,6 +427,7 @@
 			<Socket Names="SleiterMFK816Horn3" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
+			<Socket Names="SleiterST833ChimeraRoofrack" Offset="(-1.6; 0.065; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="SleiterMFK816Spotlight, SleiterMFK816Horn2"  />
 			<Socket Names="SleiterMFK816Roofrack" ParentFrame="BoneCabin_cdt" NamesBlock="SleiterMFK816Spotlight, SleiterMFK816Horn2" />
 		</AddonSockets>
 		<AddonSockets>

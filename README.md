@@ -4,8 +4,8 @@
 - [Latest](https://github.com/Vitzen238/Snowrunner-Turbo-Enhancements-RLM-patch/releases)
 
 ## Compatibility:
-- Snowrunner 43.0;
-- RLM 50.0.1
+- Snowrunner 44.0
+- RLM 50.1.0
 
 ## Description:
 - **I am not the author of either [Real Life Mod](https://mod.io/g/snowrunner/m/real-life-mod#description) or [Turbocharger Sound Enhancements](https://mod.io/g/snowrunner/m/sound-fixes).**

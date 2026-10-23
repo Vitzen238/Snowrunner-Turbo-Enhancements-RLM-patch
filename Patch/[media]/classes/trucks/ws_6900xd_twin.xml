@@ -1,4 +1,4 @@
-<!--Requires Separate GravityFactor="1.4"-->
+<!--Requires Separate _template="Gravity"-->
 <_templates Include="trucks">
 	<Wheel>
 		<SecondAxle
@@ -46,7 +46,7 @@
 		/>
 	</Flare>
 	<Body>
-		<Twist GravityFactor="1.4"
+		<Twist _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
 			Mass="3300"
@@ -61,7 +61,7 @@
 				<Motor Damping="100000" Spring="6000000" Type="Spring" />
 			</Constraint>
 		</Twist>
-		<TieRod GravityFactor="1.4" Mass="1">
+		<TieRod _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -76,7 +76,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<SunShield GravityFactor="1.4" Collisions="None" Mass="2">
+		<SunShield _template="Gravity" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -628,10 +628,10 @@
 			<!--444	<Flare _template="IgnitionSignalWhite" Dir="(0.707; 0.000; 0.707)" Pos="(1.423; 1.393; 1.344)" ParentFrame="BoneCabin_cdt" /> -->
 			<Flare _template="IgnitionSignalOrange" Dir="(0.707; 0; 0.707)" Pos="(-3.912; 1.578; 1.383)" />
 			<Flare _template="IgnitionSignalOrange" Dir="(-0.707; 0; 0.707)" Pos="(-4.024; 1.578; 1.384)" />
-			<!--555	<Flare _template="IgnitionSignalWhite" Dir="(0.707; 0.000; 0.707)" Pos="(-3.944; 1.393; 1.344)" /> -->
+			<!--555	<Flare _template="IgnitionSignalWhite" Dir="(0.707; 0.000; 0.707)" Pos="(-3.944; 1.393; 1.344)" />-->
 			<Flare _template="IgnitionSignalOrange" Dir="(0.707; 0; -0.707)" Pos="(-3.912; 1.578; -1.383)" />
 			<Flare _template="IgnitionSignalOrange" Dir="(-0.707; 0; -0.707)" Pos="(-4.024; 1.578; -1.384)" />
-			<!--666	<Flare _template="IgnitionSignalWhite" Dir="(0.707; 0.000; -0.707)" Pos="(-3.944; 1.393; -1.344)" /> -->
+			<!--666	<Flare _template="IgnitionSignalWhite" Dir="(0.707; 0.000; -0.707)" Pos="(-3.944; 1.393; -1.344)" />-->
 			<Flare _template="IgnitionSignalRedSmall" Pos="(-7.86; 1.498; -1.316)" />
 			<Flare _template="IgnitionSignalRedSmall" Pos="(-7.837; 1.501; -0.159)" />
 			<Flare _template="IgnitionSignalRedSmall" Pos="(-7.837; 1.501; 0)" />
@@ -704,7 +704,7 @@
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.426; 1.664; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.932; 2.13; -4.911)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.006; 2.143; 1.603)" Position="(4.48; 3.034; -0.203)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(0; 1; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.845; 1.705; -6.183)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.788; 1.117; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.701; 2.508; -4.833)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.101; 2.223; -0.174)" Position="(3.521; 2.549; -3.022)" />

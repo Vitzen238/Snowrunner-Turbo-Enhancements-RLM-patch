@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -25,7 +25,7 @@
 				<Motor Damping="0.5" Spring="25" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Mudguard GravityFactor="1.4" AngularDamping="3.0" Collisions="Default" Mass="10">
+		<Mudguard  _template="Gravity" AngularDamping="3.0" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -33,7 +33,7 @@
 				MaxLimit="10"
 			/>
 		</Mudguard>
-		<MirrorCord GravityFactor="1.4" Collisions="Default" Mass="1">
+		<MirrorCord  _template="Gravity" Collisions="Default" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -43,7 +43,7 @@
 				<Motor Damping="0.1" Spring="1" Type="Spring" />
 			</Constraint>
 		</MirrorCord>
-		<Mirror GravityFactor="1.4" Collisions="Default" Mass="1">
+		<Mirror  _template="Gravity" Collisions="Default" Mass="1">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -53,7 +53,7 @@
 				<Motor Damping=".1" Spring="200" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<ChassisCord GravityFactor="1.4" Collisions="None" Mass="1">
+		<ChassisCord  _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Prismatic"
@@ -388,7 +388,7 @@
 			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(6.557; 1.338; -0.466)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.419; 1.899; -2.148)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.809; 1.905; -0.207)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.150; 3.597; 3.415)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.611; 1.914; 1.454)" Position="(4.217; 2.831; -0.39)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(0; 0.669; -1.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13; 2; 5.834)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(0; 0.669; -1.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13; 2; 5)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.197; 1.735; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.641; 1.384; -4.536)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.479; 0.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.767; 1.805; 2.899)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.113; 1.995; -0.56)" Position="(2.776; 2.655; -4.430)" />

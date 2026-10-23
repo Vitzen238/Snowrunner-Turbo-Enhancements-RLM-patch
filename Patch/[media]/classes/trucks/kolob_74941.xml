@@ -37,7 +37,7 @@
 		/>
 	</Flare>
 	<Body>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -47,7 +47,7 @@
 				<Motor Damping="1" Spring="150" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Panel GravityFactor="1.4" Collisions="None" Mass="0.1">
+		<Panel _template="Gravity" Collisions="None" Mass="0.1">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Prismatic"

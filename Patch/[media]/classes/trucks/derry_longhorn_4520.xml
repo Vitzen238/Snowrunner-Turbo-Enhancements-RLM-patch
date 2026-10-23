@@ -42,7 +42,7 @@
 		/>
 	</Flare>
 	<Body>
-		<Mirror GravityFactor="1.4" Collisions="Default" Mass="1.5">
+		<Mirror _template="Gravity" Collisions="Default" Mass="1.5">
 			<Constraint
 				LinearLimitsX="(-0.01;0.01)"
 				LinearLimitsY="(-0.03;0.03)"
@@ -52,7 +52,7 @@
 				<Motor Damping="30" Spring="1050" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Hitch GravityFactor="1.4" Collisions="Default" Mass="10">
+		<Hitch _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				PivotOffset="(0; 0; 0)"

@@ -15,12 +15,12 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="2.5">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="2.5">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<BoneSunshield GravityFactor="1.4" Collisions="Default" Mass="2">
+		<BoneSunshield _template="Gravity" Collisions="Default" Mass="2">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -439,9 +439,9 @@
 				<AddonsShift Offset="(-0.93; 0; 0)" Types="MinicraneNavistar" />
 				<AddonsShift Offset="(-0.72; 0; 0)" Types="FordF750Trunk" />
 			</Socket>
-			<Socket Names="TatraSideboard" NamesBlock="InternationalPaystar5070CabinProtector" Offset="(-1.6; 0.024; 0)" ParentFrame="BoneChassis_cdt">
-				<AddonsShift Offset="(-0.93; 0; 0)" Types="MinicraneNavistar" />
-				<AddonsShift Offset="(-0.72; 0; 0)" Types="FordF750Trunk" />
+			<Socket Names="TatraSideboard" NamesBlock="InternationalPaystar5070CabinProtector" Offset="(-1.25; 0.024; 0)" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.98; 0; 0)" Types="MinicraneNavistar" />
+				<AddonsShift Offset="(-0.8; 0; 0)" Types="FordF750Trunk" />
 			</Socket>
 			<Socket
 				Names="FrameAddonKung"

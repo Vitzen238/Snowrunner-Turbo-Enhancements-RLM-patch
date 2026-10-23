@@ -46,7 +46,7 @@
 		/>
 	</Flare>
 	<Body>
-		<Twist GravityFactor="1.4" ImpactType="Truck">
+		<Twist  _template="Gravity" ImpactType="Truck">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				PivotOffset="(0; 0; 0)"
@@ -57,7 +57,7 @@
 				<Motor Damping="10000" Spring="250000" Type="Spring" />
 			</Constraint>
 		</Twist>
-		<TieRodR GravityFactor="1.4" Collisions="None" Mass="1">
+		<TieRodR  _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; -1)"
 				Type="Hinge"
@@ -72,7 +72,7 @@
 				/>
 			</Constraint>
 		</TieRodR>
-		<TieRodL GravityFactor="1.4" Collisions="None" Mass="1">
+		<TieRodL  _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -87,7 +87,7 @@
 				/>
 			</Constraint>
 		</TieRodL>
-		<SunShield GravityFactor="1.4" Collisions="None" Mass="2">
+		<SunShield  _template="Gravity" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -97,7 +97,7 @@
 				<Motor Damping="0.5" Spring="20" Type="Spring" />
 			</Constraint>
 		</SunShield>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="50">
+		<SideMirror  _template="Gravity" Collisions="Default" Mass="50">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -107,7 +107,7 @@
 				<Motor Damping="10" Spring="1000" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<MirrorRagdoll GravityFactor="1.4" Collisions="None" Mass="3">
+		<MirrorRagdoll  _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -120,7 +120,7 @@
 				<ConeMotor Damping="1" Spring="130" Type="Spring" />
 			</Constraint>
 		</MirrorRagdoll>
-		<Antenna GravityFactor="1.4" Collisions="Default" Mass="2">
+		<Antenna  _template="Gravity" Collisions="Default" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"

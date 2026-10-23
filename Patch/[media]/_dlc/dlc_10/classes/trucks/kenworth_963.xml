@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<TieRod GravityFactor="1.4" Mass="1">
+		<TieRod  _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -30,7 +30,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -40,7 +40,7 @@
 				<Motor Damping="0.65" Spring="1.5" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SteeringShaft GravityFactor="1.4" Mass="1">
+		<SteeringShaft  _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -55,7 +55,7 @@
 				/>
 			</Constraint>
 		</SteeringShaft>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
+		<Mudguard  _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -65,7 +65,7 @@
 				<Motor Damping="12" Spring="5" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Mirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<Mirror  _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -436,7 +436,7 @@
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.27; 2.278; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.866; 5; -4.55)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(3.312; 2.55; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5.969; 5; -5.795)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.909; 1.953; 2.5)" Position="(3.65; 3.4; -0.485)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(6.3; 0.853; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(7.3; 1.5; -8.5)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(6.5; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.57; 1.65; -3.425)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(6.5; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.57; 1.65; -3.425)" />
 			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.997; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.57; 1.44; -3.425)" />
 			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(5; 2.2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.900; 4.3; 5)" />

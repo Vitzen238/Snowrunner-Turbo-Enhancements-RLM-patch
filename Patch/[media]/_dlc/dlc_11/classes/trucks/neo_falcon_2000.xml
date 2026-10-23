@@ -26,8 +26,8 @@
 			Size="0.2"
 		/>
 	</Flare>
-	<Body _template="Gravity" >
-		<TieRod Mass="1">
+	<Body>
+		<TieRod _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; -1; 0)"
 				Type="Hinge"
@@ -43,7 +43,7 @@
 			</Constraint>
 		</TieRod>
 		<Body _template="Gravity" >
-			<Sunshield Collisions="None" ImpactType="Truck" Mass="2">
+			<Sunshield _template="Gravity" Collisions="None" ImpactType="Truck" Mass="2">
 				<Constraint
 					AxisLocal="(0; 0; 1)"
 					Type="Hinge"
@@ -53,7 +53,7 @@
 					<Motor Damping="0.1" Spring="10" Type="Spring" />
 				</Constraint>
 			</Sunshield>
-			<SideMirror Collisions="Default" Mass="5">
+			<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Type="Hinge"
@@ -64,7 +64,7 @@
 				</Constraint>
 			</SideMirror>
 		</Body>
-		<Belt1 Collisions="None" Mass="1">
+		<Belt1 _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Prismatic"
@@ -74,7 +74,7 @@
 				<Motor Damping="15" Spring="100" Type="Spring" />
 			</Constraint>
 		</Belt1>
-		<Belt Collisions="None" Mass="1">
+		<Belt _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Prismatic"
@@ -442,7 +442,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(6.45; 1.275; -0.8)" Position="(8.7; 1.46; -1.4)" />
 			<!-- <CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.849; 1.484; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.708; 3.536; 3.318)" /> -->
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.662; 1.050; 0.5)" Position="(4.971; 1.9; -0.5)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(6.32; 0.413; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.421; 0.7; -3.51)" />
+			<CameraPos FOV="32.0" Name="wheels"  InterestPosition="(6; 0.976; -0.2)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.332; 1.526; -4.276)" />
 			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(5.848; 0.674; -0.65)" Position="(9.5; 3.256; -0.8)" />
 			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(5.126; 2.013; -0.96)" Position="(8.85; 1.83; -2)" />
 			<CameraPos FOV="32.0" Name="sticker_back" InterestPosition="(3.24; 1.02; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(3.65; 1.9; -2)" />

@@ -24,7 +24,7 @@
 		/>
 	</Flare>
 	<Body>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="1">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="1">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -34,7 +34,7 @@
 				<Motor Damping="5" Spring="75" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="10">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -212,14 +212,14 @@
 	<PhysicsModel Mesh="trucks/tuz_108_warthog">
 		<NetSync Legacy="false" />
 		<Body _template="Gravity"
-			CenterOfMassOffset="(-0.3; 0.1; 0)"
+			CenterOfMassOffset="(-0.3; 0.0; 0)"
 			ImpactType="Truck"
 			Mass="1965"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
 			<Body _template="Gravity"
-				CenterOfMassOffset="(-0.2; 0.4; 0)"
+				CenterOfMassOffset="(-0.2; 0.0; 0)"
 				ImpactType="Truck"
 				Mass="2100"
 				ModelFrame="BoneCabin_cdt"
@@ -307,20 +307,20 @@
 		<Ignition>
 			<Light _template="IgnitionSignalRed" Color="g(255; 10; 10) x 0.4" Pos="(-3.007; 0.937; -0.436)" />
 			<Light _template="IgnitionSignalRed" Color="g(255; 10; 10) x 0.4" Pos="(-3.007; 0.937; 0.436)" />
-			<Light _template="IgnitionSignalWhite" Color="g(255; 186; 112) x .5" Pos="(2.501; 1.32; -0.892)" ParentFrame="BoneCabin_cdt" />
-			<Light _template="IgnitionSignalWhite" Color="g(255; 186; 112) x .5" Pos="(2.501; 1.32; 0.892)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(255; 186; 112) x .5" Pos="(2.501; 1.32; -0.746)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(255; 186; 112) x .5" Pos="(2.501; 1.32; 0.746)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalRed" Color="g(168; 12; 0) x 0.8" Size="0.3" Pos="(-3.007; 0.937; 0.436)" />
 			<Flare _template="IgnitionSignalRed" Color="g(168; 12; 0) x 0.8" Size="0.3" Pos="(-3.007; 0.937; -0.436)" />
-			<Flare _template="IgnitionSignalWhite" Size="0.3" Pos="(2.501; 1.32; -0.892)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="IgnitionSignalWhite" Size="0.3" Pos="(2.501; 1.32; 0.892)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Size="0.3" Pos="(2.501; 1.32; -0.746)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Size="0.3" Pos="(2.501; 1.32; 0.746)" ParentFrame="BoneCabin_cdt" />
 		</Ignition>
 		<HeadLight>
-			<Model _template="HeadLightRay" Org="(2.501; 1.32; -0.892)" ParentFrame="BoneCabin_cdt" />
-			<Model _template="HeadLightRay" Org="(2.501; 1.32; 0.892)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.3" Pos="(2.501; 1.32; -0.892)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.3" Pos="(2.501; 1.32; 0.892)" ParentFrame="BoneCabin_cdt" />
-			<!-- <Flare _template="BlueStreak" Size="0.4" Pos="(2.501; 1.32; -0.892)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="BlueStreak" Size="0.4" Pos="(2.501; 1.32; 0.892)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(2.501; 1.32; -0.746)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(2.501; 1.32; 0.746)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.3" Pos="(2.501; 1.32; -0.746)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.3" Pos="(2.501; 1.32; 0.746)" ParentFrame="BoneCabin_cdt" />
+			<!-- <Flare _template="BlueStreak" Size="0.4" Pos="(2.501; 1.32; -0.746)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Size="0.4" Pos="(2.501; 1.32; 0.746)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="BlueStreak" Size="0.35" Pos="(1.119; 2.795; 0)" ParentFrame="BoneCabin_cdt" /> -->
 		</HeadLight>
 	</ModelAttachments>
@@ -350,7 +350,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(4.186; 1.747; -0.705)" Position="(6.674; 5.706; -0.086)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(7.22; 3.809; 1.916)" Position="(5.008; 2.153; -0.422)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(3.226; 1.433; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-3.516; 3.26; 4.69)" />
-			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(6.934; 1.878; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.341; 3.08; 2.824)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(6.934; 1.878; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11; 3.5; 0)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(7.452; 2.69; 1.723)" Position="(4.751; 2.340; -0.595)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(4.058; 1.779; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.481; 3.48; -2.927)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(7.582; 0.452; 2.219)" Position="(5.37; 2.432; -0.088)" />
@@ -362,7 +362,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(7.956; 3.013; 2.301)" Position="(5.063; 2.172; -0.03)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.436; 1.512; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.047; 2.935; 3.2)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(7.22; 1.301; 0.99)" Position="(5.063; 2.382; -0.553)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.607; 0.411; -0.046)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.377; 1.509; -3.571)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.911; 1.31; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.91; 1.605; -3.122)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.911; 1.31; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.91; 1.605; -3.122)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(4.005; 1.062; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-1.418; 2.066; 1.833)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.175; 1.489; -0.057)" Position="(3.357; 1.816; -3.096)" />

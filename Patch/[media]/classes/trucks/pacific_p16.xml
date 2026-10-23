@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="10">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
@@ -426,7 +426,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(6.662; 0.61; 1.935)" Position="(5.221; 1.595; 0.03)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(3.468; 2.784; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.623; 4.118; -2.927)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(7.085; 1.174; 1.097)" Position="(3.96; 2.914; -0.813)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(0; 0.669; -1.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13; 2; 5.834)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.47; 1.623; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.181; 1.445; -3.573)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.47; 1.623; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.181; 1.445; -3.573)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.479; 0.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.767; 1.805; 2.899)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(3.413; 1.842; -0.692)" Position="(2.711; 2.689; -4.087)" />

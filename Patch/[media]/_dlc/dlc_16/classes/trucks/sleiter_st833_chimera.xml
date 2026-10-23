@@ -18,7 +18,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Wiper GravityFactor="1.4"
+		<Wiper _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="None"
 			Mass="5"
@@ -33,7 +33,7 @@
 				<Motor Damping="500" Spring="3000" Type="Spring" />
 			</Constraint>
 		</Wiper>
-		<Sunshield GravityFactor="1.4"
+		<Sunshield _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="None"
 			Mass="5"
@@ -48,7 +48,7 @@
 				<Motor Damping="100" Spring="1500" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Seatbelt GravityFactor="1.4"
+		<Seatbelt _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="None"
 			Mass="2"
@@ -62,7 +62,7 @@
 				<Motor Damping="50" Spring="2500" Type="Spring" />
 			</Constraint>
 		</Seatbelt>
-		<Mirror GravityFactor="1.4"
+		<Mirror _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="Default"
 			ImpactType="Truck"
@@ -206,8 +206,8 @@
 		>
 			<Cockpit
 				_template="Default"
-				LimitsHor="(-2.8; 1.5)"
-				LimitsVer="(-0.5; 0.3)"
+				LimitsHor="(-2.8; 2.5)"
+				LimitsVer="(-0.7; 0.3)"
 				ViewDir="(1; -0.1; 0)"
 				WindshieldDiffuseTexture="trucks/sleiter_st833_chimera_glass__d_a.tga"
 				WindshieldShadingTexture="trucks/sleiter_st833_chimera_glass__sh_d.tga"
@@ -244,7 +244,7 @@
 		>
 			<Body _template="Gravity"
 				CenterOfMassOffset="(0; 0; 0)"
-				Collisions="None"
+				Collisions="Default"
 				Mass="4210"
 				ModelFrame="BoneRear_cdt"
 				NetSync="pv"

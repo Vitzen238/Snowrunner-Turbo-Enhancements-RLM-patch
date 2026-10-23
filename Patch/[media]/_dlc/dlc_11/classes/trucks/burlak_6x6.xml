@@ -17,7 +17,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<TieRod GravityFactor="1.4" Mass="1">
+		<TieRod _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -32,7 +32,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -42,7 +42,7 @@
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -52,7 +52,7 @@
 				<Motor Damping="1" Spring="250" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -62,7 +62,7 @@
 				<Motor Damping="1" Spring="1" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Mirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<Mirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"

@@ -35,7 +35,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mudguard GravityFactor="1.4" AngularDamping="3.0" Collisions="Default" Mass="10">
+		<Mudguard  _template="Gravity" AngularDamping="3.0" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

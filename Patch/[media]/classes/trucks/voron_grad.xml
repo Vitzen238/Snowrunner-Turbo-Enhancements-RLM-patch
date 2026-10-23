@@ -41,7 +41,7 @@
 		/>
 	</Flare>
 	<Body>
-		<WireWiggle GravityFactor="1.4" Collisions="None" Mass="1.5">
+		<WireWiggle _template="Gravity" Collisions="None" Mass="1.5">
 			<Constraint
 				LinearLimitsX="(-0.1;0.1)"
 				LinearLimitsY="(0;0.02)"
@@ -51,7 +51,7 @@
 				<Motor Damping="2" Spring="250" Type="Spring" />
 			</Constraint>
 		</WireWiggle>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="2">
+		<Sunshield _template="Gravity" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -61,7 +61,7 @@
 				<Motor Damping=".4" Spring="40" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Step GravityFactor="1.4" Friction=".0001" Mass="1">
+		<Step _template="Gravity" Friction=".0001" Mass="1">
 			<Constraint
 				LinearLimitsX="(-.3;.3)"
 				LinearLimitsY="(-0;.5)"
@@ -71,7 +71,7 @@
 				<Motor Damping="20" Spring="350" Type="Spring" />
 			</Constraint>
 		</Step>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -81,7 +81,7 @@
 				<Motor Damping="1" Spring="200" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="10">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>

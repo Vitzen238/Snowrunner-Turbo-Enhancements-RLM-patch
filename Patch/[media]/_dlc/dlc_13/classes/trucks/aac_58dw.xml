@@ -16,7 +16,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"

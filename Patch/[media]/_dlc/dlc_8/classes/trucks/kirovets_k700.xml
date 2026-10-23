@@ -14,7 +14,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="5">
+		<Sunshield _template="Gravity" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

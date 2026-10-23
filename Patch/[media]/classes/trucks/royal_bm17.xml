@@ -25,7 +25,7 @@
 		/>
 	</Flare>
 	<Body>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -35,7 +35,7 @@
 				<Motor Damping="5" Spring="280" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="10">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>

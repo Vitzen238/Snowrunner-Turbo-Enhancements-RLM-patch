@@ -1,6 +1,13 @@
 # Changelog:
 
 ## v2.0
+- Update to Snowruner v44.0
+- Update to RLM 50.1.0
+- Added correct EngineTurbo tags to Derry Savior 
+- Added correct EngineTurbo tags to Wortek 250T
+- Added interior camera EngineTurbo tag on Kenworth T880 XML
+
+## v2.0
 - Update to RLM 50.0.1
 
 ## v1.9

@@ -14,7 +14,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Sunshield GravityFactor="1.4" Collisions="Default" Mass="3">
+		<Sunshield  _template="Gravity" Collisions="Default" Mass="3">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -24,7 +24,7 @@
 				<Motor Damping="5" Spring="50" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="3">
+		<SideMirror  _template="Gravity" Collisions="Default" Mass="3">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -34,7 +34,7 @@
 				<Motor Damping="1" Spring="3" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard GravityFactor="1.4" AngularDamping="3.0" Collisions="Default" Mass="10">
+		<Mudguard  _template="Gravity" AngularDamping="3.0" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -42,7 +42,7 @@
 				MaxLimit="18"
 			/>
 		</Mudguard>
-		<Wipers GravityFactor="1.4" Collisions="None" Mass="5">
+		<Wipers  _template="Gravity" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -450,7 +450,7 @@
 			<CameraPos FOV="32.0" Name="spare_wheel_1" 		InterestPosition="(1.200; 1.200; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.80; 6; -7.300)" />
 			<CameraPos FOV="32.0" Name="side_l" 		InterestPosition="(6.270; 2.278; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.87; 5.00; -4.550)" />
 			<CameraPos FOV="32.0" Name="side_r" 		InterestPosition="(3.312; 2.550; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5.969; 5.00; -5.795)" />
-			<CameraPos FOV="32.0" Name="wheels" 		InterestPosition="(4.350; 0.100; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.200; 1.10; -5.200)" />
+			<CameraPos FOV="32.0" Name="wheels" 		InterestPosition="(6.000; 1.300; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13; 1.50; -4.000)" />
 			<CameraPos FOV="32.0" Name="default" 		InterestPosition="(6.000; 1.300; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.10; 1.50; -4.000)" />
 			<CameraPos FOV="32.0" Name="hoods" 			InterestPosition="(6.000; 1.300; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.10; 1.50; -4.000)" />
 			<CameraPos FOV="32.0" Name="hoods_default" 	InterestPosition="(6.000; 1.300; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.10; 1.50; -4.000)" />

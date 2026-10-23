@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mirror GravityFactor="1.4" Collisions="Default" >
+		<Mirror _template="Gravity" Collisions="Default" >
 			<Constraint
 				LinearLimitsX="(-.005;.005)"
 				LinearLimitsY="(-.005; .02)"

@@ -22,8 +22,8 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<Sunshield Collisions="None" Mass="10">
+	<Body>
+		<Sunshield _template="Gravity" Collisions="None" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -33,7 +33,7 @@
 				<Motor Damping="1" Spring="100" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Mirror Collisions="Default" Mass="10">
+		<Mirror _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"

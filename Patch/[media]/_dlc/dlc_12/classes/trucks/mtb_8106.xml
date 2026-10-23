@@ -24,8 +24,8 @@
 			Size="0.2"
 		/>
 	</Flare>
-	<Body _template="Gravity" >
-		<TieRod Mass="1">
+	<Body>
+		<TieRod _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; -1; 0)"
 				Type="Hinge"
@@ -40,7 +40,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<Sunshield Collisions="None" ImpactType="Truck" Mass="2">
+		<Sunshield _template="Gravity" Collisions="None" ImpactType="Truck" Mass="2">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

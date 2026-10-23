@@ -26,7 +26,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Chain GravityFactor="1.4" Mass="60" >
+		<Chain  _template="Gravity" Mass="60" >
 			<Constraint
 				PivotOffset="(0.000; 0.000; 0.000)"
 				Type="Ragdoll"
@@ -53,7 +53,7 @@
 				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
 			</Constraint>
 		</Chain>
-		<FireEx1 GravityFactor="1.4" Collisions="None" Mass="2">
+		<FireEx1  _template="Gravity" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -63,7 +63,7 @@
 				<Motor Damping="0.2" Spring="3" Type="Spring" />
 			</Constraint>
 		</FireEx1>
-		<FireEx2 GravityFactor="1.4" Collisions="None" Mass="2">
+		<FireEx2  _template="Gravity" Collisions="None" Mass="2">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -567,10 +567,10 @@
 			<Socket Names="FrameAddonTank" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" Offset="(-2.6; 1.573; 0)" ParentFrame="BoneChassis_cdt"/>
 			<Socket Names="FrameAddonMaintainer2" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, Trailer, LogTrailer, AvenhornA15SpareWheel" Offset="(-2.4; 0.54; 0)" ParentFrame="BoneChassis_cdt"/>
 			<!--<Socket Names="FrameAddonSeismicVibratorAvenhornA15" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, Trailer, LogTrailer, AvenhornA15SpareWheel" Offset="(0.2; 1.57; 0)" ParentFrame="BoneChassis_cdt"/>-->
-			<Socket Names="BigCraneUsAvenhornA15" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" Offset="(-2.35; 1.66; 0)" ParentFrame="BoneChassis_cdt">
+			<!--<Socket Names="BigCraneUsAvenhornA15" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" Offset="(-2.35; 1.66; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; -0.07)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0.07)" />
-			</Socket>
+			</Socket>-->
 			<Socket Names="FrameAddonTow" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" Offset="(-2.5; 1.56; 0)" />
 		</AddonSockets>
 		<!-- TRAILERS -->

@@ -18,7 +18,7 @@
 		<MarkerBeacon Color="g(125; 81; 18) x 0.7" Size="0.3" />
 	</Flare>
 	<Body>
-		<Mirror GravityFactor="1.4" Collisions="Default" Mass="1.5">
+		<Mirror  _template="Gravity" Collisions="Default" Mass="1.5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -28,7 +28,7 @@
 				<Motor Damping="1" Spring="250" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Antenna GravityFactor="1.4" Collisions="Default" Mass="2">
+		<Antenna  _template="Gravity" Collisions="Default" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -41,7 +41,7 @@
 				<ConeMotor Damping="4" Spring="150" Type="Spring" />
 			</Constraint>
 		</Antenna>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -51,7 +51,7 @@
 				<Motor Damping=".25" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
+		<Mudguard  _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -61,7 +61,7 @@
 				<Motor Damping="3" Spring="5" Type="Spring" />
 			</Constraint>	
 		</Mudguard>
-		<Wire GravityFactor="1.4" Collisions="None" Mass="5">
+		<Wire  _template="Gravity" Collisions="None" Mass="5">
 			<Constraint
 				Cone="30"
 				PlaneAxisLocal="(1; 0; 0)"
@@ -144,6 +144,7 @@
 			<EngineHeavy	Sound="" />
 			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
 			<EngineTurbo	Sound="trucks/kenworth_t880/kenworth_t880_turbo" />
+			<EngineTurbo_2d Sound="trucks/kenworth_t880/kenworth_t880_turbo"    IsSound2D="true" />
 			<ChassisStress	Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
 			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
 		</Sounds>

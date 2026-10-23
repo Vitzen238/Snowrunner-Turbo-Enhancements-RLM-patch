@@ -26,7 +26,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Wiper GravityFactor="1.4" Collisions="None" Mass="10">
+		<Wiper  _template="Gravity" Collisions="None" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Wiper>
-		<Seatbelt GravityFactor="1.4" Collisions="None" Mass="1">
+		<Seatbelt  _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				LinearLimitsX="(-0.020; 0.020)"
 				LinearLimitsY="(-0.001; 0.001)"
@@ -46,7 +46,7 @@
 				<Motor Damping="20" Spring="700" Type="Spring" />
 			</Constraint>
 		</Seatbelt>
-		<Mirror GravityFactor="1.4" Collisions="Default" ImpactType="Truck" Mass="10">
+		<Mirror  _template="Gravity" Collisions="Default" ImpactType="Truck" Mass="10">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -56,7 +56,7 @@
 				<Motor Damping="50" Spring="25" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<TieRod GravityFactor="1.4" Collisions="None" Mass="10" >
+		<TieRod  _template="Gravity" Collisions="None" Mass="10" >
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -477,7 +477,7 @@
 		<CustomizationCameras>
 			<!-- MAIN CAMERAS -->
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.000; 1.600; 0.00)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.800; 1.400; -3.860)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.000; 0.7; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.200; 1.400; -5.650)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.000; 0.7; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.200; 2; -5.650)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(2.600; 3.080; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.680; 4.810; -4.570)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.270; 2.280; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.870; 5.280; -4.550)" />
 			<CameraPos FOV="32.0" Name="rear" 	InterestPosition="(5.000; 2.000; 0.000)" MaxXRotation="360" MaxYRotation="360" MaxZoom="1" Position="(-2.000; 2.500; 4.000)" />

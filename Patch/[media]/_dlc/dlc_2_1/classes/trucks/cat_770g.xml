@@ -16,7 +16,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mudguard GravityFactor="1.4" Mass="10">
+		<Mudguard  _template="Gravity" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="30" Spring="20" Type="Spring" />
 			</Constraint>

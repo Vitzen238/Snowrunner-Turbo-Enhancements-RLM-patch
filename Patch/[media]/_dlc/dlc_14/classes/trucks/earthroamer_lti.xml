@@ -17,7 +17,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<MudGuard GravityFactor="1.4"
+		<MudGuard  _template="Gravity"
 			Mass="1"
 			Collisions="Default"
 		>
@@ -30,7 +30,7 @@
 				<Motor Damping="0.5" Spring="1" Type="Spring" />
 			</Constraint>
 		</MudGuard>
-		<SunSheld GravityFactor="1.4"
+		<SunSheld  _template="Gravity"
 			Mass="2"
 			Collisions="None"
 		>

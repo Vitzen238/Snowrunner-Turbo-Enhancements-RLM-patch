@@ -24,7 +24,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<TieRod GravityFactor="1.4" Mass="1">
+		<TieRod  _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -39,7 +39,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -49,7 +49,7 @@
 				<Motor Damping="0.65" Spring="1.5" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SteeringShaft GravityFactor="1.4" Mass="1">
+		<SteeringShaft  _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -64,7 +64,7 @@
 				/>
 			</Constraint>
 		</SteeringShaft>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<SideMirror  _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Fixed"
@@ -76,7 +76,7 @@
 				<Motor Damping="250" Spring="250" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<RearMudguard GravityFactor="1.4" Collisions="Default" Mass="10">
+		<RearMudguard  _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -86,7 +86,7 @@
 				<Motor Damping="1" Spring="0.9" Type="Spring" />
 			</Constraint>
 		</RearMudguard>
-		<FrontMudguard AngularDamping="3.0" GravityFactor="1.4" Collisions="Default" Mass="10">
+		<FrontMudguard AngularDamping="3.0"  _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -96,7 +96,7 @@
 				<Motor Damping="1" Spring="1" Type="Spring" />
 			</Constraint>
 		</FrontMudguard>
-		<CollarR GravityFactor="1.4" Collisions="Default" Mass="10">
+		<CollarR  _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -106,7 +106,7 @@
 				<Motor Damping="1" Spring="0" Type="Spring" />
 			</Constraint>
 		</CollarR>
-		<CollarF GravityFactor="1.4" Collisions="Default" Mass="10">
+		<CollarF  _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

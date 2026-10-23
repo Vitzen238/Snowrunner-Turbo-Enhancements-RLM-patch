@@ -20,7 +20,7 @@
 		</Cabin2Chassis>
 	</Socket>
 	<Body>
-		<Mirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<Mirror  _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"

@@ -17,8 +17,8 @@
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
-	<Body _template="Gravity">
-		<TieRod Mass="1">
+	<Body>
+		<TieRod _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -33,7 +33,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<SideMirror Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -347,7 +347,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(6.662; 0.61; 1.935)" Position="(5.221; 1.595; 0.03)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(2.672; 1.664; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.252; 2.13; -5.376)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(9.442; 0.897; 1.844)" Position="(5.962; 2.361; -0.437)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.133; 0.669; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(7.893; 1.697; -5.834)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.838; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.87; 1.285; -4.407)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.838; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.87; 1.285; -4.407)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(2.057; 1.117; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.216; 1.658; 2.478)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(5.983; 1.426; -0.471)" Position="(4.484; 2.07; -4.234)" />

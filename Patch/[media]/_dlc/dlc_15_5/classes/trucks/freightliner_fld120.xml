@@ -17,7 +17,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Wiper GravityFactor="1.4" Collisions="None" Mass="15">
+		<Wiper  _template="Gravity" Collisions="None" Mass="15">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -27,7 +27,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Wiper>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="50">
+		<Sunshield  _template="Gravity" Collisions="None" Mass="50">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -37,7 +37,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Seatbelt GravityFactor="1.4" Collisions="None" Mass="1">
+		<Seatbelt  _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				LinearLimitsX="(-0.020; 0.020)"
 				LinearLimitsY="(-0.001; 0.001)"
@@ -47,7 +47,7 @@
 				<Motor Damping="20" Spring="700" Type="Spring" />
 			</Constraint>
 		</Seatbelt>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="30">
+		<Mudguard  _template="Gravity" Collisions="Default" Mass="30">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -57,7 +57,7 @@
 				<Motor Damping="15" Spring="20" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Mirror GravityFactor="1.4" Collisions="Default" ImpactType="Truck" Mass="30">
+		<Mirror  _template="Gravity" Collisions="Default" ImpactType="Truck" Mass="30">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"

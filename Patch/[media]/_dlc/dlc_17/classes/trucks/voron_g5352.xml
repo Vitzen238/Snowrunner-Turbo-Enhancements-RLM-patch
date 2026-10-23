@@ -26,7 +26,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mudguard GravityFactor="1.4" Collisions="Default" Mass="5">
+		<Mudguard  _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping="3" Spring="5" Type="Spring" />
 			</Constraint>	
 		</Mudguard>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; -1)"
 				Type="Hinge"
@@ -530,10 +530,10 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.082; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.082; 0)" />
 			</Socket>
-			<Socket Names="BigCraneVoronG5352" Offset="(-1.5; 1.37; 0)" ParentFrame="BoneChassis_cdt">
+			<!--<Socket Names="BigCraneVoronG5352" Offset="(-1.5; 1.37; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0.0; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0.0; 0)" />
-			</Socket>
+			</Socket>-->
 			<!-- Logs -->
 			<Socket Names="BunkLog" Offset="(-5.6; 1.26; 0)" />
 			<Socket Names="FrameAddonLogShortVoronG5352" Offset="(0.55; 1.385; 0)" ParentFrame="BoneChassis_cdt" >

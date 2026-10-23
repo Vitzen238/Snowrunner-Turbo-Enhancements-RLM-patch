@@ -18,7 +18,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Sunshield GravityFactor="1.4"
+		<Sunshield  _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="None"
 			Mass="5"
@@ -33,7 +33,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Seatbelt GravityFactor="1.4"
+		<Seatbelt  _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="None"
 			Mass="1"
@@ -47,7 +47,7 @@
 				<Motor Damping="20" Spring="700" Type="Spring" />
 			</Constraint>
 		</Seatbelt>
-		<MirrorHolder GravityFactor="1.4"
+		<MirrorHolder  _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="Default"
 			ImpactType="Truck"
@@ -63,7 +63,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</MirrorHolder>
-		<Mirror GravityFactor="1.4"
+		<Mirror  _template="Gravity"
 			CenterOfMassOffset="(0; 0; 0)"
 			Collisions="Default"
 			ImpactType="Truck"
@@ -174,7 +174,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(3.323; 1.21; 0)" Size="0.2" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="10" />
-		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_hib_billert" />
+		<EngineSocket Default="us_special_cat_th357_engine_0" Type="e_us_special_cat_th357, e_us_truck_old_hib_billert" />
 		<Driver
 			AnimationSet="Truck"
 			LegsOffset="(0; 0; 0.05)"

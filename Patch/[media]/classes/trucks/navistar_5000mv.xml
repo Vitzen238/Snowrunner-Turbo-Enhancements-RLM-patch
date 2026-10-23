@@ -22,8 +22,8 @@
 			<ExtraParent Frame="BoneChassis_cdt" />
 		</Cabin2Chassis>
 	</Socket>
-	<Body _template="Gravity">
-		<Mirror Collisions="Default" Mass="5">
+	<Body>
+		<Mirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -33,7 +33,7 @@
 				<Motor Damping="1" Spring="60" Type="Spring" />
 			</Constraint>
 		</Mirror>
-		<Antenna Collisions="None" Mass=".1">
+		<Antenna _template="Gravity" Collisions="Default" Mass=".1">
 			<Constraint
 				Cone="100"
 				PlaneAxisLocal="(0; 0; 1)"

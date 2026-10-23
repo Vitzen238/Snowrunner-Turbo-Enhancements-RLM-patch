@@ -24,7 +24,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Sunshield GravityFactor="1.4" Collisions="None" Mass="3">
+		<Sunshield _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -34,7 +34,7 @@
 				<Motor Damping="0.75" Spring="1.5" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SideMirror GravityFactor="1.4" Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -44,7 +44,7 @@
 				<Motor Damping="0.7" Spring="80" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard GravityFactor="1.4" AngularDamping="3.0" Collisions="Default" Mass="10">
+		<Mudguard _template="Gravity" AngularDamping="3.0" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

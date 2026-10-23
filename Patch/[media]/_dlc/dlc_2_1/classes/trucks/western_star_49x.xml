@@ -39,7 +39,7 @@
 		/>
 	</Flare>
 	<Body>
-		<Sunshield GravityFactor="1.4" Collisions="Default" Mass="10">
+		<Sunshield  _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				PivotOffset="(0; 0; 0)"
@@ -50,7 +50,7 @@
 				<Motor Damping="1" Spring="100" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Mirror GravityFactor="1.4" Collisions="Default" Mass="10">
+		<Mirror  _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				PivotOffset="(0; 0; 0)"

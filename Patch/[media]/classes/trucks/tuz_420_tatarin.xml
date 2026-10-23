@@ -20,7 +20,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Hook GravityFactor="1.4" Collisions="None" Mass="10">
+		<Hook _template="Gravity" Collisions="None" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
