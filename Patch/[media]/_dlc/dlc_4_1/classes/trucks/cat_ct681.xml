@@ -26,7 +26,7 @@
 		</Cabin2Chassis>
 	</Socket>
 	<Body>
-		<SideMirror  _template="Gravity" Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -36,12 +36,12 @@
 				<Motor Damping="10" Spring="550" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Mudguard  _template="Gravity" Collisions="Default" Mass="10">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint Type="Hinge">
 				<Motor Damping="1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Hitch  _template="Gravity" Collisions="Default" Mass="5">
+		<Hitch _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -51,7 +51,7 @@
 				<Motor Damping=".1" Spring="2" Type="Spring" />
 			</Constraint>
 		</Hitch>
-		<Antenna  _template="Gravity" Collisions="Default" Mass="2">
+		<Antenna _template="Gravity" Collisions="Default" Mass="2">
 			<Constraint
 				Cone="20"
 				PlaneAxisLocal="(0; 0; 1)"
@@ -178,7 +178,7 @@
 			<Gauge Damping="0.9" Dir="(-0.849; 0.414; 0.329)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/cat_ct681_arrow_01" Org="(-0.116; 2.236; -0.141)" OutputAngles="(-112;45)" />
 		</Dashboard>
 		<Damage>
-			<DamageArea Type="Engine" Min="(0.2; 2; -0.42)" Max="(1.82; 0.72; 0.42)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="Engine" Min="(0.2; 0.82; -0.42)" Max="(1.82; 2; 0.42)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(-1.45; 0.36; 0.42)" Max="(0.02; 1.05; 1.2)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.573" Type="wheels_kenworth_c500" />

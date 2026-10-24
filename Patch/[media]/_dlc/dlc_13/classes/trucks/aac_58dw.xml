@@ -199,7 +199,7 @@
 		<Body _template="Gravity"
 			CenterOfMassOffset="(0.2; -0.5; 0)"
 			ImpactType="Truck"
-			Mass="1600"
+			Mass="1430"
 			NetSync="pv"
 		>
 			<Body _template="SideMirror" ModelFrame="BoneMirrorR_cdt" />

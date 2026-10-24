@@ -21,7 +21,7 @@
 		</SideMirror>
 	</Body>
 	<Body>
-		<Sunshield  _template="Gravity" Collisions="None" Mass="5">
+		<Sunshield _template="Gravity" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"

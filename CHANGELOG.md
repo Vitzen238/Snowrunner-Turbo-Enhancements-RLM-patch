@@ -1,6 +1,9 @@
 # Changelog:
 
-## v2.0
+## v2.2
+- Update to RLM 50.1.1
+
+## v2.1
 - Update to Snowruner v44.0
 - Update to RLM 50.1.0
 - Added correct EngineTurbo tags to Derry Savior 
