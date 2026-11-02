@@ -128,7 +128,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.73; 1.54; 0)" Size="0.75" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="ru_truck_modern_engine_0" Type="e_ru_truck_modern, e_ru_truck_modern_grad, e_us_truck_modern_mack_defense_m917" />
+		<EngineSocket Default="us_truck_modern_engine_kenworth_880_0" Type="e_us_truck_modern_kenworth_t880, e_us_truck_modern_kenworth_990" />
 		<Driver AnimationSet="Truck" Pos="(3.706; 2.124; 0.706)" SteeringWheelPos="(4.088; 2.452; 0.699)" ParentFrame="BoneCabin_cdt"/>
 		<Dashboard>
 			<Gauge Damping="0.99" Dir="(-0.805; 0.593; -0.001)" InputRange="(0;120)" InputType="speed" Mesh="trucks/arrows/tatra_phoenix_arrow_1" Org="(4.354; 2.365; 0.832)" OutputAngles="(-127; 60)" />
@@ -531,6 +531,7 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="TatraPhoenixBeacon" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="BurlakBeacon" NamesBlock="TatraPhoenixHorn" Offset="(2.11; 0.02; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="TatraPhoenixVisor" ParentFrame="BoneCabinRagdoll_cdt" />

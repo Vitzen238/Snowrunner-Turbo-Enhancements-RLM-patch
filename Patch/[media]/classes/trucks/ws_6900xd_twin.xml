@@ -205,7 +205,7 @@
 		<CompatibleWheels Scale="0.8" Type="wheels_mudtires_heavy_single" />-->
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="15" />
-		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
+		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy, us_truck_modern_engine_ws49x" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(4.704; 2.255; 0.497)"

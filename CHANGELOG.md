@@ -1,5 +1,8 @@
 # Changelog:
 
+## v2.3
+- Update to RLM 51.0.0
+
 ## v2.2
 - Update to RLM 50.1.1
 

@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<TieRod  _template="Gravity" Mass="1">
+		<TieRod _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -30,7 +30,7 @@
 				/>
 			</Constraint>
 		</TieRod>
-		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
+		<Sunshield _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -40,7 +40,7 @@
 				<Motor Damping="0.65" Spring="1.5" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<SteeringShaft  _template="Gravity" Mass="1">
+		<SteeringShaft _template="Gravity" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -55,7 +55,7 @@
 				/>
 			</Constraint>
 		</SteeringShaft>
-		<Mudguard  _template="Gravity" Collisions="Default" Mass="5">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -65,7 +65,7 @@
 				<Motor Damping="12" Spring="5" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Mirror  _template="Gravity" Collisions="Default" Mass="5">
+		<Mirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -165,7 +165,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.419; 2.13; 0)" Size="1.2" />
 		<GearboxSocket Default="g_special_kenworth_963" Type="gearboxes_special_kenworth_963" />
 		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_kenworth_963" />
+		<EngineSocket Default="us_truck_old_heavy_engine_kenworth_963_0" Type="e_us_truck_old_kenworth_963" />
 		<Driver
 			AnimationSet="Truck"
 			LegsOffset="(0; 0.03; 0)"

@@ -160,7 +160,7 @@
 			<Wheel _template="MiddleAxle" Pos="(-0.534; 0.69; 1.094)" />
 			<Wheel _template="MiddleAxle" RightSide="true" Pos="(-0.534; 0.69; 1.094)" />
 		</ExtraWheels>
-		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_kenworth_990" />
+		<EngineSocket Default="us_truck_modern_engine_prime_c13" Type="e_us_truck_modern_kenworth_990" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			LegsOffset="(0; 0.03; 0)"

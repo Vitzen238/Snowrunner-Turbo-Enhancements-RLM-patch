@@ -223,7 +223,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(6.138; 1.589; 0)" Size="0.8" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
+		<EngineSocket Default="us_truck_cat_c15_acert" Type="e_un_truck_heavy_boarpac" />
 		<Driver
 			AnimationSet="Truck"
 			Pos="(3.745; 1.907; 0.505)"

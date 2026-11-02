@@ -1,4 +1,4 @@
-<!--MZKT-741351-->
+<!--MZKT-741351, CAT C18-->
 <_templates Include="trucks">
 	<Wheel>
 		<SecondAxle
@@ -163,6 +163,7 @@
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special, gearboxes_special_kolob" />
 		<FuelTank DamageCapacity="100" />
 		<EngineSocket Default="ru_special_engine_0" Type="e_ru_special" />
+		<!--<EngineSocket Default="us_special_engine_0" Type="e_us_special" />-->
 		<Driver AnimationSet="HeavyTruck" Pos="(3.67; 2.370; 0.669)" SteeringWheelPos="(4.057; 2.715; 0.67)" />
 		<Dashboard>
 			<Gauge Damping="0.9" Dir="(-0.939; 0.344; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/kolob_74760_arrow_03" Org="(4.386; 2.685; 0.854)" OutputAngles="(-124;124)" />

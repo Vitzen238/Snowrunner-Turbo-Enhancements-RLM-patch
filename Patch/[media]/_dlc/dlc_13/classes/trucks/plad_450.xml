@@ -25,7 +25,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<SideMirror  _template="Gravity" Collisions="Default" Mass="5">
+		<SideMirror _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -35,7 +35,7 @@
 				<Motor Damping="0.7" Spring="200" Type="Spring" />
 			</Constraint>
 		</SideMirror>
-		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
+		<Sunshield _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -45,7 +45,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Lifter  _template="Gravity" Collisions="None" Mass="6">
+		<Lifter _template="Gravity" Collisions="None" Mass="6">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -55,7 +55,7 @@
 				<Motor Damping="0.7" Spring="200" Type="Spring" />
 			</Constraint>
 		</Lifter>
-		<Key  _template="Gravity" Collisions="None" Mass="1">
+		<Key _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -65,7 +65,7 @@
 				<Motor Damping="0.005" Spring="0.005" Type="Spring" />
 			</Constraint>
 		</Key>
-		<MudguardFront  _template="Gravity" Collisions="Default" Mass="10">
+		<MudguardFront _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -521,16 +521,16 @@
 		<CraneSocket Pos="(-3.788; 1.797; -1.506)" ParentFrame="BoneChassis_cdt" />
 		<CraneSocket Pos="(-3.788; 1.797; 1.506)" ParentFrame="BoneChassis_cdt" />
 		<CraneSocket Pos="(-5.908; 1.130; 0)" ParentFrame="BoneChassis_cdt" />
-		<!--<AddonSockets DefaultAddon="padera_std4_subframe" RequiredAddonIfNoConflicts="padera_std4_subframe">
+		<AddonSockets DefaultAddon="padera_std4_subframe" RequiredAddonIfNoConflicts="padera_std4_subframe">
 			<Socket
 				Names="PaderaSTD4Subframe"
 				Offset="(-1.63; 0.20; 0.0)"
 				ParentFrame="BoneChassis_cdt"
-				NamesBlock=""
+				NamesBlock="PladMinicrane, Plad450SpareWheel, Plad450Saddle, Plad450Sideboard, ZikzLogLift, TatraCrane, SaddleMotorized, HeavyRepairSmall, FrameAddonKung, FrameAddon, FrameAddonLogMediumMastodon, FrameAddonLogShortMastodon, BunkLog"
 			>
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0.0)" />
 			</Socket>
-		</AddonSockets>-->
+		</AddonSockets>
 		<!-- ADDONS SOCKETS -->
 		<AddonSockets DefaultAddon="azov_4220_antarctic_diff_lock_default">
 			<Socket Names="azov4220antarcticDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" />
@@ -599,8 +599,10 @@
 				<AddonsShift Offset="(-0.1; 0; 0)" Types="PladMinicrane" />
 			</Socket>
 			<Socket Names="FrameAddonKung" NamesBlock="ZikzLogLift, Plad450Sideboard, Plad450Saddle, Plad450RearFender" Offset="(-3.6; 1.47; 0)" ParentFrame="BoneChassis_cdt"/>
-			<Socket Names="FrameAddonTank" NamesBlock="ZikzLogLift, Plad450Sideboard, Plad450Saddle, Plad450RearFender" Offset="(-3.9; 1.42; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonTank" NamesBlock="ZikzLogLift, Plad450Sideboard, Plad450Saddle" Offset="(-3.9; 1.42; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="Plad450SpareWheel" />
+				<AddonsShift Offset="(0.5; 0.14; 0)" Types="PaderaSTD4Subframe" />
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddonTank" Types="Plad450SpareWheel, Plad450RearFender" />
 			</Socket>
 			<Socket Names="BigCraneL" NamesBlock="ZikzLogLift, Plad450Sideboard, Plad450SpareWheel, Plad450Saddle, Plad450Roofrack" Offset="(-2.66; 1.81; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.14; 0.03)" />

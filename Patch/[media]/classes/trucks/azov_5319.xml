@@ -1,4 +1,4 @@
-<!--КАМАЗ-53958 / КАМАЗ-6560М, КамАЗ-910.10, https://topwar.ru/90916-mnogocelevoe-shassi-kamaz-53958-tornado.html-->
+<!--КАМАЗ-53958 / КАМАЗ-6560М, двиг. КамАЗ-910.10 (2600 Н·м), https://topwar.ru/90916-mnogocelevoe-shassi-kamaz-53958-tornado.html-->
 <_templates Include="trucks">
 	<Wheel>
 		<SecondAxle
@@ -149,8 +149,7 @@
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="100" />
 		<Exhaust Dir="(0; 0; 1)" Origin="(1.955; 0.829; 0.557)" Speed="2.0" />
-		<!--<EngineSocket Default="ru_truck_modern_engine_0" Type="e_ru_truck_modern" />-->
-		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
+		<EngineSocket Default="ru_truck_modern_engine_0" Type="e_ru_truck_modern" />
 		<Driver Pos="(3.497; 1.844; 0.661)" SteeringWheelPos="(3.897; 2.164; 0.654)" ParentFrame="BoneCabin_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.99" Dir="(-0.947; 0.32; 0.004)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/azov_5319_arrows_1" Org="(4.128; 2.172; 0.858)" OutputAngles="(-111; 21)" />

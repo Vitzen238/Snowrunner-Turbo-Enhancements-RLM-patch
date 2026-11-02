@@ -21,14 +21,14 @@
 		<ThirdAxle
 			CamberAngleRender="0"
 			ConnectedToHandbrake="true"
-			Location="rear1"
+			Location="front3"
 			Torque="default"
 			CamberSuspensionMultiplier="0.05"
 		/>
 		<FourthAxle
 			CamberAngleRender="0"
 			ConnectedToHandbrake="true"
-			Location="rear2"
+			Location="front3"
 			Torque="default"
 			CamberSuspensionMultiplier="0.05"
 		/>

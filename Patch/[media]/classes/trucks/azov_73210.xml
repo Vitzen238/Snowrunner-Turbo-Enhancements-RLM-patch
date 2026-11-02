@@ -155,7 +155,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(5.056; 1.001; 0)" Size="1" />
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="ru_special_engine_0" Type="e_ru_special" />
+		<EngineSocket Default="ru_truck_modern_engine_0" Type="e_ru_truck_modern" />
 		<Driver Pos="(4.016; 1.466; 0.709)" SteeringWheelPos="(4.398; 1.794; 0.702)" ParentFrame="BoneCabin_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.99" Dir="(-0.909; 0.418; -0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/azov_73210_arrow_01" Org="(4.688; 1.697; 0.858)" OutputAngles="(-113;113)" />

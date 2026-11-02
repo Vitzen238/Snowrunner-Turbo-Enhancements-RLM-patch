@@ -145,8 +145,8 @@
 		<!-- <LimitedFluid Center="(-0.401; 0.905; -0.845)" SizeX="1.35" SizeY="0.62" SizeZ="0.49" Type="Box" /> -->
 		<Intake Dir="(1; 0; 0)" Origin="(4.215; 1.567; 0)" Size="1.219" />
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
-		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
+		<FuelTank DamageCapacity="15" />
+		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
 		<Driver Pos="(3.203; 2.099; 0.585)" SteeringWheelPos="(3.585; 2.427; 0.584)" ParentFrame="BoneCabin_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.99" Dir="(-0.966; 0.259; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/azov_64131_arrow1" Org="(3.785; 2.382; 0.639)" OutputAngles="(-123; 131)" />
@@ -163,7 +163,8 @@
 		</Dashboard>
 		<Damage>
 			<DamageArea Type="Engine" Min="(2; 0.933; -0.5)" Max="(4.1; 1.808; 0.5)" ParentFrame="BoneChassis_cdt" />
-			<DamageArea Type="FuelTank" Min="(-1.345; 0.564; -1.165)" Max="(0.303; 1.267; 1.165)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-1.07; 0.59; -1.165)" Max="(0.303; 1.267; -0.6)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-1.07; 0.59; 1.165)" Max="(0.303; 1.267; 0.6)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.56" OffsetZ="-0.05" RearOffsetZ="0.02" Type="wheels_heavy_double1" />
 		<CompatibleWheels Scale="0.63" Type="wheels_tatra_force_815_7" />
@@ -566,9 +567,7 @@
 			<Socket Names="KAMAZ65228_WheelAddon" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="tuz_16_actaeon_fender_1">
-			<Socket Names="tuz_16_actaeonFender" Offset="(2.88; 0.10; 0)" NamesBlock="Azov64131Fender" ParentFrame="BoneChassis_cdt" >
-				<ExtraParent Frame="BoneCabin_cdt" />
-			</Socket>
+			<Socket Names="tuz_16_actaeonFender" Offset="(2.88; 0.10; 0)" NamesBlock="Azov64131Fender" ParentFrame="BoneCabin_cdt" />
 			<Socket Names="KAMAZ65228_Fender" Offset="(0; 0; 0)" NamesBlock="Azov64131Fender, Gmc9500Fender2" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>

@@ -39,7 +39,7 @@
 		/>
 	</Flare>
 	<Body>
-		<Sunshield  _template="Gravity" Collisions="Default" Mass="10">
+		<Sunshield _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				PivotOffset="(0; 0; 0)"
@@ -50,7 +50,7 @@
 				<Motor Damping="1" Spring="100" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Mirror  _template="Gravity" Collisions="Default" Mass="10">
+		<Mirror _template="Gravity" Collisions="Default" Mass="10">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				PivotOffset="(0; 0; 0)"
@@ -163,7 +163,7 @@
 			<Wheel _template="MiddleAxle" Pos="(-1.356; 0.549; 0.9)" />
 			<Wheel _template="MiddleAxle" RightSide="true" Pos="(-1.356; 0.549; 0.9)" />
 		</ExtraWheels>-->
-		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_ws_49x" />
+		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_ws_49x, e_us_truck_modern_cathx" />
 		<Driver AnimationSet="Truck" Pos="(1.369; 1.854; 0.602)" SteeringWheelPos="(1.752; 2.182; 0.595)" />
 		<Dashboard>
 			<Gauge Damping="0.99" Dir="(-0.889; 0.458; -0.006)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/western_star_49x_arrow_02" Org="(2.133; 2.068; 0.704)" OutputAngles="(-99; 99)" />

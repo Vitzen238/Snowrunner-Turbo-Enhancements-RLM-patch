@@ -129,8 +129,8 @@
 		<LimitedFluid Center="(-1.863; 0.769; -0.775)" LengthX="1.416" RadiusY="0.400" RadiusZ="0.394" Type="Cylinder" />-->
 		<Intake Dir="(1; 0; 0)" Origin="(2.07; 1.439; 0)" Size="1" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
-		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="us_truck_military_navistar_0" Type="e_us_truck_military_navistar, e_us_truck_modern_mack_defense_m917" />
+		<FuelTank DamageCapacity="15" />
+		<EngineSocket Default="us_truck_military_navistar_0" Type="e_us_truck_military_navistar" />
 		<Driver Pos="(-0.57; 1.855; 0.505)" SteeringWheelPos="(-0.188; 2.183; 0.498)" ParentFrame="BoneCabin_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.99" Dir="(-0.963; 0.27; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/navistar_5000mv_arrow1" Org="(0.098; 2.203; 0.811)" OutputAngles="(-140; 17)" />
@@ -152,7 +152,8 @@
 		</Dashboard>
 		<Damage>
 			<DamageArea Type="Engine" Min="(0.3; 0.8; -0.635)" Max="(2; 2; 0.635)" ParentFrame="BoneCabin_cdt" />
-			<DamageArea Type="FuelTank" Min="(-2.6; 0.35; -1.173)" Max="(-0.78; 1.2; 1.173)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-2.58; 0.35; -1.173)" Max="(-1.1; 1.2; -0.6)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-2.25; 0.35; 0.6)" Max="(-0.77; 1.2; 1.173)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels RearOffsetZ=".02" Scale="0.56" Type="wheels_heavy_double1" />
 		<CompatibleWheels RearOffsetZ=".04" Scale="0.57" Type="wheels_heavy_double2" />

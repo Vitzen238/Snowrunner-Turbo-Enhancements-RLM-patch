@@ -16,7 +16,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<TieRod  _template="Gravity" Collisions="None" Mass="10" >
+		<TieRod _template="Gravity" Collisions="None" Mass="10" >
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -26,7 +26,7 @@
 				<Motor Damping="1.0" Force="10" Tau="1" Type="Position"/>
 			</Constraint>
 		</TieRod>
-		<Sunshield  _template="Gravity" Collisions="None" Mass="3">
+		<Sunshield _template="Gravity" Collisions="None" Mass="3">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -36,7 +36,7 @@
 				<Motor Damping=".1" Spring="10" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Stuff  _template="Gravity" Collisions="None" Mass="8">
+		<Stuff _template="Gravity" Collisions="None" Mass="8">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
@@ -46,7 +46,7 @@
 				<Motor Damping="0.2" Spring="3" Type="Spring" />
 			</Constraint>
 		</Stuff>
-		<Bottle  _template="Gravity" Collisions="None" Mass="5">
+		<Bottle _template="Gravity" Collisions="None" Mass="5">
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Prismatic"
@@ -165,7 +165,8 @@
 		</Shafts>
 		
 		<!-- VANILLA -->
-		<CompatibleWheels Type="wheels_heavy_mercedes_benz_actros_6x6" 			Scale="0.59" OffsetZ="-0.01" RearOffsetZ="-0.07" />
+		<CompatibleWheels Type="wheels_heavy_mercedes_benz_actros_6x6" 			Scale="0.59" OffsetZ="-0.04" RearOffsetZ="-0.07" />
+		<CompatibleWheels Type="wheels_kenworth_c500" 			Scale="0.59" OffsetZ="-0.05" RearOffsetZ="-0.08" />
 		<!--<CompatibleWheels Type="wheels_heavy_double1" 			Scale="0.59" OffsetZ="-0.045" RearOffsetZ="-0.045" />-->
 		<!--<CompatibleWheels Type="wheels_heavy_double2" 			Scale="0.59" OffsetZ="-0.035" RearOffsetZ="-0.035" />-->
 		<!-- JAT -->
@@ -174,7 +175,7 @@
 		<CompatibleWheels Type="wheels_heavy_offroad_double" 	Scale="0.59" OffsetZ="-0.035" RearOffsetZ="-0.035" />-->
 		
 		<!-- VANILLA -->
-		<CompatibleWheels Type="wheels_heavy_mercedes_benz_actros_6x6" 			Scale="0.635" OffsetZ="-0.03" RearOffsetZ="-0.04" />
+		<CompatibleWheels Type="wheels_heavy_mercedes_benz_actros_6x6" 			Scale="0.635" OffsetZ="-0.06" RearOffsetZ="-0.04" />
 		<!--<CompatibleWheels Type="wheels_heavy_double1_mercedes_actros" 			Scale="0.635" OffsetZ="-0.035" RearOffsetZ="-0.035" />
 		<CompatibleWheels Type="wheels_heavy_double2_mercedes_actros" 			Scale="0.635" OffsetZ="-0.025" RearOffsetZ="-0.015" />-->
 		<!-- JAT -->
@@ -182,6 +183,7 @@
 		<CompatibleWheels Type="wheels_heavy_allterrain_double_mercedes_actros" Scale="0.635" OffsetZ="-0.05" RearOffsetZ="-0.025" />
 		<CompatibleWheels Type="wheels_heavy_offroad_double_mercedes_actros" 	Scale="0.635" OffsetZ="-0.025" RearOffsetZ="-0.015" />-->
 		<!--PREMIUM-->
+		<CompatibleWheels Scale="0.60" Type="wheels_paystar_5070_double2/3526085"	OffsetZ="-0.05" RearOffsetZ="-0.08" />
 		<CompatibleWheels Scale="0.63" Type="wheels_scammell_s24_double1/3526085"	OffsetZ="0.01" RearOffsetZ="0.01" />
 		<CompatibleWheels Scale="0.62" Type="wheels_mercedes_actros_double1/3526085"	OffsetZ="-0.029" RearOffsetZ="-0.050" />
 		<!--<CompatibleWheels Scale="0.63" Type="wheels_mercedes_actros_double2/2041913"	OffsetZ="-0.029" RearOffsetZ="-0.050" />-->
@@ -282,7 +284,7 @@
 			<Body _template="Gravity"
 				Collisions="Default"
 				ImpactType="Truck"
-				Mass="1240"
+				Mass="2440"
 				ModelFrame="BoneCabinTwist_cdt"
 				NetSync="pv"
 				CenterOfMassOffset="(-0.2; -0.1; 0)"
@@ -298,7 +300,7 @@
 				<Body _template="Gravity"
 					Collisions="Default"
 					ImpactType="Truck"
-					Mass="2200"
+					Mass="1000"
 					ModelFrame="BoneCabin_cdt"
 					NetSync="pv"
 					CenterOfMassOffset="(0.0; -0.15; 0)"
@@ -310,7 +312,7 @@
 						MinLimit="-0.12"
 						MaxLimit="-0.02"
 					>
-						<Motor Damping="1000" Spring="900000" Type="Spring" />
+						<Motor Damping="20000" Spring="500000" Type="Spring" />
 					</Constraint>
 					<Body _template="Sunshield" ModelFrame="BoneSunshield1_cdt" />
 					<Body _template="Stuff" ModelFrame="BoneStuff_cdt" />

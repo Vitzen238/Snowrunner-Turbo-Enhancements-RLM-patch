@@ -326,7 +326,7 @@
 						<Motor Damping="30" Spring="200" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body  _template="Gravity" _template="TieRod" ModelFrame="BoneTieRod1_cdt">
+				<Body _template="Gravity" _template="TieRod" ModelFrame="BoneTieRod1_cdt">
 					<Constraint
 						AxisLocal="(0; -1; 0)"
 						Name="TieRodSteer"
@@ -334,7 +334,7 @@
 						MaxLimit="30"
 					/>
 				</Body>
-				<Body  _template="Gravity" Collisions="None" Mass="0.5" ModelFrame="BoneWipersR_cdt">
+				<Body _template="Gravity" Collisions="None" Mass="0.5" ModelFrame="BoneWipersR_cdt">
 					<Constraint
 						AxisLocal="(1; 0; 0)"
 						Type="Hinge"
@@ -344,7 +344,7 @@
 						<Motor Damping="0.8" Spring="0.001" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body  _template="Gravity" Collisions="None" Mass="0.5" ModelFrame="BoneWipersL_cdt">
+				<Body _template="Gravity" Collisions="None" Mass="0.5" ModelFrame="BoneWipersL_cdt">
 					<Constraint
 						AxisLocal="(1; 0; 0)"
 						Type="Hinge"

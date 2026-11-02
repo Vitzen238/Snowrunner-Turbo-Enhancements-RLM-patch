@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Mudguard  _template="Gravity" Collisions="Default" Mass="5">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="5">
 			<Constraint AxisLocal="(0; 0; 1)" Type="Hinge">
 				<Motor Damping="3" Spring="5" Type="Spring" />
 			</Constraint>
@@ -112,7 +112,8 @@
 		<Intake Dir="(1; 0; 0)" Origin="(5.299; 1.949; 0)" Size="1.3" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="15" />
-		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
+		<!--<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />-->
+		<EngineSocket Default="us_truck_modern_engine_cathx" Type="e_us_truck_modern_cathx" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			LegsOffset="(0; 0.03; 0)"
@@ -510,14 +511,11 @@
 		<CraneSocket Pos="(2.723; 1.79; -1.043)" ParentFrame="BoneCabinPrismatic_cdt" />
 		<CraneSocket Pos="(-5.502; 1.15; -0.005)" ParentFrame="BoneChassis_cdt" />
 		<CraneSocket Pos="(-1.374; 1.333; 0.433)" ParentFrame="BoneChassis_cdt" />
-		<AddonSockets
-			DefaultAddon="plad_440_fender_addon"
-			RequiredAddonIfNoConflicts=""
-		>
+		<AddonSockets>
 			<Socket Names="Plad440Fender" NamesBlock="WS6900FrameAddonKung" Offset="(-0.45; 0.3; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0.38; 0; 0)" />
-				<!--<AddonsShift Offset="(0; -0.02; 0)" Types="FrameAddonLogShort" />-->
 			</Socket>
+			<!--<Socket Names="DerryLonghorn3194Fender" Offset="(1.06; 0.1; 0)" ParentFrame="BoneChassis_cdt"/>-->
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Ankatra1160Counterweight" Offset="(3.25;0.3;0)" ParentFrame="BoneCabin_cdt" >

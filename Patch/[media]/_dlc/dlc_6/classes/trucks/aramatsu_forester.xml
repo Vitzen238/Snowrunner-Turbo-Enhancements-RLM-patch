@@ -32,12 +32,12 @@
 		/>
 	</Flare>
 	<Body>
-		<Suspension AngularDamping="10" Mass="1000">
+		<Suspension _template="Gravity" AngularDamping="10" Mass="1000">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
-				MinLimit="-20"
-				MaxLimit="20"
+				MinLimit="-30"
+				MaxLimit="30"
 			>
 				<Motor Damping="800.0" Spring="400" Type="Spring" />
 			</Constraint>
@@ -129,7 +129,7 @@
 			Speed="3.00"
             ParentFrame="BoneFront_cdt"
 		/>
-		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
+		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern" />
 		<Driver
 			AnimationSet="Forwarder"
 			DriverCharacter="driver_forester_m"
@@ -177,10 +177,10 @@
 		<Body _template="Gravity"
 			CenterOfMassOffset="(0; -0.5; 0)"
 			ImpactType="Truck"
-			Mass="6000"
+			Mass="4875"
 			NetSync="pv"
 		>
-			<Body Mass="2000" ModelFrame="BoneSteering_cdt" NetSync="pv" _template="Gravity">
+			<Body Mass="1725" ModelFrame="BoneSteering_cdt" NetSync="pv" _template="Gravity">
 				<Constraint
 					AxisLocal="(0; -1; 0)"
 					Name="ChassisSteer"
@@ -195,7 +195,7 @@
 						Type="Position"
 					/>
 				</Constraint>
-				<Body Mass="4000" ModelFrame="BoneFront_cdt" NetSync="pv" _template="Gravity">
+				<Body Mass="3000" ModelFrame="BoneFront_cdt" NetSync="pv" _template="Gravity">
 					<Constraint
 						AxisLocal="(1; 0; 0)"
 						Type="Hinge"
@@ -235,12 +235,12 @@
 							</Constraint>
 						</Body>
 					</Body>
-					<Body _template="Suspension" ModelFrame="BoneSuspensionFL_cdt"  _template="Gravity"/>
-					<Body _template="Suspension" ModelFrame="BoneSuspensionFR_cdt"  _template="Gravity"/>
+					<Body _template="Suspension" ModelFrame="BoneSuspensionFL_cdt"/>
+					<Body _template="Suspension" ModelFrame="BoneSuspensionFR_cdt"/>
 				</Body>
 			</Body>
-			<Body _template="Suspension" ModelFrame="BoneSuspensionRL_cdt"  _template="Gravity"/>
-			<Body _template="Suspension" ModelFrame="BoneSuspensionRR_cdt"  _template="Gravity"/>
+			<Body _template="Suspension" ModelFrame="BoneSuspensionRL_cdt"/>
+			<Body _template="Suspension" ModelFrame="BoneSuspensionRR_cdt"/>
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>

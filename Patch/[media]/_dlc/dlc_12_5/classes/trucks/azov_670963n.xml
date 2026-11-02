@@ -158,7 +158,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(5.652; 1.362; 0)" Size="1.219" />
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="120" />
-		<EngineSocket Default="us_special_mack_defense_mcv6" Type="e_us_truck_modern_mack_defense_m917, e_ru_truck_modern_grad" />
+		<EngineSocket Default="ru_truck_modern_engine_0" Type="e_ru_truck_modern, e_ru_truck_modern_grad" />
 		<Driver Pos="(4.680; 2.228; 0.699)" SteeringWheelPos="(5.063; 2.562; 0.667)" ParentFrame="BoneCabin_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.9" Dir="(-0.931; 0.211; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/azov_670963n_arrow_01" Org="(5.343; 2.502; 0.784)" OutputAngles="(-120;120)" />

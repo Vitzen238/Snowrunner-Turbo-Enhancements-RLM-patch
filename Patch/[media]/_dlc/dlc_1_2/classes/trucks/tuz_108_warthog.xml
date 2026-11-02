@@ -138,7 +138,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(2.8; 1.499; 0)" Size="1" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="120" />
-		<EngineSocket Default="ru_truck_modern_engine_0" Type="e_ru_truck_modern" />
+		<EngineSocket Default="ru_truck_old_engine_0" Type="e_ru_truck_old" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			LegsOffset="(0; 0.08; 0)"

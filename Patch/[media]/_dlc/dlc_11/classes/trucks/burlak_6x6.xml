@@ -445,7 +445,7 @@
 		<!-- <STICKER> -->
 		<!-- <STUFF> -->
 		<AddonSockets>
-            <Socket InCockpit="true" Names="RezvaniTankRepairBox"  Offset="(1.55; 1.11; 0.5)" ParentFrame="BoneCabin_cdt" />
+            <Socket InCockpit="true" Names="RezvaniTankRepairBox" Offset="(1.55; 1.11; 0.5)" ParentFrame="BoneCabin_cdt" />
         </AddonSockets>
 		<!-- <OTHER> -->
 		<AddonSockets>

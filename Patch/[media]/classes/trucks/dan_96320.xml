@@ -135,7 +135,7 @@
 		<!--<LimitedFluid Center="(1.394; 0.862; -0.919)" SizeX="0.936" SizeY="0.478" SizeZ="0.984" Type="Box" />-->
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="ru_special_engine_0" Type="e_ru_special" />
+		<EngineSocket Default="ru_truck_modern_engine_0" Type="e_ru_truck_modern" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(5.637; 1.716; 0.613)"

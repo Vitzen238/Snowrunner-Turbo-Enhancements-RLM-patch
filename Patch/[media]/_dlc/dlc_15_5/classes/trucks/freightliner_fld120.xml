@@ -17,7 +17,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<Wiper  _template="Gravity" Collisions="None" Mass="15">
+		<Wiper _template="Gravity" Collisions="None" Mass="15">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -27,7 +27,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Wiper>
-		<Sunshield  _template="Gravity" Collisions="None" Mass="50">
+		<Sunshield _template="Gravity" Collisions="None" Mass="50">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -37,7 +37,7 @@
 				<Motor Damping="100" Spring="100" Type="Spring" />
 			</Constraint>
 		</Sunshield>
-		<Seatbelt  _template="Gravity" Collisions="None" Mass="1">
+		<Seatbelt _template="Gravity" Collisions="None" Mass="1">
 			<Constraint
 				LinearLimitsX="(-0.020; 0.020)"
 				LinearLimitsY="(-0.001; 0.001)"
@@ -47,7 +47,7 @@
 				<Motor Damping="20" Spring="700" Type="Spring" />
 			</Constraint>
 		</Seatbelt>
-		<Mudguard  _template="Gravity" Collisions="Default" Mass="30">
+		<Mudguard _template="Gravity" Collisions="Default" Mass="30">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -57,7 +57,7 @@
 				<Motor Damping="15" Spring="20" Type="Spring" />
 			</Constraint>
 		</Mudguard>
-		<Mirror  _template="Gravity" Collisions="Default" ImpactType="Truck" Mass="30">
+		<Mirror _template="Gravity" Collisions="Default" ImpactType="Truck" Mass="30">
 			<Constraint
 				AxisLocal="(0; 1; 0)"
 				Type="Hinge"
@@ -631,6 +631,10 @@
 			<Socket Names="FreightlinerFLD120Repairs" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" />
 		</AddonSockets>
 		<AddonSockets>
+			<Socket Names="FrameAddonUSDumper_1" Offset="(-1.35; 1.035; 0)" NamesBlock="FreightlinerFLD120Kung, FreightlinerFLD120Repairs, MinicraneUS, LogLift, MetalDetector" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0;  -0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+			</Socket>
 			<Socket Names="SaddleMotorized" NamesBlock="FreightlinerFLD120Repairs, FreightlinerFLD120Kung, MinicraneUS, LogLift" Offset="(-1.55; -0.27; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.080)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.080)" />

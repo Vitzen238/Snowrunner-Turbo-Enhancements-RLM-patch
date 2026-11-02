@@ -14,6 +14,7 @@
 			ConnectedToHandbrake="true"
 			Location="rear"
 			Torque="default"
+			ParentFrame="BoneRearRLM_cdt"
 		/>
 	</Wheel>
 	<Body>
@@ -286,16 +287,30 @@
 		<Body _template="Gravity"
 			CenterOfMassOffset="(0.4; -0.1; 0)"
 			ImpactType="Truck"
-			Mass="3742"
+			Mass="5742"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
 			<Body _template="Gravity"
 				ModelFrame="BoneChassisWeighter_cdt"
-				Collisions="Default"
-				Mass="6321"
+				Collisions="None"
+				Mass="2321"
 			>
 				<Constraint Type="Fixed" />
+			</Body>
+			<Body _template="Gravity"
+				ModelFrame="BoneRearRLM_cdt"
+				Collisions="Default"
+				Mass="3000"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-6"
+					MaxLimit="6"
+				>
+					<Motor Damping="50" Spring="100" Type="Spring" />
+				</Constraint>
 			</Body>
 			<Body _template="Gravity"
 				CenterOfMassOffset="(-0.05; -0.15; 0)"
@@ -315,7 +330,7 @@
 				<Body _template="Gravity"
 					ModelFrame="BoneCabinWeighter_cdt"
 					Collisions="None"
-					Mass="4515"
+					Mass="3515"
 					CenterOfMassOffset="(0; -0.25; 0)"
 				>
 					<Constraint Type="Fixed" />
@@ -464,15 +479,15 @@
 		UnlockByRank="1"
 		ExcludeAddons=""
 	>
-		<WinchSocket Pos="(-4.543; 0.891; 1.281)" />
-		<WinchSocket Pos="(-4.543; 0.891; -1.281)" />
-		<WinchSocket Pos="(0.699; 1.759; 1.141)" />
-		<WinchSocket Pos="(0.699; 1.759; -1.141)" />
+		<!--<WinchSocket Pos="(-4.543; 0.891; 1.281)" />
+		<WinchSocket Pos="(-4.543; 0.891; -1.281)" />-->
+		<WinchSocket Pos="(0.62; 1.34; 0.6)" />
+		<WinchSocket Pos="(0.62; 1.34; -0.6)" />
 		
-		<CraneSocket Pos="(-4.543; 0.891; 1.281)" />
-		<CraneSocket Pos="(-4.543; 0.891; -1.281)" />
-		<CraneSocket Pos="(0.699; 1.759; 1.141)" />
-		<CraneSocket Pos="(0.699; 1.759; -1.141)" />
+		<!--<CraneSocket Pos="(-4.543; 0.891; 1.281)" />
+		<CraneSocket Pos="(-4.543; 0.891; -1.281)" />-->
+		<CraneSocket Pos="(0.62; 1.34; 0.6)" />
+		<CraneSocket Pos="(0.62; 1.34; -0.6)" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_WORTEK_250T_DESC"
 			UiIcon30x30="heavyVehicleImg30"
