@@ -4,7 +4,7 @@
 - [Latest](https://github.com/Vitzen238/Snowrunner-Turbo-Enhancements-RLM-patch/releases)
 
 ## Compatibility:
-- Snowrunner 44.0
+- Snowrunner 44.2
 - RLM 51.0.0
 
 ## Description:
